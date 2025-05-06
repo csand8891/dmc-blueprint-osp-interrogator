@@ -1,0 +1,148 @@
+##########################
+# C# / .NET Core / .NET
+##########################
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Project state
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# Roslyn Analyzers
+*.ruleset
+
+# User-specific files
+*.user
+*.suo
+*.ideajoin # JetBrains Rider
+*.sln.DotSettings.user # ReSharper
+*.csproj.DotSettings.user # ReSharper
+
+# Build Server Folders
+*_i/ # Visual Studio Team Services
+*_work/ # Visual Studio Team Services
+.vs/ # Visual Studio 2017+ hidden folder
+.idea/ # JetBrains Rider hidden folder
+
+# Visual Studio Code
+.vscode/*
+# To share launch and task configurations, uncomment the following lines
+# and ensure these files don't contain sensitive information.
+# !.vscode/launch.json
+# !.vscode/tasks.json
+# To share recommended extensions, uncomment the following line:
+# !.vscode/extensions.json
+# To share general workspace settings (be cautious with user-specific paths):
+# !.vscode/settings.json
+
+# Rider specific
+*.sln.iml
+
+# Other Build Artifacts
+*.pdb
+*.exe
+*.dll
+*.aps
+*.ncrunch*
+*.licenseheader
+*.orig
+*.[Pp]ublish.xml
+*.[Pp]ublishsettings
+*.build.log
+
+# NuGet Packages
+packages/
+# Exclude package files in the root (for packages.config projects)
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+## TODO: If you have local packages (e.g. from a local feed) then edit
+# Package Restore is new with NuGet 2.7 and above. You restauración from the Solution Explorer.
+# If you are using a version of NuGet prior to 2.7, then the following may break your build.
+
+# Local Test Settings
+*.vsmdi
+*.testsettings
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestResult.xml
+*.trx
+
+# NUnit
+*.nunit
+nunit-project.xml
+
+# Local databases
+*.mdf
+*.ldf
+*.sdf
+
+# Secrets and Environment Variables
+# IMPORTANT: Never commit sensitive information!
+# Use User Secrets for development in .NET:
+# https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets
+# For other secrets, use environment variables or a secure vault.
+secrets.json
+appsettings.*.json # Be careful with appsettings.Development.json if it contains secrets
+                   # It's better to use User Secrets.
+*.env
+
+# Web Deploy
+*.deploy.cmd
+*.deploy.config
+*.deploy-readme.txt
+*.SourceManifest.xml
+*.sitemanifest
+*.zip # Often used for deployment packages
+
+# Profiler Files
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# OS generated files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# Linux
+._*
+
+# Temporary files from editors
+*~
+*.swp
+*.bak
+
+# Output of benchmark tests
+BenchmarkDotNet.Artifacts/
+
+# StyleCop
+StyleCopReport.xml
+StyleCopViolations.xml
+
+# FAKE - F# Make
+.fake/
+
+# Paket
+.paket/paket.exe
+paket-files/
+
+# If you are using Entity Framework Core migrations
+# and prefer to generate them on each developer's machine rather than committing them:
+# Migrations/  # Be cautious with this, many teams prefer to commit migrations
