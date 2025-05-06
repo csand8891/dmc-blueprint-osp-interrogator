@@ -6,7 +6,7 @@ namespace DmcBlueprint.Models
         public DistributorAndCustomerInfo DistributorAndCustomerDetails { get; set; }
         public RevisionAndCustomizationInfo RevisionAndCustomization { get; set; }
         public DvdMediaVersionData DvdMediaVersions { get; set; }
-        public SoftwareVersionData AdditionalSoftwareDvdVersions { get; set; }
+        public SoftwareVersionIdentifier AdditionalSoftwareDvdVersions { get; set; }
         public List<SoftwarePackage> SoftwarePackageComposition { get; set; }
         public List<CustomSoftwareGroup> CustomSoftwareComposition { get; set; }
         public List<SpecCodeSection> NcSpecCodes { get; set; }
