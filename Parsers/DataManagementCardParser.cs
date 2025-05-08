@@ -11,11 +11,103 @@ namespace DmcBlueprint.Parsers
     public class DataManagementCardParser
     {
         private static readonly Regex SectionHeaderRegex =
-            new Regex(@"^=+\s*\[(?<name>[^\]]+)\]\s*=+$", RegexOptions.Compiled)
+            new Regex(@"^=+\s*\[(?<name>[^\]]+)\]\s*=+$", RegexOptions.Compiled);
+
+        /// <summary>
+        /// Parses the specified Data Management Card file and returns a structured representation.
+        /// </summary>
+        /// <param name="filePath">The full path to the Data Management Card file.</param>
+        /// <returns>A <see cref="SoftwareDataManagementCard"/> object populated with data from the file.</returns>
         public SoftwareDataManagementCard Parse(string filePath)
         {
             var managementCard = new SoftwareDataManagementCard();
             var lines = File.ReadAllLines(filePath);
+
+            var managementCard = new SoftwareDataManagementCard();
+            var lines = File.ReadAllLines(filePath);
+            _currentSection = CurrentSection.None; // Initialize at the start of parsing
+
+            foreach (var line in lines)
+            {
+                string trimmedLine = line.Trim();
+                if (string.IsNullOrWhiteSpace(trimmedLine))
+                {
+                    continue; // Skip empty or whitespace-only lines
+                }
+
+                if (IsSectionHeader(trimmedLine))
+                {
+                    UpdateCurrentSection(trimmedLine);
+                    _currentCustomSoftGroup = null; // Reset any section-specific sub-state
+                }
+                else
+                {
+                    // This is a data line, process it based on the _currentSection
+                    switch (_currentSection)
+                    {
+                        case CurrentSection.MachineData:
+                            // TODO: Parse machine data line and populate managementCard.MachineDetails
+                            break;
+                        case CurrentSection.CustomerData:
+                            // TODO: Parse customer data line and populate managementCard.DistributorAndCustomerDetails
+                            break;
+                        case CurrentSection.Note:
+                            if (IsCommentLine(trimmedLine))
+                            {
+                                var revisionEntry = ParseRevisionEntryFromLine(trimmedLine);
+                                if (revisionEntry != null)
+                                {
+                                    managementCard.RevisionAndCustomization ??= new RevisionAndCustomizationInfo();
+                                    managementCard.RevisionAndCustomization.RevisionEntries.Add(revisionEntry);
+                                }
+                            }
+                            else
+                            {
+                                // TODO: Handle other types of lines within the NOTE section
+                                // e.g., < Note NO.1 >, < Special Spec >, [ Not attached Windows System Disk ]
+                            }
+                            break;
+                        case CurrentSection.DvdMediaVersionData:
+                            // TODO: Parse DVD media version data line and populate managementCard.DvdMediaVersion
+                            break;
+                        case SoftVersionExceptedOspSystemCd:
+                            // TODO: Parse Soft Version Excepted OSP System CD line and populate managementCard.SoftVersionExceptedOspSystemCd
+                            break;
+                        case PackageSoftComposition:
+                            // TODO: Parse Package Soft Composition line and populate managementCard.PackageSoftComposition
+                            break;
+                        case NcCustomSoftComposition:
+                            // TODO: Parse NC Custom Soft Composition line and populate managementCard.NcCustomSoftComposition
+                            break;
+                        case NcSpecCode1:
+                            // TODO: Parse NC-SPEC CODE No.1 line and populate managementCard.NcSpecCode1
+                            break;
+                        case NcSpecCode2:
+                            // TODO: Parse NC-SPEC CODE No.2 line and populate managementCard.NcSpecCode2
+                            break;
+                        case NcSpecCode3:
+                            // TODO: Parse NC-SPEC CODE No.3 line and populate managementCard.NcSpecCode3
+                            break;
+                        case PlcSpecCode1:
+                            // TODO: Parse PLC-SPEC CODE No.1 line and populate managementCard.
+                            break;
+                        case PlcSpecCode2:
+                            // TODO: Parse PLC-SPEC CODE No.2 line and populate managementCard.
+                            break;
+                        case PlcSpecCode3:
+                            // TODO: Parse PLC-SPEC CODE No.3 line and populate managementCard.
+                            break;
+                        case CurrentSection.None:
+                            // This line is before any recognized section header or is otherwise unclassified.
+                            // You might want to log it or parse it if it's part of a general file header.
+                            // Example: The "cspsVer.12.1.0     2023-03-07  19:21:26" line from your example.
+                            break;
+                        default:
+                            // Potentially log unhandled lines for a known section
+                            break;
+                    }
+                }
+            }
 
             return managementCard;
         }
@@ -48,20 +140,39 @@ namespace DmcBlueprint.Parsers
 
         // --- Helper Functions ---
 
+        /// <summary>
+        /// Checks if the given line matches the expected section header format (e.g., ===[Section Name]===).
+        /// </summary>
+        /// <param name="line">The line to check, expected to be already trimmed of leading/trailing whitespace from the caller.</param>
+        /// <returns>True if the line is a section header, false otherwise.</returns>
         internal bool IsSectionHeader(string line)
         {
             if (string.IsNullOrWhiteSpace(line))
             {
                 return false;
             }
-
-            return SectionHeaderRegex.IsMatch(line.Trim());
+            // The regex matches:
+            // ^                  Start of the string
+            // =+                 One or more '=' characters
+            // \s*                Zero or more whitespace characters
+            // \[                 A literal '['
+            // (?<name>[^\]]+)   A named capture group "name" matching one or more characters that are not ']'
+            // \]                 A literal ']'
+            // \s*                Zero or more whitespace characters
+            // =+                 One or more '=' characters
+            // $                  End of the string
+            return SectionHeaderRegex.IsMatch(line); // Assuming line is already trimmed by caller
         }
         
+        /// <summary>
+        /// Updates the internal current section state based on the provided section header line.
+        /// This method assumes the <paramref name="sectionHeaderLine"/> has already been validated by <see cref="IsSectionHeader"/>.
+        /// </summary>
+        /// <param name="sectionHeaderLine">The validated section header line from the input file.</param>
         internal void UpdateCurrentSection(string sectionHeaderLine)
         {
             // This method now assumes sectionHeaderLine has already been validated by IsSectionHeader
-            string trimmedHeader = sectionHeaderLine.Trim(); // Trim is still good practice here
+            string trimmedHeader = sectionHeaderLine.Trim();
             
             // Extracting the name using Regex can be more robust if IsSectionHeader also provides the name
             // Or, we can stick to IndexOf if IsSectionHeader guarantees the brackets exist.
@@ -140,6 +251,11 @@ namespace DmcBlueprint.Parsers
             }
         }
 
+        /// <summary>
+        /// Determines if a given line from the "NOTE" section should be treated as a comment line (typically a revision entry).
+        /// </summary>
+        /// <param name="line">The line to check, expected to be already trimmed.</param>
+        /// <returns>True if the line is considered a comment/revision entry; otherwise, false.</returns>
         internal bool IsCommentLine(string line)
         {
             // Called when parsing RevisionAndCustomizationInfo section
@@ -150,6 +266,11 @@ namespace DmcBlueprint.Parsers
                    !trimmedLine.StartsWith("=");
         }
 
+        /// <summary>
+        /// Parses a line (assumed to be a revision entry from the "NOTE" section) into a <see cref="RevisionEntry"/> object.
+        /// </summary>
+        /// <param name="line">The revision entry line to parse.</param>
+        /// <returns>A populated <see cref="RevisionEntry"/> object, or null if the line is empty, whitespace, or cannot be minimally parsed.</returns>
         internal RevisionEntry? ParseRevisionEntryFromLine(string line)
         {
             // Example line: "1  03/07/23  SO# 2170654  P# 1080911"
