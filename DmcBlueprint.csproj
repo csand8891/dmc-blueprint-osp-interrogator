@@ -10,5 +10,10 @@
   <ItemGroup>
     <InternalsVisibleTo Include="DmcBlueprint.Tests" />
   </ItemGroup>
+  <ItemGroup>
+    <!-- Explicitly exclude files from the test project directory -->
+    <Compile Remove="DmcBlueprint.Tests\**\*.cs" />
+    <EmbeddedResource Remove="DmcBlueprint.Tests\**\*.cs" />
+  </ItemGroup>
 
 </Project>
