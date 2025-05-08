@@ -16,7 +16,7 @@ namespace DmcBlueprint.Parsers
 
             return managementCard;
         }
-        private enum CurrentSection
+        public enum CurrentSection
             {
                 None,
                 MachineData,
@@ -40,14 +40,17 @@ namespace DmcBlueprint.Parsers
         private CurrentSection _currentSection = CurrentSection.None;
         private string? _currentCustomSoftGroup = null;
 
+        // Property to expose _currentSection for testing
+        internal CurrentSection CurrentSectionForTesting => _currentSection;
+
         // --- Helper Functions ---
         
-        private void UpdateCurrentSection(string sectionHeaderLine)
+        internal void UpdateCurrentSection(string sectionHeaderLine)
         {
             // Map header line to CurrentSection enum ...
             string trimmedHeader = sectionHeaderLine.Trim();
             int openBracketIndex = trimmedHeader.IndexOf('[');
-            int closBracketIndex = trimmedHeader.IndexOf(']');
+            int closeBracketIndex = trimmedHeader.IndexOf(']');
 
             if (openBracketIndex != -1 && closeBracketIndex != -1 && closeBracketIndex > openBracketIndex)
             {
@@ -97,7 +100,7 @@ namespace DmcBlueprint.Parsers
                     default:
                         Console.WriteLine($"Warning: Unknown section name encountered: [{sectionName}] in line: {sectionHeaderLine}");
                         // Decide if _currentSection should be set to None or retain its previous value
-                        // _currentSection = CurrentSection.None; 
+                        _currentSection = CurrentSection.None; 
                         break;
                 }
             }
@@ -107,6 +110,7 @@ namespace DmcBlueprint.Parsers
                 // This might happen if your IsSectionHeader check in the main loop is too broad.
                 // For now, we'll assume it's not a section we should change to.
                 // Console.WriteLine($"Warning: Line treated as section header but not in expected format: {sectionHeaderLine}");
+                _currentSection = CurrentSection.None;
             }
         }
 
