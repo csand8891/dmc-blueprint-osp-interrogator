@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace DmcBlueprint.Parsers
 {
     public class DataManagementCardParser
     {
+        private static readonly Regex SectionHeaderRegex =
+            new Regex(@"^=+\s*\[(?<name>[^\]]+)\]\s*=+$", RegexOptions.Compiled)
         public SoftwareDataManagementCard Parse(string filePath)
         {
             var managementCard = new SoftwareDataManagementCard();
@@ -44,73 +47,96 @@ namespace DmcBlueprint.Parsers
         internal CurrentSection CurrentSectionForTesting => _currentSection;
 
         // --- Helper Functions ---
+
+        internal bool IsSectionHeader(string line)
+        {
+            if (string.IsNullOrWhiteSpace(line))
+            {
+                return false;
+            }
+
+            return SectionHeaderRegex.IsMatch(line.Trim());
+        }
         
         internal void UpdateCurrentSection(string sectionHeaderLine)
         {
-            // Map header line to CurrentSection enum ...
-            string trimmedHeader = sectionHeaderLine.Trim();
-            int openBracketIndex = trimmedHeader.IndexOf('[');
-            int closeBracketIndex = trimmedHeader.IndexOf(']');
+            // This method now assumes sectionHeaderLine has already been validated by IsSectionHeader
+            string trimmedHeader = sectionHeaderLine.Trim(); // Trim is still good practice here
+            
+            // Extracting the name using Regex can be more robust if IsSectionHeader also provides the name
+            // Or, we can stick to IndexOf if IsSectionHeader guarantees the brackets exist.
+            Match match = SectionHeaderRegex.Match(trimmedHeader);
+            string sectionName = "";
 
-            if (openBracketIndex != -1 && closeBracketIndex != -1 && closeBracketIndex > openBracketIndex)
+            if (match.Success && match.Groups["name"].Success)
             {
-                string sectionName = trimmedHeader.Substring(openBracketIndex + 1, closeBracketIndex - openBracketIndex - 1).Trim();
-
-                switch (sectionName)
-                {
-                    case "Machine Data":
-                        _currentSection = CurrentSection.MachineData;
-                        break;
-                    case "Customer Data":
-                        _currentSection = CurrentSection.CustomerData;
-                        break;
-                    case "NOTE":
-                        _currentSection = CurrentSection.Note;
-                        break;
-                    case "DVD Media Version Data":
-                        _currentSection = CurrentSection.DvdMediaVersionData;
-                        break;
-                    case "Soft Version Excepted OSP System CD": // Note: "Excepted" might be a typo in the file for "Expected" or "Excluding"
-                        _currentSection = CurrentSection.SoftVersionExceptedOspSystemCd;
-                        break;
-                    case "Package Soft composition": // Note: "composition" vs "Composition"
-                        _currentSection = CurrentSection.PackageSoftComposition;
-                        break;
-                    case "NC Custom Soft composition":
-                        _currentSection = CurrentSection.NcCustomSoftComposition;
-                        break;
-                    case "NC-SPEC CODE No.1":
-                        _currentSection = CurrentSection.NcSpecCode1;
-                        break;
-                    case "NC-SPEC CODE No.2":
-                        _currentSection = CurrentSection.NcSpecCode2;
-                        break;
-                    case "NC-SPEC CODE No.3":
-                        _currentSection = CurrentSection.NcSpecCode3;
-                        break;
-                    case "PLC-SPEC CODE No.1":
-                        _currentSection = CurrentSection.PlcSpecCode1;
-                        break;
-                    case "PLC-SPEC CODE No.2":
-                        _currentSection = CurrentSection.PlcSpecCode2;
-                        break;
-                    case "PLC-SPEC CODE No.3":
-                        _currentSection = CurrentSection.PlcSpecCode3;
-                        break;
-                    default:
-                        Console.WriteLine($"Warning: Unknown section name encountered: [{sectionName}] in line: {sectionHeaderLine}");
-                        // Decide if _currentSection should be set to None or retain its previous value
-                        _currentSection = CurrentSection.None; 
-                        break;
-                }
+                sectionName = match.Groups["name"].Value.Trim();
             }
             else
             {
-                // This line was passed to UpdateCurrentSection but doesn't seem to be a valid header.
-                // This might happen if your IsSectionHeader check in the main loop is too broad.
-                // For now, we'll assume it's not a section we should change to.
-                // Console.WriteLine($"Warning: Line treated as section header but not in expected format: {sectionHeaderLine}");
-                _currentSection = CurrentSection.None;
+                // Fallback or error if regex matching fails unexpectedly after IsSectionHeader passed.
+                // This path should ideally not be hit if IsSectionHeader is working correctly.
+                // For robustness, we can still use the IndexOf approach as a fallback,
+                // or simply log an error and set to None.
+                int openBracketIndex = trimmedHeader.IndexOf('[');
+                int closeBracketIndex = trimmedHeader.IndexOf(']');
+                if (openBracketIndex != -1 && closeBracketIndex != -1 && closeBracketIndex > openBracketIndex)
+                {
+                    sectionName = trimmedHeader.Substring(openBracketIndex + 1, closeBracketIndex - openBracketIndex - 1).Trim();
+                }
+                else
+                {
+                    Console.WriteLine($"Error: UpdateCurrentSection called with invalid header format despite IsSectionHeader: {sectionHeaderLine}");
+                    _currentSection = CurrentSection.None;
+                    return;
+                }
+            }
+
+            switch (sectionName)
+            {
+                case "Machine Data":
+                    _currentSection = CurrentSection.MachineData;
+                    break;
+                case "Customer Data":
+                    _currentSection = CurrentSection.CustomerData;
+                    break;
+                case "NOTE":
+                    _currentSection = CurrentSection.Note;
+                    break;
+                case "DVD Media Version Data":
+                    _currentSection = CurrentSection.DvdMediaVersionData;
+                    break;
+                case "Soft Version Excepted OSP System CD":
+                    _currentSection = CurrentSection.SoftVersionExceptedOspSystemCd;
+                    break;
+                case "Package Soft composition":
+                    _currentSection = CurrentSection.PackageSoftComposition;
+                    break;
+                case "NC Custom Soft composition":
+                    _currentSection = CurrentSection.NcCustomSoftComposition;
+                    break;
+                case "NC-SPEC CODE No.1":
+                    _currentSection = CurrentSection.NcSpecCode1;
+                    break;
+                case "NC-SPEC CODE No.2":
+                    _currentSection = CurrentSection.NcSpecCode2;
+                    break;
+                case "NC-SPEC CODE No.3":
+                    _currentSection = CurrentSection.NcSpecCode3;
+                    break;
+                case "PLC-SPEC CODE No.1":
+                    _currentSection = CurrentSection.PlcSpecCode1;
+                    break;
+                case "PLC-SPEC CODE No.2":
+                    _currentSection = CurrentSection.PlcSpecCode2;
+                    break;
+                case "PLC-SPEC CODE No.3":
+                    _currentSection = CurrentSection.PlcSpecCode3;
+                    break;
+                default:
+                    Console.WriteLine($"Warning: Unknown section name encountered: [{sectionName}] in line: {sectionHeaderLine}");
+                    _currentSection = CurrentSection.None; 
+                    break;
             }
         }
 
