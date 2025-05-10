@@ -2,7 +2,7 @@ namespace DmcBlueprint.Models
 {
     public class SpecCodeSection
     {
-        public string SectionTitle { get; set; }
+        public string? SectionTitle { get; set; }
         public List<string> HexCodes { get; set; }
         public List<SpecFeature> SpecCodes { get; set; }    
 

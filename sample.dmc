@@ -1,0 +1,840 @@
+ cspsVer.12.1.0     2023-03-07  19:21:26
+(Zip Format Install)
+
+
+
+ OSP Software Management Data Card
+
+                                 -------- cf. Attached Approval List --------
+                                 -------- -------- -------- -------- --------
+===========================[ Machine Data ]===================================
+
+< Type of OSP >
+                              OSP-P300LA
+< Type of Machine >
+                              LB3000II
+                              1SC-1000
+                              V12
+< Soft Production No >
+                              #08410
+< Project No >
+                              P251028
+< Software Production Date >
+                              2023-03-07
+
+===========================[ Customer Data ]==================================
+
+< Name >
+             O.A.C.
+< Address >
+             USA
+< Phone >
+< Customer >
+             O.A.C.
+< Address >
+             USA
+< Phone >
+
+===========================[ NOTE ]===========================================
+
+< Note NO.1 >
+< Special Spec >
+< Comment >
+             1  03/07/23  SO# 2170654  P# 1080911
+
+[ Not attached Windows System Disk ]
+===========================[ DVD Media Version Data ]==========================
+[ Windows System CD Version ]
+  01
+
+[ OSP System CD Version ]
+  03
+
+
+===========================[ Soft Version Excepted OSP System CD ]============
+[ Windows System Version ]
+  8.0.0.E
+
+[ Custom API Additional DVD Version ]
+  App_THINC_API          V1.23.2.0W-V3.3.4_P
+
+[ MTconnect Version@(Included in App_THINC_API DVD) ]
+  MTConnect              V3.3.4
+
+============================[ Package Soft composition ]======================
+
+[ NC INSTALLER ]
+
+     INST109M
+
+[ REALTIME OS DRIVER ]
+
+     VDRV401A
+
+[ VPS INSTALLER ]
+
+     VPSI800D
+
+**START
+[ REALTIME OS ]
+
+     VSYS501A
+
+
+ccdrps-pv2.10                    - 1/10 - <W01><O03><        LB3000II><P251028>
+[ NC CONTROL ]
+
+     LNC-38BE-P300A
+
+[ NC CONTROL MESSAGE ]
+
+     LNC-38BE-ENG-P300A
+
+[ PLC SYSTEM ]
+
+     PLCS301A
+
+[ PLC SYSTEM MESSAGE ]
+
+        [N/A]
+
+[ NC ALARM HELP ]
+
+     LPA-307C-ENG
+
+[ NC MAMUAL ]
+
+     LPM-351A-ENG
+
+[ P100 TOOL ]
+
+     UTY-007B
+
+[ PLC CONTROL ]
+
+     LU3-413B
+
+[ ONE TOUCH IGF ]
+
+     LADVA514A
+
+[ ONE TOUCH IGF MESSAGE ]
+
+        [N/A]
+
+[ VERTICAL FUNCTION KEY ]
+
+     SVFKA623A
+
+[ VERTICAL FUNCTION KEY MESSAGE ]
+
+     LVFKA604A
+
+[ IT PLAZA APPLICATION COMMON ]
+
+     SITP310A
+
+[ EASY MODELLING ]
+
+     SOECA341J
+
+[ CUSTOM API ]
+
+     LCAPI-003Z
+
+[ VPS PACKAGE ]
+
+     VPSE800D
+
+[ SAFETY CONTROL ]
+
+     SFTY003R
+
+[ OSP SUITE ]
+
+     SUITE121A
+
+[ OSP SUITE UTILITY ]
+
+     SUITEUTY121A
+
+[ EASY SETTING OF CYCLE TIME REDUCTION ]
+
+     LEASYSET-002A
+
+
+
+
+ccdrps-pv2.10                    - 2/10 - <W01><O03><        LB3000II><P251028>
+============================[ NC Custom Soft composition ]=====================
+
+
+[ LPP ]
+     C:\OSP-P\P-MANUAL\LPP\ENG\LPP627C-ENG.CNT
+     C:\OSP-P\P-MANUAL\LPP\ENG\*
+
+
+[ HMI ]
+     C:\OSP-P\HMI\PDSN401-LU302X.DLL
+     C:\OSP-P\HMI\ENG\PDSN401-LU302XEN.DLL
+     C:\OSP-P\HMI-REG\PSRD401-LU302X.REG
+     C:\OSP-P\HMI-REG\PSRN401-LU302X.REG
+     C:\OSP-P\HMI\PDSD401-LU302X.DLL
+     C:\OSP-P\HMI\ENG\PDSD401-LU302XEN.DLL
+     C:\OSP-P\HMI\PDSP401-LU201W.DLL
+     C:\OSP-P\HMI\ENG\PDSP401-LU201WEN.DLL
+
+
+[ PBU-DAT ]
+     C:\PBU-DAT\LHDBKST-1200A.PBU
+     C:\PBU-DAT\LALMHSA-1202A.PBU
+     C:\PBU-DAT\LMCNDTA-1202B.PBU
+     C:\PBU-DAT\LPRM11A-1210A.PBU
+     C:\PBU-DAT\PLCUA21-LMFA9A.PBU
+     C:\PBU-DAT\PLCUD11-LA001A.PBU
+     C:\PBU-DAT\PLCUF11-LA001A.PBU
+     C:\PBU-DAT\PLCUH11-LA001A.PBU
+     C:\PBU-DAT\LRKUA30-MFB00-D.PBU
+     C:\PBU-DAT\LRKUB20-B00-A.PBT
+     C:\PBU-DAT\LRTOF01-MF03-A.PBU
+
+
+[ CNS-DAT ]
+     C:\OSP-P\TOOLS\SAFETY\SLGC03-LU004H.SEO
+     C:\OSP-P\CNS-DAT\AXSPLP3-MF01-C.CNS
+     C:\OSP-P\CNS-DAT\PLCUB11-LA001A.CNS
+     C:\OSP-P\CNS-DAT\PLCUC11-LUA103H.CNS
+     C:\OSP-P\CNS-DAT\LNCSPEC-1200A.DAT
+     C:\OSP-P\CNS-DAT\LNCBSPC-1200A.DAT
+     C:\OSP-P\CNS-DAT\ENG\PMCA300-L627C-EN.MSG
+     C:\OSP-P\CNS-DAT\PFCUA21-L001C.CNS
+     C:\OSP-P\CNS-DAT\PMIO200-LU100V.CNS
+     C:\OSP-P\VOLANTE\LOADERLOGO-P300A-100A.BMP
+     C:\OSP-P\SharedDLL\OSPLANGINI\OSPLANGID-ENG-172A.INI
+     C:\OSP-P\SharedDLL\OSPLANGINI\OSPLANG-DEFAULT-ENG-100A.INI
+     C:\OSP-P\CNS-DAT\PIOCK11-L003F.DAT
+     C:\OSP-P\CNS-DAT\ENG\PIOD21-P251028BE.CNS
+     C:\OSP-P\CNS-DAT\SIOD21-P251028B.CNS
+     C:\OSP-P\CNS-DAT\PWRD21-P251028A.CNS
+     C:\OSP-P\CNS-DAT\PLPWR21-LUA001L.CNS
+     C:\OSP-P\CNS-DAT\ERP-A0029.CNS
+     C:\OSP-P\CNS-DAT\ENG\LPM1-P251028A-ENG.CNS
+     C:\OSP-P\CNS-DAT\SLGCA01-LMF012D.CNS
+     C:\OSP-P\CNS-DAT\SSMPL2-SA-UA002-A.CNS
+     C:\OSP-P\CNS-DAT\SSMPL2-XA-MF001-A.CNS
+     C:\OSP-P\CNS-DAT\SSMPL2-ZA-MF001-A.CNS
+     C:\OSP-P\CNS-DAT\SSMPL2-WA-MF001-A1.CNS
+     C:\OSP-P\CNS-DAT\SSMPL2-TA-MF001-A.CNS
+     C:\OSP-P\CNS-DAT\AXSPLSAA-SA-N-UA232-B-2.CNS
+     C:\OSP-P\CNS-DAT\AXSPLSAB-SA-N-UA232-B-2.CNS
+     C:\OSP-P\CNS-DAT\AXSPLSAC-SA-N-UA232-B-2.CNS
+     C:\OSP-P\CNS-DAT\AXSPLSAD-SA-N-UA232-B-2.CNS
+     C:\OSP-P\CNS-DAT\AXSPLNA-XA-N-MF201-A-2.CNS
+     C:\OSP-P\CNS-DAT\AXSPLNA-ZA-N-MF202-A-2.CNS
+     C:\OSP-P\CNS-DAT\AXSPLNA-WA-N-MF202-A-4.CNS
+     C:\OSP-P\CNS-DAT\SPOM1-5A5-03-SA-A.CNS
+     C:\OSP-P\VOLANTE\PREREG-001B.REG
+     C:\OSP-P\CNS-DAT\DGPTFD-P251028A.CNS
+     C:\OSP-P\CNS-DAT\DGFD-A0003.CNS
+
+
+[ MSB ]
+     C:\OSP-P\MSB\LMSK311A.MSB
+     C:\OSP-P\MSB\LMSW110B.MSB
+
+
+[ ETC ]
+     C:\OSP-P\LMNT301B.DEF
+     C:\OSP-P\OSPMNGCD.CNC
+     C:\OSP-P\VOLANTE\OSPLOADER-101A.INI
+     C:\OSP-P\VOLANTE\LOADERCOMPANYLOGO-100A.BMP
+
+ccdrps-pv2.10                    - 3/10 - <W01><O03><        LB3000II><P251028>
+
+**END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ccdrps-pv2.10                    - 4/10 - <W01><O03><        LB3000II><P251028>
+===========================[ NC-SPEC CODE No.1 ]==============================
+
+9100-0000-4101-0000-14C0-4F18-0000-1043
+
+0001-9D52-2D00-4900-0101-6000-1020-0000
+
+==================  ==================  ==================  ==================
+SLANT-Y AXIS     -  ONE TOUCH IGF ADVo  EXTERNAL MEASURE -  TOOL CENTER CTRL -
+Y AXIS BY CT-Z   -  TAPE DATA IN/OUT o  MEASURE RS232C   -  Hi-Cut Pro       -
+ABSO SCALE YS    -  FD IN/OUT(IBM)   -  CEJ MATIC        -  SUPER-NURBS Hi.  -
+Y-AXIS BARRIER   -  WITHOUT MS-DOS   -  SIZE CATCHER     -  NURBS            -
+Y HORI.BARRIER   -  T-SEPARATE EDIT  -  EX.MEASURE BCD   -  SUPER Hi-NC      -
+B-AXIS 0.001deg  -  DNC-C ETHERNET   -  T-SETTER R/L COM -  SUPER-NURBS Rac. -
+B-AXIS 1deg      -  P-200 SPEC       o  TOOL TRANSFER SYS-  TOOL-ID          -
+B-AXIS CONTROL   -  FL-net           -  HI SPEED GAUGING -  INVERSE TIME FEED-
+------------------  ------------------  ------------------  ------------------
+ATC              -  BUFFER 160M      -  TOUCH SETTER     o  ST. REST ZB      -
+1CAM-ATC         -  BUFFER 320M      -  2ND SP MEASURE   -  ST. REST MID     -
+2CAM-ATC         -  BUFFER 640M      -  TOUCH SETTER AUTO-  ST. REST ZC      -
+EXT.ATC HOME POS -  BUFFER 1280M     -  TOUCH SENSOR     o  ATC SH. SRV.D.   -
+VTM MACHINE      -  NO-SSU-RD        o  C ZERO OFFSET    -  ST.R TOW-A.B     -
+NEW MG.PANEL     -  FDD3.5INCH EDIT  -  Y GAUGING        -  ST.R TOW-A.AUTO  -
+PANEL OLD TYPE   -  EDIT INTERLOCK   -  OPTICAL SENSOR   o  ST.R TOW-A.JOG   -
+Y-AXIS TRQUE LIM.-  EDIT INTERLOCK C -  MEASU.DATA PRT.  -  ST. REST TOW-A.  -
+                                                                              
+==================  ==================  ==================  ==================
+HI-G CONTROL     o  PROGRAM SELECT   -  PITCH ERROR COMP -  CE MARKING       -
+PFC‡U            -  MG TOOL READY    -  IND.PITCH COMP.  -  PITCH ER.COMP.SP.-
+B-AXIS COMP.     -  COMMON VAR. NAME -  ABSO SCALE ZA    -  NC DOOR          -
+X-AXIS MIRR.     -  HOME POSITION B  -  ABSO SCALE XA    -  SPEC. SELECT     -
+WK.CORDINATE 10  -  WARMING UP       -  ABSO SCALE ZB    -  R SPEC           -
+WK.CORDINATE 50  -  MACHINE LOCK SP. -  ABSO SCALE XB    -  NOT R SPEC       o
+TOOL OFFSET 500  -  G00 LINEAR FEED  -  ABSO SCALE CA    -  THERMAL COMP. L2 -
+TOOL LIFE WARN.  -  A/B SYNC. MOTION -  WITHOUT COMP.    -  THERMAL COMP. L1 -
+------------------  ------------------  ------------------  ------------------
+NC TURRET        o  PLANE CONVERSION -  TURRET POS.COMP. o  NC MASTER        -
+OTC TURRET       -  PROFILE GENERAT. -  TOOL OFFSET 64   -  S-LINK NC TEST   -
+CAM TURRET       -  CONTOUR CUTTING. -  TOOL OFFSET 96   o  S-LINK SP TEST   -
+MANY CHIPS TOOL  -  B-AXIS INTERPOL. -  TOOL LIFE MNGMNT o  OH               -
+ABSO SCALE TA    -  SYNCHRO.TAPPING  -  TOOL OFFSET 200  -  NEW OPERAT.PANEL o
+B-AXIS TURRET    -  FLAT TURNING     -  TOOL WEAR COMP.  o  NO SERVO         -
+HEAVY TOOLING    o  HELICAL CUTTING  -  TOOL OFFSET SYS. -  PLC/SFC PROGRAM  -
+DOUBLE TOOLING   -  SLANT CUTTING    -  TOOL OFFSET 800  -  PLC              -
+                                                                              
+==================  ==================  ==================  ==================
+LT MACHINE       -  HOME POSITION    -  0.0001M CONTROL  -  NC ROBOT         -
+SUB SPINDLE      -  SPINDLE SYNC.TAP -  I/M SWICTH       o  NC LOADER        -
+PARALLEL 2 SPNDL -  TOOL RETRACTION  -  SCRIPT FUNCTION  -  SYSTEM STAT.DISP -
+PICK OFF UNIT    -  SPIN. FLUCTUATE  o  WINDOWS OPERATION-  OH LOGO CHANGE   -
+VERTICAL MACHINE -  NC TORQUE LIMIT. o  CYCLE TIME CAL.  o  C-AXIS COMP. 2   -
+LAW-V MACHINE    -  THREAD OVERRIDE  -  CYCLE TIME REDUC -  F CONVERT        -
+ACC MACHINE      -  GM CODE MCRO     -  CYCLE TIME R.NEW o  LOST MOTION CMP. -
+B-TURRET SUB SP. -  CENTER COMP.     -  NO LOAD DETECT   -  PLR2 LOW SEQUENCE-
+------------------  ------------------  ------------------  ------------------
+MULTIPLE MACHINE -  LAP4             o  NC WORK COUNTER  o  PROG. TAIL STOCK -
+B-TURRET M-AXIS  -  NOSE-R 2B        o  WORK CNT.SPECIAL -  SIMPLE TOW-ALONG -
+M-AXIS NO C-AX.  -  USER TASK 2      o  NC WORK MONITOR  o  PG. TAIL STOCK B -
+T/M AXIS SW.     -  EXP.AUTO CHAMF   o  CYCLE TIME CHECK o  AUTO TAIL STOCK  -
+L TOOL INDEX     -  THREAD PNT.OFFST -  LOAD MONITOR     o  TAIL STOCK CLAMP -
+C-AX.PT.ERR.CMP. -  THREAD FEED HOLD -  LOAD MONITOR W   -  NC TAIL STOCK    o
+MULTI-MAGAZINE   -  ARC THREAD CUT.  o  MAC MAN COMM.    -  NC TAIL STOCK TRQo
+SYNCHRO. REVERSE -  COMMON VAR. 1000 -  MAC MAN          o  MANY CHIPS 12    -
+                                                                              
+==================  ==================  ==================  ==================
+2 SADDLE MACHINE -  ONE TOUCH IGF    -  DNC-T1           o  SPINDLE ORIENT.  o
+MIRROR IMAGE     -  IGF              -  DNC-T2           -  MANY CHIPS 4     -
+Z-W OVER LAP     -  IGF CONVERT      -  DNC-T3           -  CB-AX. WO MB-AX. -
+CAM MACHINE      -  IGF DATA TRANS   -  DNC-T4           -  C SYNC. CONTROL  -
+NEW W-DATA       -  ONE-TOUCH S/SHEET-  DNC-P1           -  M-AXIS ORIENT.   -
+SUB MAGAZINE     -  COL.AVOID.SYSTEM -  DNC-P2           -  L MULTI. MACHIN. -
+H1 TURRET        -  PROGRAMING HELP  o  DNC-P3           -  R MULTI. MACHIN. -
+FLAT BED         -  HELP             o  DNC-P4           -  HOB CUTTING      -
+------------------  ------------------  ------------------  ------------------
+SERVO LINK NC    o  STN L.C.D MONO.  -  DNC-A            -  SPINDLE MAX IL.  o
+NOT R PITCH ER.CP-  E100 SPEC.       -  DNC-B            -  SP-HEAD IL.      -
+0 OFFSET DETECT  -  3D. ANIMATION    o  DNC-C1           -  PARTS CA. IL.    -
+CEMK STOP MONITOR-  ACP EXPANSION    -  DNC-C2           -  1S PARTS CA. IL. -
+SERVO LINK SPNDL o  ANIMATION        o  DNC-C3           -  ZA-W AXIS IL.    -
+SPINDLE ANALOG   -  S10 SPEC.        -  DNC-DT           -  XB-W AXIS IL.    -
+SPINDLE I/O      -  U100/U10 SPEC.   -  SMPL.REMOTE DIAG -  TURRET ZA-W IL.  -
+NOT NEW R SPEC   o  OAC MESSAGE      -  DNC-RT           -  TAIL-ST.REST IL. -
+==============================================================================
+
+ccdrps-pv2.10                    - 5/10 - <W01><O03><        LB3000II><P251028>
+===========================[ NC-SPEC CODE No.2 ]==============================
+
+0160-A303-0000-C010-3001-7100-0000-0000
+
+0000-0280-0020-0000-E000-6D00-A012-0000
+
+==================  ==================  ==================  ==================
+COORDINATE CONV. -  ATTACHMENT       -  A-TRT MID. POS.  -  CAM-AXIS ICB     -
+WK.CORDINATE 100 -  ATTACHMENT SWIVEL-  B-TRT MID. POS.  -  CAM LE. LESS     -
+TOOL OFFSET 999  -  MLT MAG. TYPE-C  -  C-TRT MID. POS.  -  ROID-NC MASTER   -
+COORDINATE CAL   -  VTR              -  CAS HYDRAULIC TRT-  Y-AXIS BARRIER IL-
+PROGRAM MESSAGE  o  LONG BORING BAR B-  USER MANAGE. EXT.-  TOUCH SENSOR B   -
+3-D CO. CONV.    -  3-D CO. CONV. 2  -  LATHE X-RADIUS   -  TOOL-ID Type-B   -
+PROF.GENE.HELI.  -  3-D INDEX        -  OP. BUFFER EXPAND-  FILE NAME SIZE EX-
+PREMIUM THREAD   -  L TOOL INDEX SP. -  MULTI TOOL       -  EtherNet/IP      -
+------------------  ------------------  ------------------  ------------------
+NC TST HI PRECISE-  MEAS.DATA COMM.SP-  HI-SPEED RESTART -                   -
+NC TST POLS LOW  -  3 AXIS MEASURE   -  L-G IGF LINK     -                   -
+NC TST CHECK LESS-  M-AXIS MEASURE   -  BLOCK SKIP MULT. -                   -
+TST 1ST-SP ATT.  -  M-AXIS INTERPOL. -  M-GUIDANCE 2     -  MODBUS COM.      -
+W AXIS CUTTING   -  BLUM HYBRID SEN. -  T-GUIDANCE(MAIN) -  ROBOT DANDORI DIS-
+BTRT PROG. TST   -  M-TOOL TOUCH ST. -  T-GUIDANCE(SUB)  -  STANDROID        -
+NC TST 1st INCH  o  BLUM TOUCH SETTER-  NEW JIS          -  LIQ. CRYSTAL@PH -
+NC TST INCH      o  SIDE SH. SRV.D   -  SP. CLP HIGH-SP. -  PRINT ROLL       -
+                                                                              
+==================  ==================  ==================  ==================
+APC              -  TOUCH SETTER2    -  ABCO SCALE YSB   -  FIXTURE OFFSET   -
+NC UNLOADER      -  STROKE LIMIT RLS -  ABSO SCALE YSC   -  CYCLE MODE SET@ o
+WORK SUPPORT     -  RIGID TOUCH SETR -  ABSO SCALE XC    -  MACHINE. REC. II -
+MULT.U MATRIX MG -  Y-MODE TOUCH SETR-  ABSO SCALE ZC    -  ZB-W(TS) AXIS IL -
+L TOOL IDX. SEL  -  TL BRAK. DETECT. -  SPIN. FLUCT. II  -  SHORT RAPID DROOPo
+MLT MAG. TYPE-B  -  AE SENSOR        -  SUP. VL DIP REG. o  TAP RETRACT FUNC.-
+ATC.EX.HP        -  BLUM SENSOR      -  M-AX MULT. REV   -  EES MOTOR        -
+POT TOOL TABLE   -  STROKE DIVIDE    -  SP ORIENT. HI    -  ROID             -
+------------------  ------------------  ------------------  ------------------
+MG-AXIS ATC      -  PLC CROSS RAIL   -  B-TRT Y-AXIS     -  STATUS LOGGER    -
+C-AXIS 1POINT    -  NC CROSS RAIL    -  ID/OD-GRIP SW NO -  STATUS MONITOR   -
+RT-AXIS ATC      -  HP CROSS RAIL    -  ZA-ZC AXIS IL    -  RETRACT(ST.MON.) -
+TURNING CO. CONV.-  SUPER EASY SET   -  TRT INDI. CHANGE -  ADD. SENSOR      -
+TR. ATC TYPE-A   -  NG TL CO. TM RED.-  3 SADDLE MACHINE -  FEED AXIS DIAG.  -
+TR. ATC TYPE-B   -  NX TL CO. TM RED.-  C-TRT M-AXIS     -  GATHER AGING     o
+TR. ATC TYPE-C   -  TR. ATC TYPE-D   -  C-TRT SUB SPNDLE -  SPINDLE DIAG.    -
+TURRET ATC       -  EXT. MG TOOL DATA-  C-TRT Y-AXIS     -  MACHINE DIAG.    o
+                                                                              
+==================  ==================  ==================  ==================
+CUSTOM-API       o  TOOL DIRECTION   -  SA AXIS TANDEM   -  2M1L ONE SIDE CUT-
+OSP-API          o  TOOL DIR COMP.   -  SB AXIS TANDEM   -  NC DOOR 2        -
+USER TASK 3      -  TCPC MACHINE CO. -  SPINDLE ACCEL SET-  CURR. GEIN TEACH -
+THiNC ALARM      -  TCPC CUT POINT   -  SPINDLE ROT. 0.1 -  Y-AXIS TURNING   -
+M-INTELLIGENCE   -  TCPC SUB SPINDLE -  STEP CUTTING FEED-  PUNCH TAP        -
+M-SPN. FLUCTUATE -  TCPC LATHE TURN. -  C-AXIS CLAMP AUT.-  ENLARGE/REDUCT   -
+L-GUIDANCE       -  B/C TURRET TRIC  -  TOOL GROOVE PROC.-  LATHE FLAG       -
+M-GUIDANCE       -  SUPER PROF. GENE.-  SP.COL. DETECTIONo  M33T MACHINE     -
+------------------  ------------------  ------------------  ------------------
+USE TOOL DISP.   o  AXIS ACTIVE STOP o  CE MARKING STOP  -  EASY OPERAT PANELo
+MACHINING MODE   o  M-AX LIFE COUNT  -  MFU              o  MULT OPERAT PANEL-
+NOSE-R DIR CHG   -  0.1u TB/MB AX. SP-  GEOMETRIC COMP.  -  L TOOL MAC INFORMo
+INTERRUPT PROGRAM-  STRAIGHT. COMP.  -  GEOMETRIC MES.   -  EOP ANM SCALE-UP o
+INTERRUPT PROG2  -  VAR. LOST MOTION o  TL SIDE OFFSET   -  19 INCH EXTEND   -
+BASE OP. SCREEN  o  SERVO NAVI L     o  TL TIP SIDE OFF. -  ECO SUITE        o
+TOOL MAC INFORM. -  RPD FD SPEED SET o  M-AXIS TORQ. SKIP-  OSP SUITE        o
+OFFSET BASE FIX  o  TIME CONST SELECT-  TURNING CUT      -  BASEZERO Z V.MEAS-
+                                                                              
+==================  ==================  ==================  ==================
+SERVO ADJUST SP  -  WORK WEIGHT SET  o  SELF ST.R 1      -  POWER METER      -
+TOOL LIFE NOT.SP -  Y-AX MANUAL FEED -  SELF ST.R 2      -  TH.COMP.OILCON   -
+WORK ROUGH       -  C-AXIS MANUAL CO.-  SELF ST.R 3      -  LASER UNIT       -
+ST.REST BARRIER  -  C-AXIS TORQ. SKIP-  SELF ST.R 1 REL. -  GRINDING         -
+WORK POSITION 30 -  HOME POSITION C  -  SELF ST.R 2 REL. -  TOOL STOCKER     -
+NO HIGH LOW TH.  o  AT ROTATION COMP -  SELF ST.R 3 REL. -  SADDLE DIV. TIME -
+TORQUE WATCH     o  LONG BORING BAR  -  NC ST.R 1 SADDLE -  EX. TOOL STOCKER -
+TAILSTOCK SP.LOW -  TOOL BASE        -  MA AXIS NO       -  NC CENTERING CH. -
+------------------  ------------------  ------------------  ------------------
+TOOL LIFE NOTICE o  SYNC.CONTROL ZA  -  BELT SLIP CHECK  -  MAC. TIME SHORT. -
+GOT-HMI          -  SYNC.CONTROL XA  -  M BELT SLIP CHECK-  TOOL LIFE MNG. 6 -
+MEASU.COMP.CLEAR -                   -  ROTARY NOTCH FIL.-  ATCHP IN POSITION-
+ALARM MESSAGE    -  SP. ORIENT. HI   -  MLTREV SP. ORIENT-  TURN. CUT GUIDE  -
+OTHER.SYS.WATCH  -  SDF SEPARATE NC  o  GEN. OL. DETECT  -  EX MONITOR ATT.  -
+CON BACK SP      -  SDF SEPARATE SP  o  NO LOAD DET. EXT -  SPIN. OUT. MON.  o
+0.1u T/M AXIS SP.-  SDF SEPARATE PLC -  LOAD MONITOR EXT -  SUITE w/o WIDGET o
+LOST MOTION CMP. -  FEED AXIS RETRACT-  C-AX NOTCH FILTER-  REMAI.TIME DISP. o
+==============================================================================
+
+ccdrps-pv2.10                    - 6/10 - <W01><O03><        LB3000II><P251028>
+===========================[ NC-SPEC CODE No.3 ]==============================
+
+0000-8000-0000-0000-0000-0000-0000-0000
+
+0000-0000-0000-0000-0000-0000-0000-0000
+
+==================  ==================  ==================  ==================
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+------------------  ------------------  ------------------  ------------------
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                                                                              
+==================  ==================  ==================  ==================
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+------------------  ------------------  ------------------  ------------------
+W-AX. W/O TS     -                   -                   -                   -
+CHUCKING TS      -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                                                                              
+==================  ==================  ==================  ==================
+CMP. FOR DEFORM. -                   -                   -                   -
+FIR FILTER       -                   -                   -                   -
+CORN. SHORTCUT   -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+------------------  ------------------  ------------------  ------------------
+EX.M.NUM. BINARY -                   -                   -                   -
+TL.BR.DT. IN MG  -                   -                   -                   -
+CENT.TL.STCK AT. -                   -                   -                   -
+MANY CHIPS TL. EX-                   -                   -                   -
+                 -                   -                   -                   -
+TOUCH SENSOR SEL.-                   -                   -                   -
+TL.LIFE-MNG.MG.S.-                   -                   -                   -
+ECO SUITE PLUS   o                   -                   -                   -
+                                                                              
+==================  ==================  ==================  ==================
+ROID TCP         -                   -                   -                   -
+ROID WS TRANSFER -                   -                   -                   -
+ROID MODEL CHECK -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+                 -                   -                   -                   -
+FMC-IF           -                   -                   -                   -
+------------------  ------------------  ------------------  ------------------
+MAC PROCESS DIAG -                   -                   -                   -
+BLK-MID SEQ.RESET-                   -                   -                   -
+L SPINDLE DIAG.  -                   -                   -                   -
+MONI-RETRACT CYC.-                   -                   -                   -
+ADJ. PATH ALGN.  -                   -                   -                   -
+POS. SMOOTHING   -                   -                   -                   -
+DNS./FLCT. CMP.  -                   -                   -                   -
+REVERSAL CMP.    -                   -                   -                   -
+==============================================================================
+
+ccdrps-pv2.10                    - 7/10 - <W01><O03><        LB3000II><P251028>
+===========================[ PLC-SPEC CODE No.1 ]=============================
+
+0000-0210-0001-0100-0100-0252-3001-0000
+
+0000-0020-8200-0012-0000-0000-0040-0000
+
+==================  ==================  ==================  ==================
+ST. REST FIX     -  HIGH COOLANT     -  OVERRIDE SPECIAL -  L TOOL INDEX SP  -
+ST. REST MID     -  B-TURRET 1MMTR   -  LOAD MONITOR     o  TL EXST COMF.REV.-
+ST. REST LOW-T   -  A-COOLANT 1MMTR  -  SAFETY TAPE SW   -                   -
+ST. REST REL.    -  COOLANT H/L SP.  -  NC MASTER        -  FL-net           -
+ST. REST OPEN    -  CLNT LEVEL CHECK -  CYCLE TIME RE.NEWo  ATC TYPE-R       -
+ST. REST CLOSE   -  CLNT FLOW CHECK  -  LAW-F L-MACHINE  -  AAC TYPE-C       -
+ST. REST TOW-A   -  COOLANT L/M CHG. -  PNL.POSIT. FRONT -  NC TURRET SETUP  -
+ST. REST GR.COMF -  CLNT.THRU.SPNDL. -  T CONST SWITCH   -  SETUP TEST MODE  -
+------------------  ------------------  ------------------  ------------------
+CENTER WORK      o  M-AXIS ORIENT.   -  DNC-B            -  B-AXIS TURRET    -
+TAIL STOCK LIMIT -  FLAT TURNING     -  DNC-C            -  B-AXIS 1deg      -
+TAIL-STK.IL.RLS. -  B-TURRET M-AXIS  -  ATC TYPE G       -  B-AXIS 0.001deg  -
+PROG. TAIL STOCK -  B-AXIS POS LOMP  -  W-AXIS OVERLAP   -  TURRET TYPE-H1   -
+SIMPLE TOW-ALONG -  ATC TYPE H       -  ST.R AUTO TOW-A B-  TURRET TYPE-H2   -
+TAIL STK.RT.INCH -  CAM AXIS LUB.    -  THREAD OVERRIDE  -  TR.PNDLM.CNTRL.  -
+SR. AUTO TOW-A.  -  M-AXIS OIL MIST  -  IND.CHK1 NO CHECK-  L TOOL INDEX     -
+SR. ENABLE SW    -  M-SP. OILCOOLER  -  PROG. TAIL STK. B-  L TOOL THD. CLMP -
+                                                                              
+==================  ==================  ==================  ==================
+CHUCK GRASP COMF o  TOUCH SETTER     o  WARMING UP       -  NO CEIL 2        -
+CHUCK IL. RLS.   -  TOUCH SET. SLIDE -  WORK CNT.SPECIAL -  NO CEIL 3        -
+CHUCK. MISS 1 SP -  TOUCH SET. COVER -  CHIP CNVYR CHECK -  WORK STOCKER     -
+CHUCK. MISS 2 SP -  TOUCH SET. MOTOR -  THRU&MEASURE AIR -  WORK STOCKER2    -
+CHUCK H/L 1 SP.  -  TL BRAK. DETECT. -  DRAIN PUMP       -  VERTICAL SW. LO. -
+CHUCK H/L 2 SP.  -  WORK EJECTOR     -  SP AIR PURGE DET -  T.CLMP OUTPUT HLD-
+INDEX CHK 45 1SP -  WORK EJ.AD CONF  -  AIR PRES.DETECT  -  B-PANEL          o
+INDEX CHK 90 1SP -  WORK EJ.RT CONF  -  SEQUENCER ALARM  -  NC DOOR          -
+------------------  ------------------  ------------------  ------------------
+2 CHUCK PDL. 1SP -  EXTERNAL MEASURE -  DUAL START       -  NC ROBOT         -
+SMW CHUCK 1 SP.  -  EX. MEASURE BCD  -  DUAL ST.DR. CLS. o  OR5              -
+FR.DRV.CHUCK 1SP -  CEJ MATIC        -  EDIT INTERLOCK   -  HYD ER DET.      -
+CHK GRSP SPC 1SP -  TOUCH SENSOR 2SP -  PROG.STOP SPECIA -  SPEC SELECT      -
+2 CHUCK PDL. 2SP -  TOUCH SENSOR     o  PANEL POSIT. SP  -  NO CE DOOR OPENLS-
+SMW CHUCK 2SP    -  OPTICAL SENSOR   o  PORTABLE PH      -  OSP CHIP CONVERE -
+FR.DRV.CHUCK 2SP -  2SP TOUCH SETTER -  CE MARKING       -  SWING&LIMIT SWIVE-
+CHK GRSP SPC 2SP -  TOUCH SET. COV.LK-  OIL LEVEL DETECT o  OR SEFTY FENCE   -
+                                                                              
+==================  ==================  ==================  ==================
+HYD. UNIT COOLER -  MECHA-LOCK DOOR1 -  BF/PC BIT SWITCH -  A CLAMP MISS CHK -
+OIL COOLER ALM-A -  MECHA-LOCK DOOR2 o  PARTS CATCHER    -  B CLAMP MISS CHK -
+HYD. OIL COOLER  -  R.DOOR2          -  PARTS CA.DOOR IL -  SWING IL TYPE-A  -
+WITHOUT STE SW   -  AUTO DOOR2       -  PARTS CA.AD/RT SP-  SWING IL TYPE-B  -
+EX BRAKE RELEASE o  DOOR IL. S       o  PARTS CA.SWING   -  DUAL HAND OPE.   -
+SAFETY RELAY     -  DOOR IL. D       -  NC TAIL STOCK    o  FENCE MECHA-LOCK -
+POS UNIT         -  DOOR IL. E       o  CONV.DEVICE I/F  -  HAND OPE. I.L.   -
+CHUCK IL.RLS.SP  -  MECHA-LOCK SP.   -  UNLOADER  I/F    -  LDR AXIS INTRLCK -
+------------------  ------------------  ------------------  ------------------
+SPNDL OIL AIR LUB-  DR.SPEED SWITCH  -  BAR FEEDER I/F 1 -  NC LOADER        -
+SPNDL ORNT.ELEC. o  AUTO DOOR        o  BAR FEEDER I/F 2 -  NC LOADER TYPE-C -
+SPNDL ORNT. PIN  -  DOOR CONTROL     -  B.FEEDER CHK.IL. -  2M1L             -
+SPNDL ORNT. BRK. -  R.DOOR ONE BODY  -  BAR FEEDER I/F 3 -  3M1L             -
+1SP. LOWEST SP.  -  R.DOOR SIDE OPEN -  BAR FEEDER I/F 4 -  GANTRY LOADER    -
+2SP. LOWEST SP.  -  ROOF DOOR        -  BAR FEEDER I/F 5 -  RECIPROCAL INTER -
+1SP. OIL COOLER  -  PL DOOR I.L.E-D  -  THRU. AIRBLOW IL.-  2CARRIERS LDR    -
+2SP. OIL COOLER  -  PL DOOR I.L.E-C  -  CUT OFF DETECT   -  3 AXIS LOADER    -
+                                                                              
+==================  ==================  ==================  ==================
+0.0001M CONTROL  -  ATC TYPE A       -  RBT/LDR I/F B    -  TURNOVER DEVICE  -
+FLAT BED         -  ATC TYPE B       -  RBT/LDR I/F C    -  TRNOVR RTRCT SP. -
+W-AXIS CONTROL   -  ATC TYPE C       -  RBT/LDR I/F D    -  TURNOVER L->R    -
+HYD LESS         -  ATC TYPE D       -  OGL LOADER I/F   -  DIREC SWITCHABLE -
+W-AXIS CLAMP     -  MG. DOOR 2       -  PROGRAM SELECT A -  MULTI-MAGAZINE   -
+HOB CUTTING      -  MG.DOOR MECHA-LK -  PROGRAM SELECT B -  M.LOCK SP CVR.   -
+B-TURRET SUB SP. -  MG TOOL MAN CHG  -  PROGRAM SELECT C -  LVT SAFETY FENCE -
+B-AXIS INTERPOL. -  TOOL ID          -  FIX POT ATC      -  MEASURE OVER M/C -
+------------------  ------------------  ------------------  ------------------
+2 SADDLE MACHINE -  NC TURRET        o  LFS10            -  FINGER CHUCK 4-1 -
+MULTIPLE MACHINE -  TURRET LIMIT A   -  LVT              -  FINGER CHUCK 4-2 -
+OPPOSED TURRET   -  CAM TURRET       -  LAW-V            -  FINGER CHUCK 2-1 -
+SUB SPINDLE      -  NC TR WITH BRAKE -  2SP-H            -  FINGER CHUCK 2-2 -
+OPPOSED 2 SPNDL  -  TURRET LIMIT B   -  ACC MACHINE      -  COLLET GRSP COMF -
+SLANT-Y AXIS     -  1MMT CLUTCH COMF.-  ATC TYPE-E       -  SIDE COVER I.L.  -
+PARALLEL 2 SPNDL -  1 MOTOR MULTI TR -  ATC TYPE-F       -  M.LOCK SIDE CVR. -
+B-AXIS TURRET    -  1MMT BRAKE CR    -  SUB MAGAZINE     -  SUB PANEL        -
+==============================================================================
+
+ccdrps-pv2.10                    - 8/10 - <W01><O03><        LB3000II><P251028>
+===========================[ PLC-SPEC CODE No.2 ]===========================
+
+0000-0008-0300-0000-0000-0000-0000-0000
+
+0000-0000-0010-0000-0000-0000-0088-0000
+
+==================  ==================  ==================  ==================
+HP COOLANT UNIT  -  1SP C BRAKE KEEP -  MAN JOG FEED     -                   -
+HP COOLANT UNIT2 -  2SP C BRAKE KEEP -  SP COM. UNIT 0.1 -                   -
+HP COOLANT UNIT3 -  FD.CHUCK 1 GRSP  -  CHIP NIPPING AVO.-                   -
+RV. FLUSH CLNT   -  FD.CHUCK GRSP.CK -  CAT TOOL DIR.    -                   -
+BL. SADDLE CLNT  -  C UNCLAMP CONF.  -  TABLE ROUND CONV.-                   -
+ANOTHER TANK     -  1SP A.CHUCK RSS  -  MG CLAMP         -                   -
+RV. FLUSH CLNT2  -  2SP A.CHUCK RSS  -  SETUP MODE       -  CUSTOM PLC       -
+SP TAIL WORK HLD -  NC ST. R. CLAMP  -  GEN. OL. DETECT  -  PREVENT TS. RT.  -
+------------------  ------------------  ------------------  ------------------
+SAFETY SW RST    -  OPTICAL SENSOR B -  RIGID TURRET     -  SIDE SHUTTER     -
+DOOR DIVISION    -  TOUCH SET.SLD B  -  A-TURRET PENDULUM-  TCH STTR POS RV  -
+FLAT DOOR IL     -  TOUCH SET.CROS-L -  B-TURRET PENDULUM-  1SP CHK GRASP C  -
+FLAT 1 DOOR      -  TOUCH SET.CROS-R1-  A-TURRET PND. SW.-  2SP CHK GRASP C  -
+FLAT DOOR IL SP  -  TOUCH SET.CROS-R2-  B-TURRET PND. SW.-  W-AXIS CUTTING   -
+FLAT DOOR MLK    -  TOUCH SET.SLID R -  DOOR IL. SW CHECK-  TOUCH SET.TRN.SLD-
+R.DR.GUIDE SLIDE -  TR.&MEASURE AIR  -  OSP CNVYR PNL.SP -  DOOR I.L.E-C SP  -
+MAINTENANCE DOOR -  T SETTER MOTOR B -  SPNDL LUBE DRAIN -  SP. LATHE TOOL   -
+                                                                              
+==================  ==================  ==================  ==================
+NC STEADY REST   -  SCHUNK CHUCK 1 SP-  ACC AREA SENSOR  -  MCTYPE VTR-A     -
+ST REST AIR CLAMP-  SCHUNK CHUCK 2 SP-  SP VIB. SENSOR   -  ANGLE HEAD       -
+SELF ST.R 1      -  CHUCK H/L B 1SP. -  S-ST CHK. PDL/PB -  L-NAVI GUIDANCE  -
+SELF ST.R 2      -  P-TS UNCLAMP IL  -  APC SPNDL CLAMP  -  EASY OPERAT PANELo
+SELF ST.R 3      -  HP COOLANT UNIT5 -  PH TYPE-B        o  ANG COOLANT      -
+SELF ST.R 1 REL. -  HP COOLANT UNIT6 -  C CONNECT SP     -  ANG AIRBLOW      -
+SELF ST.R 2 REL. -  VTR CHUCK CTRL   -  PH TYPE-C        -  SHOWER SW        -
+SELF ST.R 3 REL. -  2APC SETUP CLAMP -  THINC ALARM      -  MF UNIT          o
+------------------  ------------------  ------------------  ------------------
+NC TAIL WORK HLD o  HAND PUSH. AIR   -  2PALLET APC      -  ATC TYPE-P       -
+NC TAIL NO CHG   o  STOCKER INV.CTRL -  STACKER CRANE I/F-  ATC NO MOD RST   -
+NC TAIL NO PEDAL -  STCK.AREA SENSOR -  C AXIS GROUP SW. -  DOOR WINDOW      -
+HYD QL NC TAIL   -  3AX LDR SWING IL -  PALLET CLAMP B   -  DRUM FILTER      -
+NC TAIL PRECISE  -  CHUCK H/L B 2SP. -  2PALLET APC I/F C-  PH ENABLE SW     -
+NC TAIL POLS LOW -  1SP C GAIN CUT   -  6PALLET APC I/F C-  ATC SIDE TH.TOOL -
+TAIL SLEEVE I.L  -  2SP C GAIN CUT   -  APC DOOR         -  ST.REST MAN GRIP -
+TAIL SLEEVE 1SP  -  NC UNLOADER      -  PALLET CLAMP C   -  3 SADDLE MACHINE -
+                                                                              
+==================  ==================  ==================  ==================
+CHUCK GRASP CO.B1-  SUB PNL.B ST.CHG -  NEW CEMK         -  AIR NOZZLE SW    -
+CHUCK GRASP CO.B2-  CENT.PARTITION   -  M-NAVI GUIDANCE  -  M-SP AIRBLOW SW  -
+ST. REST ZC      -  SP PEAK POW. CUT -  SUB PNL.B BIT SW -  CHIP CON SW      -
+NC TAIL INCHING  o  CE CHUCK NO CONF -  ATC OIL PRES.DET -  OILMIST SW       -
+INDEX CHK 45/90SW-  ATC TYPE-Q       -  OIL LEVEL DET.2  -  OILHOLE SW       -
+2SP CHK DS SENSOR-  MULTI-MAG. B     -  VERT. MLT. PANEL -  OILHOLE HIGH SW  -
+CHUCK GRASP CO.D1-  APC FRONT DOOR2  -  OPERATION DOOR   -  COOLANT CLOG     -
+CHUCK GRASP CO.D2-  CHUCK/JIG CHANGE -  C CLAMP CONF.    -  COOLANT LV CHECK -
+------------------  ------------------  ------------------  ------------------
+SP. LOW. FIX. SP.-  A TURRET MID.    -  PWR SUP R/L COM  -  M-SP COOLING     -
+C AXS BR. TRQ LMT-  B TURRET MID.    -  EX CUT FEED OVR  -  THR SP COOLANT   -
+SKIVING CUT      -  C TURRET MID.    -  EX INT PROGRAM   -  X-AXIS OILMIST   -
+TURN.TOOL GROOVE -  2APC I/F B       -  SUB PANEL B      -  OIL SKIMMER      -
+1SP WIND-CHG SP  -  L TOOL IDX. SEL  -  EX NC FEED HOLD  -  COOLANT COOLING  -
+2SP WIND-CHG SP  -  B 2MMTR TYPE B   -  INSIDE M/C CNVYR -  COOLANT SW       -
+SP BRAKE PS      -  C MODE C BRAKE   -  LIFT UP MOSNIC A -  WORK WASH SW     -
+MAN MODE C BRAKE -  TAIL STOCK CLAMP -  LIFT UP MOSNIC B -  CHIP FLUSH SW    -
+                                                                              
+==================  ==================  ==================  ==================
+MANY CHIPS 12    -  M-SP LUBE CHECK  -  HP COOLANT UNIT4 -  AAC              -
+MANY CHIPS 8     -  M-SP OIL AIR     -  AXIS RETRACT     -  M-SP CL/UC MCODE -
+ATC POS INDEX RED-  MA-SP. LOWEST    -  CROSS RAIL AUTO 7-  AT MCODE         -
+B-AXIS 5deg PITCH-  M-SP 4P INDEX    -  CROSS RAIL AUTO 8-  AT-C INDEX 5DEG  -
+MANY CHIPS 4     -  TOOL M-SP.MAX    -  CROSS RAIL AUTO 9-  MAN AT TOOL CHG  -
+TL EXIST COMF.   -  C-TURRET M-AXIS  -  CROSS RAIL AUTO10-  AAC TYPE B       -
+TURNING IL       -  CHIP BITING AV.  -  DOOR IL S SP     -  DOOR IL S SP2    -
+2MOTOR TR TYPE B -  MACHIN. Navi M-i -  PENDANT IL       -  CONVEYER HOLD DR -
+------------------  ------------------  ------------------  ------------------
+2MOTOR MULTI TR  -  LINEAR GUIDE CVR.-  FIRE ALARM CHK   -  ATC TYPE M       -
+2MOTOR TR B      -  ATC CYCL TIME RED-  MIST COLLECTOR   -  ATC SHUTTER      -
+TR INDEX COND W  -  ATC TYPE I       -  0.1UM PH CHG     -  MATRIX TIM.RE.A  -
+2SP-H TR.CLMP-R  -  EX ATC HP        -  CROSS RAIL AUTO  -  MATRIX TIM.RE.B  -
+2SP-H TR.CLMP-L  -  ATC TYPE J       -  CROSS RAIL AT-C  -  ATC COV.TOOL     -
+B TURRET Y       -  ATC TYPE K       -  SP ER DET. SHARE -  ATC LATHE TOOL   -
+C TURRET Y       -  TOOL RET MT CM   -  ABSO SCALE FILT. -  ATC TYPE N       -
+2 MOTOR TR C     -  ATC TYPE L       -  1SP INDEX CHK SP -  ATC SENS. TOOL   -
+==============================================================================
+
+ccdrps-pv2.10                    - 9/10 - <W01><O03><        LB3000II><P251028>
+===========================[ PLC-SPEC CODE No.3 ]===========================
+
+0100-0080-2000-0000-0000-0000-0000-0000
+
+0004-0000-0000-0000-0000-0000-0000-0000
+
+==================  ==================  ==================  ==================
+TOOL STOCKER     -  OSP-P500         -                   -                   -
+TOOL STOCKER OP. -  NC ATC SHUTTER   -                   -                   -
+MULTI.SP.ORNT.   -  NC SIDE SHUTTER  -                   -                   -
+TOOL STOCKER OUT.-  NO C TL.INDEX M  -                   -                   -
+GRINDING FUNC.   -  SWING IL TYPE-C  -                   -                   -
+LASER UNIT B     -  ST.R.BAL.SCRW.ZB -                   -                   -
+ATC TYPE-T       -  TR LIFT UP       -                   -                   -
+EX.MG TOOL DATA  -  B TR LIFT UP     -                   -                   -
+------------------  ------------------  ------------------  ------------------
+PROGRAM SELECT D -  3RD CL1 DOOR IL  -                   -                   -
+1SP CHK PRES. 6  -  3RD CL2 DOOR IL  -                   -                   -
+2SP CHK PRES. 6  -  3RD CL3 DOOR IL  -                   -                   -
+INC./ORI.HI-SPEED-  3RD CL4 DOOR IL  -                   -                   -
+IND. ROOF DOOR IL-  3RD CL5 DOOR IL  -                   -                   -
+AAC TYPE C       -  3RD CL6 DOOR IL  -                   -                   -
+LODER SWING SERVO-  3RD CL7 DOOR IL  -                   -                   -
+H1 TR. UNCLAMP   -  3RD CL8 DOOR IL  -                   -                   -
+                                                                              
+==================  ==================  ==================  ==================
+TH./ATC AIR COM. -  2ND CL1 DOOR IL  -                   -                   -
+TOUCH SET. POWER -  2ND CL2 DOOR IL  -                   -                   -
+TOUCH PROBE FIX  -  2ND CL3 DOOR IL  -                   -                   -
+M02 SHORT. TIME  -  2ND CL4 DOOR IL  -                   -                   -
+LASER UNIT       -  2ND CL5 DOOR IL  -                   -                   -
+R/W HEAD POS. SP -  2ND CL6 DOOR IL  -                   -                   -
+RB/LD REQ. 255   -  2ND CL7 DOOR IL  -                   -                   -
+RB/LD SP ORNT.15 -  2ND CL8 DOOR IL  -                   -                   -
+------------------  ------------------  ------------------  ------------------
+A L-TUR. ATC     -  1ST CL1 DOOR IL  -                   -                   -
+B L-TUR. ATC     -  1ST CL2 DOOR IL  -                   -                   -
+ST.R GR.COMF C   -  1ST CL3 DOOR IL  -                   -                   -
+PROG TS AIR CLP  -  1ST CL4 DOOR IL  -                   -                   -
+CUT STATUS MON.  -  1ST CL5 DOOR IL  -                   -                   -
+SP.DIAGNOSTIC    o  1ST CL6 DOOR IL  -                   -                   -
+ATC TYPE-S       -  1ST CL7 DOOR IL  -                   -                   -
+ENABLE SW CHECK  -  1ST CL8 DOOR IL  -                   -                   -
+                                                                              
+==================  ==================  ==================  ==================
+BLUM TOUCH PROBE -  THINC ALARM EX.  -                   -                   -
+TR BRAK. DETECT.C-  ANG CT.THR.CL.   -                   -                   -
+HYBRID SENSOR    -  ARMROID T.HAND   -                   -                   -
+ST.R. MOUNT PAR. -  MA AXIS NO       -                   -                   -
+TAIL ADVANCE 2   -  LIQ. CRYSTAL PH  -                   -                   -
+PARTS CA. BELT   -  FLAT DOOR CEMK   -                   -                   -
+OIL CNLT SPECIAL -  EE MAN CHG       -                   -                   -
+OSP SUITE        o  AUTO TS AIR CLP. -                   -                   -
+------------------  ------------------  ------------------  ------------------
+TURNING CUT      -  EES Type-C       -                   -                   -
+WORK SUPP.B-TUR. -  OAC HP. COOLANT2 -                   -                   -
+NC UNLOADER B    -  OAC HP. COOLANT4 -                   -                   -
+WORK EJECT H1    -  TR TOOL NO. MNG  -                   -                   -
+CE PARTS CA.DRIL -  MG TORQUE LIMIT  -                   -                   -
+BALL SCREW COOL. -  ARMROID CLNT     -                   -                   -
+DATA TRA. OUT.MG -  BLUM LS. TSC.    -                   -                   -
+VL L-MACHINE     -  TOOL-ID TL. ATT. -                   -                   -
+                                                                              
+==================  ==================  ==================  ==================
+WORK SUPPORT SP. -  TR INDIV. CTRL   -  TL BRAK.DETECT.D -                   -
+HP COOLANT UNIT7 -  MATRIX PREP.ST   -  UPGRAD.SEQ.REST. -                   -
+TOOL IC          -  MATRIX NG ST     -  ECO SUITE PLUS   o                   -
+ST.R GR.COMF B   -  MATRIX STOR.ST   -  1SP CHK PRES. 32 -                   -
+TL BRAK. DETECT.B-  TESTCUT MODE     -  2SP CHK PRES. 32 -                   -
+THRM. OIL COOLER -  ATC TIME RED.TR. -  TOUCH PANEL PH   -                   -
+DOOR INCHING     -  EES Type-A       -                   -                   -
+CHIP CNV.INTERV. -  EES Type-B       -                   -                   -
+------------------  ------------------  ------------------  ------------------
+ECO SUITE        o  JIS MAC SAFETY   -  TL STK.MNT.DOOR  -                   -
+M-AXIS INTERPOL. -  ENABLING EASING  -  BLK SKP 9 PAIRS  -                   -
+M-AXIS MEASURE   -  TESTCUT TURRET   -  ARMROID CO. HAND -                   -
+M-AXIS CLAMP M   -  TESTCUT ATC      -  EX.MEASU.BINARY  -                   -
+MATRIX TLS SHUT. -  4M1L             -  TOUCH ST.TR.SL.B -                   -
+ATC-H MATRIX MG  -  ST REL. START IL -  VERT.SW.HD.3P    -                   -
+C-AXIS CLAMP AUT -  STANDROID        -  M-SP.OIL COOL.SP -                   -
+NC TAIL START IL -  ARMROID          -  MODBUS           -                   -
+==============================================================================
+
+ccdrps-pv2.10                    - 10/10 - <W01><O03><        LB3000II><P251028>

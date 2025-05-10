@@ -3,9 +3,9 @@ namespace DmcBlueprint.Models
     public class SoftwarePackage
     {
         // Descriptive name of software package
-        public string PackageName { get; set; }
+        public string? PackageName { get; set; }
         // Filename associated with software package
-        public string Identifier { get; set; }
+        public string? Identifier { get; set; }
 
         public SoftwarePackage(string packageName, string identifier)
         {
