@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 namespace DmcBlueprint.Models
 {
     public class SpecCodeSection

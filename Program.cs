@@ -19,14 +19,18 @@ class Program
 
         // Define the output file path
         string outputFilePath = "parsing_output.txt";
-        FileStream fs = new FileStream(outputFilePath, FileMode.Create); // Create or overwrite the file
-        StreamWriter writer = new StreamWriter(fs) { AutoFlush = true }; // AutoFlush is convenient for seeing output as it happens
+        string specCodeOutputFilePath = "spec-code-output.txt";
+
+        FileStream mainFs = new FileStream(outputFilePath, FileMode.Create);
+        StreamWriter mainWriter = new StreamWriter(mainFs) { AutoFlush = true };
+        FileStream specCodeFs = null; // Initialize to null
+        StreamWriter specCodeWriter = null; // Initialize to null
 
         // Save the original console output stream
         TextWriter originalConsoleOut = Console.Out;
 
         // Redirect console output to the file
-        Console.SetOut(writer);
+        Console.SetOut(mainWriter);
 
         Console.WriteLine($"DMC Blueprint Parser Demonstration - Outputting to {Path.GetFullPath(outputFilePath)}");
         Console.WriteLine("===================================================================");
@@ -57,9 +61,15 @@ class Program
         try
         {
             // Function 1: Parsing the DMC file
+            Console.WriteLine($"\nAttempting to parse DMC file: {Path.GetFullPath(filePath)}");
             SoftwareDataManagementCard card = parser.Parse(filePath);
             Console.WriteLine("\nFile Parsed Successfully!");
             Console.WriteLine("------------------------------------");
+
+            // Open the spec code output file after successful parsing
+            specCodeFs = new FileStream(specCodeOutputFilePath, FileMode.Create);
+            specCodeWriter = new StreamWriter(specCodeFs) { AutoFlush = true };
+            WriteSpecCodeFeaturesToFile(card, specCodeWriter);
 
             // Function 2: Displaying some of the parsed data
             DisplayParsedCardInfo(card);
@@ -82,12 +92,23 @@ class Program
         {
             // Ensure the output is written to the file and close the writer
             Console.Out.Flush(); // Ensure everything is written
-            Console.SetOut(originalConsoleOut); // Restore original console output
-            writer.Close();
-            fs.Close();
+            mainWriter.Close(); // Close main output writer
+            mainFs.Close();
 
+            if (specCodeWriter != null)
+            {
+                specCodeWriter.Flush();
+                specCodeWriter.Close();
+            }
+            if (specCodeFs != null)
+            {
+                specCodeFs.Close();
+            }
+
+            Console.SetOut(originalConsoleOut); // Restore original console output
             Console.WriteLine($"\n--- End of File Output ---"); // This will go to the actual console
             Console.WriteLine($"Parsing output has been saved to: {Path.GetFullPath(outputFilePath)}");
+            if (File.Exists(specCodeOutputFilePath)) Console.WriteLine($"Spec code features have been saved to: {Path.GetFullPath(specCodeOutputFilePath)}");
         }
     }
 
@@ -134,7 +155,7 @@ class Program
         }
 
         Console.WriteLine($"  NC Spec Codes Sections: {card.NcSpecCodes.Count}");
-        if (card.NcSpecCodes.Any())
+          
         {
             var firstNcSection = card.NcSpecCodes.First();
             Console.WriteLine($"    First NC Section: '{firstNcSection.SectionTitle ?? "N/A"}' has {firstNcSection.SpecCodes.Count} features.");
@@ -146,6 +167,28 @@ class Program
             if (firstNcSection.HexCodes.Any())
             {
                 Console.WriteLine($"      First Hex Code Line: {firstNcSection.HexCodes.First()}");
+            }
+            if (card.NcSpecCodes.Count >= 2)
+            {
+                var secondNcSection = card.NcSpecCodes[1];
+                Console.WriteLine($"    Second NC Section: '{secondNcSection.SectionTitle ?? "N/A"}' has {secondNcSection.SpecCodes.Count} features.");
+                if (secondNcSection.SpecCodes.Any())
+                {
+                    var firstFeature = secondNcSection.SpecCodes.First();
+                    Console.WriteLine($"      First Feature: No.{firstFeature.Number} Bit.{firstFeature.Bit} - {firstFeature.Name} (Enabled: {firstFeature.IsEnabled})");
+                }
+                if (secondNcSection.HexCodes.Any())
+                {
+                    Console.WriteLine($"      First Hex Code Line: {secondNcSection.HexCodes.First()}");
+                }
+            }
+            if (card.NcSpecCodes.Count >= 3)
+            {
+                var thirdNcSection = card.NcSpecCodes[2];
+                Console.WriteLine($"    Third NC Section: '{thirdNcSection.SectionTitle ?? "N/A"}' has {thirdNcSection.SpecCodes.Count} features.");
+                // Assuming similar structure for features and hex codes as the first section
+                if (thirdNcSection.SpecCodes.Any()) Console.WriteLine($"      First Feature: No.{thirdNcSection.SpecCodes.First().Number} Bit.{thirdNcSection.SpecCodes.First().Bit} - {thirdNcSection.SpecCodes.First().Name} (Enabled: {thirdNcSection.SpecCodes.First().IsEnabled})");
+                if (thirdNcSection.HexCodes.Any()) Console.WriteLine($"      First Hex Code Line: {thirdNcSection.HexCodes.First()}");
             }
         }
 
@@ -162,6 +205,28 @@ class Program
             if (firstPlcSection.HexCodes.Any())
             {
                 Console.WriteLine($"      First Hex Code Line: {firstPlcSection.HexCodes.First()}");
+            }
+            if (card.PlcSpecCodes.Count >= 2)
+            {
+                var secondPlcSection = card.PlcSpecCodes[1];
+                Console.WriteLine($"    Second PLC Section: '{secondPlcSection.SectionTitle ?? "N/A"}' has {secondPlcSection.SpecCodes.Count} features.");
+                if (secondPlcSection.SpecCodes.Any())
+                {
+                    var firstFeature = secondPlcSection.SpecCodes.First();
+                    Console.WriteLine($"      First Feature: No.{firstFeature.Number} Bit.{firstFeature.Bit} - {firstFeature.Name} (Enabled: {firstFeature.IsEnabled})");
+                }
+                if (secondPlcSection.HexCodes.Any())
+                {
+                    Console.WriteLine($"      First Hex Code Line: {secondPlcSection.HexCodes.First()}");
+                }
+            }
+            if (card.PlcSpecCodes.Count >= 3)
+            {
+                var thirdPlcSection = card.PlcSpecCodes[2];
+                Console.WriteLine($"    Third PLC Section: '{thirdPlcSection.SectionTitle ?? "N/A"}' has {thirdPlcSection.SpecCodes.Count} features.");
+                // Assuming similar structure for features and hex codes as the first section
+                if (thirdPlcSection.SpecCodes.Any()) Console.WriteLine($"      First Feature: No.{thirdPlcSection.SpecCodes.First().Number} Bit.{thirdPlcSection.SpecCodes.First().Bit} - {thirdPlcSection.SpecCodes.First().Name} (Enabled: {thirdPlcSection.SpecCodes.First().IsEnabled})");
+                if (thirdPlcSection.HexCodes.Any()) Console.WriteLine($"      First Hex Code Line: {thirdPlcSection.HexCodes.First()}");
             }
         }
 
@@ -183,6 +248,32 @@ class Program
             }
         }
         Console.WriteLine("------------------------------------");
+    }
+
+    static void WriteSpecCodeFeaturesToFile(SoftwareDataManagementCard card, StreamWriter writer)
+    {
+        writer.WriteLine("Parsed Spec Code Features:");
+        writer.WriteLine("==========================");
+
+        writer.WriteLine("\n--- NC Spec Codes ---");
+        foreach (var section in card.NcSpecCodes)
+        {
+            writer.WriteLine($"\nSection: {section.SectionTitle}");
+            foreach (var feature in section.SpecCodes.OrderBy(f => f.Number).ThenBy(f => f.Bit))
+            {
+                writer.WriteLine($"{feature.Number}.{feature.Bit} {feature.Name} {(feature.IsEnabled ? 'o' : '-')}");
+            }
+        }
+
+        writer.WriteLine("\n--- PLC Spec Codes ---");
+        foreach (var section in card.PlcSpecCodes)
+        {
+            writer.WriteLine($"\nSection: {section.SectionTitle}");
+            foreach (var feature in section.SpecCodes.OrderBy(f => f.Number).ThenBy(f => f.Bit))
+            {
+                writer.WriteLine($"{feature.Number}.{feature.Bit} {feature.Name} {(feature.IsEnabled ? 'o' : '-')}");
+            }
+        }
     }
 
     static void CreateSampleDmcFile(string filePath)

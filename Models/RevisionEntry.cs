@@ -1,3 +1,5 @@
+using System;
+
 namespace DmcBlueprint.Models
 {
     public class RevisionEntry
