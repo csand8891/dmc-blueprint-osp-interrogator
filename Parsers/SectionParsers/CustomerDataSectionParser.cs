@@ -32,11 +32,10 @@ namespace DmcBlueprint.Parsers.SectionParsers
         public void ParseLine(string line, DistributorAndCustomerInfo customerInfo)
         {
             // Note: 'line' is already trimmed by the main Parse loop.
-            string valueCandidate = line; // Already trimmed
+            string valueCandidate = line; 
 
             if (line.StartsWith("<") && line.EndsWith(">"))
-            {
-                // This is a key line
+            { 
                 string key = line.Substring(1, line.Length - 2).Trim();
                 if (key == "Customer")
                 {
@@ -50,7 +49,6 @@ namespace DmcBlueprint.Parsers.SectionParsers
             }
             else if (!string.IsNullOrWhiteSpace(valueCandidate) && _currentCustomerDataKey != null)
             {
-                // This is a value line for the current key and entity
                 ContactEntry currentContact = _currentCustomerEntityType == CustomerEntityType.Distributor
                     ? customerInfo.Distributor
                     : customerInfo.EndCustomer;

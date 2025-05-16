@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿﻿// See https://aka.ms/new-console-template for more information
 using System;
 using System.IO; // For File.Exists, Path.GetFullPath, File.WriteAllText
 using System.Linq; // For .Any(), .First(), .DefaultIfEmpty()
@@ -23,8 +23,8 @@ class Program
 
         FileStream mainFs = new FileStream(outputFilePath, FileMode.Create);
         StreamWriter mainWriter = new StreamWriter(mainFs) { AutoFlush = true };
-        FileStream specCodeFs = null; // Initialize to null
-        StreamWriter specCodeWriter = null; // Initialize to null
+        FileStream? specCodeFs = null; // Initialize to null
+        StreamWriter? specCodeWriter = null; // Initialize to null
 
         // Save the original console output stream
         TextWriter originalConsoleOut = Console.Out;

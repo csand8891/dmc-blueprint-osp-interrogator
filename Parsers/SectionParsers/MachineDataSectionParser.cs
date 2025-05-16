@@ -23,7 +23,7 @@ namespace DmcBlueprint.Parsers.SectionParsers
         public void ParseLine(string line, MachineIdentifier machineDetails)
         {
             // Note: 'line' is already trimmed by the main Parse loop.
-            string valueCandidate = line; // Already trimmed
+            string valueCandidate = line; 
 
             if (line.StartsWith("<") && line.EndsWith(">"))
             {

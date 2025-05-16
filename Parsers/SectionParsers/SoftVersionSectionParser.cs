@@ -22,7 +22,7 @@ namespace DmcBlueprint.Parsers.SectionParsers
         public void ParseLine(string line, SoftwareVersionIdentifier softVersions)
         {
             // Note: 'line' is already trimmed by the main Parse loop.
-            string valueCandidate = line; // Already trimmed
+            string valueCandidate = line; 
 
             if (valueCandidate.StartsWith("[") && valueCandidate.EndsWith("]"))
             {

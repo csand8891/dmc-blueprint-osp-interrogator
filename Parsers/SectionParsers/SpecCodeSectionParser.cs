@@ -34,9 +34,9 @@ namespace DmcBlueprint.Parsers.SectionParsers
         /// </summary>
         /// <param name="line">The line of text to parse from the DMC file.</param>
         /// <param name="card">The <see cref="SoftwareDataManagementCard"/> object to populate with parsed data.</param>
-        /// <param name="currentSection">An enum value indicating the type of the current section being parsed (e.g., NcSpecCode1, PlcSpecCode2).</param>
+        /// <param name="activeSection">An enum value indicating the type of the current section being parsed (e.g., NcSpecCode1, PlcSpecCode2).</param>
         /// <param name="currentActualSectionTitle">The exact title string of the section as read from the file (e.g., "NC-SPEC CODE No.1").</param>
-        public void ParseLine(string line, SoftwareDataManagementCard card, DataManagementCardParser.CurrentSection currentSection, string currentActualSectionTitle)
+        public void ParseLine(string line, SoftwareDataManagementCard card, DataManagementCardParser.ActiveSection activeSection, string currentActualSectionTitle)
         {
             // 'line' can be raw 78-char or pre-trimmed.
             // Console.WriteLine($"DEBUG (SpecCodeParser): ParseLine received line (length {line.Length}): '{line}' for section {currentActualSectionTitle}");
@@ -48,7 +48,7 @@ namespace DmcBlueprint.Parsers.SectionParsers
                 return; // Ignore separator lines
             }
 
-            SpecCodeSection? specSection = GetOrCreateSpecCodeSection(card, currentSection, currentActualSectionTitle);
+            SpecCodeSection? specSection = GetOrCreateSpecCodeSection(card, activeSection, currentActualSectionTitle);
             if (specSection == null)
             {
                 Console.WriteLine($"Error (SpecCodeParser): Could not get or create SpecCodeSection for: {currentActualSectionTitle}.");
@@ -99,7 +99,6 @@ namespace DmcBlueprint.Parsers.SectionParsers
 
                     // Console.WriteLine($"DEBUG (SpecCodeParser): Processing block {successfullyParsedFeatureColumn}: '{featureBlock}'. Initial RawName='{rawNamePartForParsing}', Initial StatusChar='{statusCharForParsing}' at line index {currentIndex + featureNameLength}");
 
-                    bool wasRecovered = false;
                     int actualBlockConsumedIncludingStatus = featureBlockSize; // Default: 17 name + 1 status
 
                     // Attempt recovery if the initially parsed statusChar is not valid
@@ -112,7 +111,6 @@ namespace DmcBlueprint.Parsers.SectionParsers
                             statusCharForParsing = charAfterBlock; // Use the recovered status char
                             // rawNamePartForParsing remains the 17 chars from the original featureBlock.
                             // The name part will be trimmed from this rawNamePartForParsing.
-                            wasRecovered = true;
                             actualBlockConsumedIncludingStatus = featureBlockSize + 1; // 18 for block + 1 for recovered status
                             // Console.WriteLine($"DEBUG (SpecCodeParser):     RECOVERED status char '{statusCharForParsing}' from char after 18-char block. Original RawName='{rawNamePartForParsing}', Original StatusCharInBlock='{featureBlock[featureNameLength]}'");
                         }
@@ -186,19 +184,19 @@ namespace DmcBlueprint.Parsers.SectionParsers
         /// based on the section title, or creates and adds a new one if it doesn't exist.
         /// </summary>
         /// <param name="card">The main <see cref="SoftwareDataManagementCard"/> object.</param>
-        /// <param name="currentSection">The enum indicating the type of spec code section (NC or PLC).</param>
+        /// <param name="activeSection">The enum indicating the type of spec code section (NC or PLC).</param>
         /// <param name="sectionTitle">The title of the section (e.g., "NC-SPEC CODE No.1").</param>
         /// <returns>The existing or newly created <see cref="SpecCodeSection"/>, or null if the section title is empty or the section type is invalid.</returns>
-        private SpecCodeSection? GetOrCreateSpecCodeSection(SoftwareDataManagementCard card, DataManagementCardParser.CurrentSection currentSection, string sectionTitle)
+        private SpecCodeSection? GetOrCreateSpecCodeSection(SoftwareDataManagementCard card, DataManagementCardParser.ActiveSection activeSection, string sectionTitle)
         {
             if (string.IsNullOrEmpty(sectionTitle)) return null;
 
             List<SpecCodeSection> targetList;
-            if (currentSection >= DataManagementCardParser.CurrentSection.NcSpecCode1 && currentSection <= DataManagementCardParser.CurrentSection.NcSpecCode3)
+            if (activeSection >= DataManagementCardParser.ActiveSection.NcSpecCode1 && activeSection <= DataManagementCardParser.ActiveSection.NcSpecCode3)
             {
                 targetList = card.NcSpecCodes;
             }
-            else if (currentSection >= DataManagementCardParser.CurrentSection.PlcSpecCode1 && currentSection <= DataManagementCardParser.CurrentSection.PlcSpecCode3)
+            else if (activeSection >= DataManagementCardParser.ActiveSection.PlcSpecCode1 && activeSection <= DataManagementCardParser.ActiveSection.PlcSpecCode3)
             {
                 targetList = card.PlcSpecCodes;
             }
