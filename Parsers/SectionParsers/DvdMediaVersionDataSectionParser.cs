@@ -3,10 +3,27 @@ using System;
 
 namespace DmcBlueprint.Parsers.SectionParsers
 {
+    /// <summary>
+    /// Parses the "[ DVD Media Version Data ]" section of a DMC file.
+    /// This section contains version information for Windows System and OSP System CD/DVDs.
+    /// Keys are expected to be enclosed in square brackets (e.g., "[ Windows System CD/DVD Version ]").
+    /// </summary>
     internal class DvdMediaVersionDataSectionParser
     {
+        /// <summary>
+        /// Stores the current key being processed from the DVD Media Version Data section.
+        /// Keys are identified by being enclosed in square brackets.
+        /// </summary>
         private string? _currentDvdMediaKey = null;
 
+
+        /// <summary>
+        /// Parses a single line from the "[ DVD Media Version Data ]" section of a DMC file.
+        /// It identifies keys (e.g., "[ Windows System CD/DVD Version ]") and their corresponding version values,
+        /// populating the provided <see cref="DvdMediaVersionData"/> object.
+        /// </summary>
+        /// <param name="line">The line of text to parse. This line is expected to be pre-trimmed.</param>
+        /// <param name="dvdMediaData">The <see cref="DvdMediaVersionData"/> object to populate with parsed data.</param>
         public void ParseLine(string line, DvdMediaVersionData dvdMediaData)
         {
             // Note: 'line' is already trimmed by the main Parse loop.
@@ -39,6 +56,12 @@ namespace DmcBlueprint.Parsers.SectionParsers
                 _currentDvdMediaKey = null; // Typically, one value per key in this section
             }
         }
+
+        /// <summary>
+        /// Resets the internal state of the parser.
+        /// This should be called when starting to parse a new DMC file or before re-parsing,
+        /// to ensure that any previously stored key is cleared.
+        /// </summary>
         public void ResetState()
         {
             _currentDvdMediaKey = null;

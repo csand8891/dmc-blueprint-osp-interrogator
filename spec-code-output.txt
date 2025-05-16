@@ -4,449 +4,643 @@ Parsed Spec Code Features:
 --- NC Spec Codes ---
 
 Section: NC-SPEC CODE No.1
-1.0 I/M SWITCH o
-1.1 rev./min-Feed o
-1.2 0.1mic.Control -
-1.3 Angle-1/10000 o
-1.4 SystemVariable o
-1.5 Add-MathFunct. o
-1.6 Sub.Programs o
-1.7 Schedule-Prog. o
-2.0 TapeStore320m- o
-2.1 MultiVolume -
-2.2 3D-Crculer.INT -
-2.3 Wk.Cordinate20 -
-2.4 Wk.Cordinate50 -
-2.5 ToolData200 -
-2.6 ToolData300 -
-2.7 ToolData100 -
-3.0 4Axis-Control o
-3.1 5Axis-Control -
-3.2 6Axis-Control -
-3.3  -
-3.4 Pls-Hndl.2set -
-3.5 Pls-Hndl.3set -
-3.6 SSU-RD o
-3.7 Prog.Help o
-4.0 Herical-Cut. o
-4.1 One-Direc.posi o
-4.2 Skip-function o
-4.3 Change-wk.cord o
-4.4 3D-Tool-Offset -
-4.5 ExactStop o
-4.6 PGM-mirror-Img o
-4.7 Enlarge/Reduct o
-5.0 Rum.head.Cmp -
-5.1 Tl.Axial Direc -
-5.2 P200 o
-5.3 MA-H PPC -
-5.4 F1-feed(param) -
-5.5 5-axis Mac. Fun. -
-5.6 Pivot dis. Comp. -
-5.7 Tl.Dir Leng Comp -
-6.0 Tl.Dir Command -
-6.1 ATC Subpanel -
-6.2 AXP_test -
-6.3  -
-6.4 Ver. Backlash o
-6.5 Slope.Mach 2 -
-6.6 Slope.Index -
-6.7 Slope-IMAP -
-7.0 Sync.Control-X -
-7.1 Sync.Control-Y -
-7.2 Sync.Control-Z -
-7.3 Sync.Cntrl-4th -
-7.4 5th-Ax.limit -
-7.5 Rotary-2Ax. -
-7.6 Sync.Cntrl-5th -
-7.7 Animation o
-8.0 Color-Display o
-8.1 Feed backlash o
-8.2 G/M Macro 100/20 -
-8.3 One Touch IGF XM -
-8.4 L. Turning cut -
-8.5 Graphic o
-8.6 MTB Fun. select -
-8.7 Prog.Select-C -
-9.0 BlockSkip(2/3) -
-9.1 BlockSkip(3) -
-9.2 Retract Funct. -
-9.3  -
-9.4 PFC2/MCS2 o
-9.5 Tool(Byte)Groove -
-9.6 Spindle Contour -
-9.7 Ax.name.Design -
-10.0 CordinateCalc. o
-10.1 Area-Machining o
-10.2 CordinateConv. o
-10.3 InverseTime.Feed -
-10.4 Program-Limit o
-10.5 Program-Msg o
-10.6 Playback(IMAP) -
-10.7 IMAP -
-11.0 Hi-Cut Pro o
-11.1 EXT.Position.Cmp -
-11.2 Rotary-2set -
-11.3 Pls-Hndl.Mag. -
-11.4 3D R.-Simulation o
-11.5 Cancel-Axis o
-11.6 Seq.reset-Mid o
-11.7 Sequence-Stop o
-12.0 MX-H PPC -
-12.1 Safety Logic sp. o
-12.2 DNC-B -
-12.3  -
-12.4  -
-12.5 DNC-C3 -
-12.6 Point.Calc. -
-12.7 Add-Patrn-Cycl -
-13.0 Head Rot -
-13.1 Table Rot -
-13.2 Head&Table Rot -
-13.3 Tool nose cen. F -
-13.4 Table Co. Feed -
-13.5 Double-columnPPC -
-13.6 Builtin-motor-AT -
-13.7 CE Monitar NON -
-14.0 ADD-Ax.name-U -
-14.1 ADD-Ax.name-V -
-14.2 ADD-Ax.name-W -
-14.3 ADD-Ax.name-A o
-14.4 ADD-Ax.name-B -
-14.5 ADD-Ax.name-C -
-14.6 Inductsyn---X -
-14.7 Inductsyn---Y -
-15.0 Inductsyn---Z -
-15.1 Inductsyn---U -
-15.2 Inductsyn---V -
-15.3 Inductsyn---W -
-15.4 Inductsyn---A -
-15.5 Inductsyn---B -
-15.6 Inductsyn---C -
-15.7 A-Axis.Limit -
-16.0 B-Axis.Limit -
-16.1 C-Axis.Limit -
-16.2 Index.Table-A -
-16.3 Index.Table-B -
-16.4 Index.Table-C -
-16.5 5deg-Index--A -
-16.6 5deg-Index--B -
-16.7 5deg-Index--C -
-17.0 Ser.Link NC-Axis o
-17.1 Ser.Link S-Axis o
-17.2  -
-17.3 Warming-Up -
-17.4 4Axis-B Fix -
-17.5 SpindleDAcontrol -
-17.6 Spindle PG Non -
-17.7 M-LAP -
-18.0 Hi-G o
-18.1 Indx.Manual.OP -
-18.2 NC-OP.monitor o
-18.3  -
-18.4 IMAP-B -
-18.5 IMAP-C -
-18.6  -
-18.7 Temporary Soft -
-19.0  -
-19.1 F-TapeConversion -
-19.2 Geo.Err.Gaug -
-19.3 Geo.Err.Cmp -
-19.4 Leading edge Cmp -
-19.5 Tool Side Cmp -
-19.6 Attach.idx.Cmp -
-19.7 Graphic-IMAP -
-20.0 AOT-IGF 5face -
-20.1  -
-20.2  -
-20.3  -
-20.4 AOT-IGF 5axis -
-20.5  -
-20.6  -
-20.7  -
-21.0 SpareTl.change o
-21.1 Tl.life.manage o
-21.2 CRT-Display o
-21.3 DNC-C Ethernet -
-21.4 Unmaned.OP.Rec -
-21.5 AutoEsc/Return -
-21.6 Tl.Comp/brk o
-21.7 Gauging/Zero o
-22.0 OH-Spec -
-22.1 DNC-DT -
-22.2 M.Nav Spin.Var -
-22.3 DNC-T3 -
-22.4 Premium M-i -
-22.5 DNC-T1 o
-22.6 Com.Var.200set -
-22.7 Com.Var.1000set o
-23.0 Turning Cut -
-23.1 Interrupt-prog. -
-23.2 Non es spec. o
-23.3 Non es spec. V4 o
-23.4 Non es spec. LP -
-23.5 2nd.Tool.Offset -
-23.6 Nose.Radius.Cmp -
-23.7 MSB_YAxEscape -
-24.0 MSB-TlCmp/brk1 o
-24.1 MSB-TlCmp/brk o
-24.2 MSB-Tlbrk.det o
-24.3 MSB-Opt.Probe o
-24.4 MSBGauging/Zero o
-24.5 MSB-Zero-Cmp o
-24.6 MSB-KURODA.Prb -
-24.7 MSB-Ref.Tl.150 o
-25.0 High Speed Intp. -
-25.1 NURBS Command -
-25.2 Super Hi-NC -
-25.3 Machin. Navi M-g -
-25.4 Machin. Navi M-i -
-25.5 Lir.Posit.int o
-25.6 MOP-TOOL(NCIN) -
-25.7 Low SVP o
-26.0 SchduleUpdate o
-26.1 Manual.Gauging o
-26.2 Intr.Gaug.work -
-26.3 Intr.Gaug.tool -
-26.4 Man.Skip -
-26.5  -
-26.6 Straight.Comp -
-26.7 Tool.Wear.Offset o
-27.0 Synchro.Tap o
-27.1  o
-27.2 New Ang/Arc Feed -
-27.3 Super-Hi-NC-Rt. -
-27.4  -
-27.5  -
-27.6 In/Out Var. o
-27.7  -
-28.0 Program-Branch -
-28.1  -
-28.2 B-axis interlock -
-28.3 Any-angl.chnfr o
-28.4 Cyl.Side-Mach -
-28.5 Slope.Mach -
-28.6 Wk.Cordina.100 -
-28.7 Sipl.load.moni o
-29.0  -
-29.1  -
-29.2 F1 Feed(PLC) -
-29.3 Wk.Cordinate200 o
-29.4  -
-29.5 Pls-Hndl.4set -
-29.6 Pls-Hndl.5set -
-29.7 Pls-Hndl.6set -
-30.0 PH7(Doub.Col.MC) -
-30.1 HELP o
-30.2 TAS-S/TAS-C o
-30.3 Windows Ope. -
-30.4  -
-30.5 None R spec o
-30.6 7Axis-Control -
-30.7 8Axis-Control -
-31.0 None R specV2.0 -
+1.0 SERVO LINK NC o
+1.1 NOT R PITCH ER.CP -
+1.2 0 OFFSET DETECT -
+1.3 CEMK STOP MONITOR -
+1.4 SERVO LINK SPNDL o
+1.5 SPINDLE ANALOG -
+1.6 SPINDLE I/O -
+1.7 NOT NEW R SPEC o
+2.0 2 SADDLE MACHINE -
+2.1 MIRROR IMAGE -
+2.2 Z-W OVER LAP -
+2.3 CAM MACHINE -
+2.4 NEW W-DATA -
+2.5 SUB MAGAZINE -
+2.6 H1 TURRET -
+2.7 FLAT BED -
+3.0 MULTIPLE MACHINE -
+3.1 B-TURRET M-AXIS -
+3.2 M-AXIS NO C-AX. -
+3.3 T/M AXIS SW. -
+3.4 L TOOL INDEX -
+3.5 C-AX.PT.ERR.CMP. -
+3.6 MULTI-MAGAZINE -
+3.7 SYNCHRO. REVERSE -
+4.0 LT MACHINE -
+4.1 SUB SPINDLE -
+4.2 PARALLEL 2 SPNDL -
+4.3 PICK OFF UNIT -
+4.4 VERTICAL MACHINE -
+4.5 LAW-V MACHINE -
+4.6 ACC MACHINE -
+4.7 B-TURRET SUB SP. -
+5.0 NC TURRET o
+5.1 OTC TURRET -
+5.2 CAM TURRET -
+5.3 MANY CHIPS TOOL -
+5.4 ABSO SCALE TA -
+5.5 B-AXIS TURRET -
+5.6 HEAVY TOOLING -
+5.7 DOUBLE TOOLING -
+6.0 HI-G CONTROL o
+6.1 PFC‡U -
+6.2 B-AXIS COMP. -
+6.3 X-AXIS COMP. -
+6.4 WK.CORDINATE 10 -
+6.5 WK.CORDINATE 50 -
+6.6 TOOL OFFSET 500 -
+6.7 TOOL LIFE WARN. -
+7.0 ATC -
+7.1 1CAM-ATC -
+7.2 2CAM-ATC -
+7.3 EXT.ATC HOME POS -
+7.4 VTM MACHINE -
+7.5 NEW MG.PANEL -
+7.6 PANEL OLD TYPE -
+7.7 Y-AXIS TRQUE LIM. -
+8.0 SLANT-Y AXIS -
+8.1 Y AXIS BY CT-Z -
+8.2 ABSO SCALE YS -
+8.3 Y-AXIS BARRIER -
+8.4 Y HORI.BARRIER -
+8.5 B-AXIS 0.001deg -
+8.6 B-AXIS 1deg -
+8.7 B-AXIS CONTROL -
+9.0 STN L.C.D MONO. -
+9.1 E100 SPEC. -
+9.2 3D. ANIMATION o
+9.3 ACP EXPANSION -
+9.4 ANIMATION o
+9.5 S10 SPEC. -
+9.6 U100/U10 SPEC. -
+9.7 OAC MESSAGE -
+10.0 ONE TOUCH IGF -
+10.1 IGF -
+10.2 IGF CONVERT -
+10.3 IGF DATA TRANS -
+10.4 ONE-TOUCH S/SHEET -
+10.5 COL.AVOID.SYSTEM -
+10.6 PROGRAMING HELP o
+10.7 HELP o
+11.0 LAP4 o
+11.1 NOSE-R 2B o
+11.2 USER TASK 2 o
+11.3 EXP.AUTO CHAMF o
+11.4 THREAD PNT.OFFST o
+11.5 THREAD FEED HOLD -
+11.6 ARC THREAD CUT. o
+11.7 COMMON VAR. 1000 -
+12.0 HOME POSITION -
+12.1 SPINDLE SYNC.TAP -
+12.2 TOOL RETRACTION -
+12.3 SPIN. FLUCTUATE o
+12.4 NC TORQUE LIMIT. o
+12.5 THREAD OVERRIDE o
+12.6 GM CODE MCRO -
+12.7 CENTER COMP. -
+13.0 PLANE CONVERSION -
+13.1 PROFILE GENERAT. -
+13.2 CONTOUR CUTTING. -
+13.3 B-AXIS INTERPOL. -
+13.4 SYNCHRO.TAPPING -
+13.5 FLAT TURNING -
+13.6 HELICAL CUTTING -
+13.7 SLANT CUTTING -
+14.0 PROGRAM SELECT -
+14.1 MG TOOL READY -
+14.2 COMMON VAR. NAME -
+14.3 HOME POSITION B -
+14.4 WARMING UP -
+14.5 MACHINE LOCK SP. -
+14.6 G00 LINEAR FEED -
+14.7 A/B SYNC. MOTION -
+15.0 BUFFER 160M -
+15.1 BUFFER 320M -
+15.2 BUFFER 640M -
+15.3 BUFFER 1280M -
+15.4 NO-SSU-RD o
+15.5 FDD3.5INCH EDIT -
+15.6 EDIT INTERLOCK -
+15.7 EDIT INTERLOCK C -
+16.0 ONE TOUCH IGF ADV -
+16.1 TAPE DATA IN/OUT o
+16.2 FD IN/OUT(IBM) -
+16.3 WITHOUT MS-DOS -
+16.4 T-SEPARATE EDIT -
+16.5 DNC-C ETHERNET -
+16.6 P-200 SPEC o
+16.7 FL-net -
+17.0 DNC-A -
+17.1 DNC-B -
+17.2 DNC-C1 -
+17.3 DNC-C2 -
+17.4 DNC-C3 -
+17.5 DNC-DT -
+17.6 SMPL.REMOTE DIAG -
+17.7 DNC-RT -
+18.0 DNC-T1 o
+18.1 DNC-T2 -
+18.2 DNC-T3 -
+18.3 DNC-T4 -
+18.4 DNC-P1 -
+18.5 DNC-P2 -
+18.6 DNC-P3 -
+18.7 DNC-P4 -
+19.0 NC WORK COUNTER o
+19.1 WORK CNT.SPECIAL -
+19.2 NC WORK MONITOR o
+19.3 CYCLE TIME CHECK o
+19.4 LOAD MONITOR o
+19.5 LOAD MONITOR W -
+19.6 MAC MAN COMM. -
+19.7 MAC MAN o
+20.0 0.0001M CONTROL -
+20.1 I/M SWICTH o
+20.2 SCRIPT FUNCTION -
+20.3 WINDOWS OPERATION -
+20.4 CYCLE TIME CAL. o
+20.5 CYCLE TIME REDUC -
+20.6 CYCLE TIME R.NEW o
+20.7 NO LOAD DETECT -
+21.0 TURRET POS.COMP. o
+21.1 TOOL OFFSET 64 -
+21.2 TOOL OFFSET 96 o
+21.3 TOOL LIFE MNGMNT o
+21.4 TOOL OFFSET 200 -
+21.5 TOOL WEAR COMP. o
+21.6 TOOL OFFSET SYS. -
+21.7 TOOL OFFSET 800 -
+22.0 PITCH ERROR COMP -
+22.1 IND.PITCH COMP. -
+22.2 ABSO SCALE ZA -
+22.3 ABSO SCALE XA -
+22.4 ABSO SCALE ZB -
+22.5 ABSO SCALE XB -
+22.6 ABSO SCALE CA -
+22.7 WITHOUT COMP. -
+23.0 TOUCH SETTER -
+23.1 2ND SP MEASURE -
+23.2 TOUCH SETTER AUTO -
+23.3 TOUCH SENSOR -
+23.4 C ZERO OFFSET -
+23.5 Y GAUGING -
+23.6 OPTICAL SENSOR -
+23.7 MEASU.DATA PRT. -
+24.0 EXTERNAL MEASURE -
+24.1 MEASURE RS232C -
+24.2 CEJ MATIC -
+24.3 SIZE CATCHER -
+24.4 EX.MEASURE BCD -
+24.5 T-SETTER R/L COM -
+24.6  -
+24.7  -
+25.0 SPINDLE MAX IL. o
+25.1 SP-HEAD IL. -
+25.2 PARTS CA. IL. -
+25.3 1S PARTS CA. IL. -
+25.4 ZA-W AXIS IL. -
+25.5 XB-W AXIS IL. -
+25.6 TURRET ZA-W IL. -
+25.7 TAIL-ST.REST IL. -
+26.0 SPINDLE ORIENT. o
+26.1 MANY CHIPS 4 -
+26.2 CB-AX. WO MB-AX. -
+26.3 C SYNC. CONTROL -
+26.4 M-AXIS ORIENT. -
+26.5 L MULTIPLE MACHIN -
+26.6 R MULTIPLE MACHIN -
+26.7 HOB CUTTING -
+27.0 PROG. TAIL STOCK o
+27.1 SIMPLE TOW-ALONG -
+27.2 PG. TAIL STOCK B -
+27.3 AUTO TAIL STOCK -
+27.4 TAIL STOCK CLAMP -
+27.5 NC TAIL STOCK -
+27.6 NC TAIL STOCK TRQ -
+27.7 MANY CHIPS 12 -
+28.0 NC ROBOT -
+28.1 NC LOADER -
+28.2 SYSTEM STAT.DISP -
+28.3 OH LOGO CHANGE -
+28.4 C-AXIS COMP. 2 -
+28.5 F CONVERT -
+28.6 LOST MOTION CMP. -
+28.7 PLR2 LOW SEQUENCE -
+29.0 NC MASTER -
+29.1 S-LINK NC TEST -
+29.2 S-LINK SP TEST -
+29.3 OH -
+29.4 NEW OPERAT.PANEL o
+29.5 NO SERVO -
+29.6 PLC/SFC PROGRAM -
+29.7 PLC -
+30.0 CE MARKING -
+30.1 PITCH ER.COMP.SP. -
+30.2 NC DOOR -
+30.3 SPEC. SELECT -
+30.4 R SPEC -
+30.5 NOT R SPEC o
+30.6 THERMAL COMP. L2 o
+30.7 THERMAL COMP. L1 -
+31.0 ST. REST ZB -
+31.1 ST. REST MID -
+31.2 ST. REST ZC -
+31.3 ATC SH. SRV.D. -
+31.4 ST.R TOW-A.B -
+31.5 ST.R TOW-A.AUTO -
+31.6 ST.R TOW-A.JOG -
+31.7 ST. REST TOW-A. -
+32.0 TOOL CENTER CTRL -
+32.1 Hi-Cut Pro -
+32.2 SUPER-NURBS Hi. -
+32.3 NURBS -
+32.4 SUPER Hi-NC -
+32.5 SUPER-NURBS Rac. -
+32.6 TOOL-ID -
+32.7 INVERSE TIME FEED -
+
+Section: NC-SPEC CODE No.2
+1.0 TOOL LIFE NOTICE -
+1.1 GOT-HMI -
+1.2 MEASU.COMP.CLEAR -
+1.3 ALARM MESSAGE -
+1.4 OTHER.SYS.WATCH -
+1.5 CON BACK SP -
+1.6 0.1u T/M AXIS SP. -
+1.7 LOST MOTION CMP. -
+2.0 SERVO ADJUST SP -
+2.1 TOOL LIFE NOT.SP -
+2.2 WORK ROUGH -
+2.3 ST.REST BARRIER -
+2.4 WORK POSITION 30 -
+2.5 NO HIGH LOW TH. -
+2.6 TORQUE WATCH -
+2.7 TAILSTOCK SP.LOW -
+3.0 USE TOOL DISP. o
+3.1 MACHINING MODE o
+3.2 NOSE-R DIR CHG -
+3.3 INTERRUPT PROGRAM -
+3.4 INTERRUPT PROG2 -
+3.5 BASE OP. SCREEN o
+3.6 TOOL MAC INFORM. -
+3.7 OFFSET BASE FIX o
+4.0 CUSTOM-API o
+4.1 OSP-API -
+4.2 USER TASK 3 -
+4.3 THiNC ALARM -
+4.4 M-INTELLIGENCE -
+4.5 M-SPN. FLUCTUATE -
+4.6 L-GUIDANCE -
+4.7 M-GUIDANCE -
+5.0 MG-AXIS ATC -
+5.1 C-AXIS 1POINT -
+5.2 RT-AXIS ATC -
+5.3 TURNING CO. CONV. -
+5.4 TR. ATC TYPE-A -
+5.5 TR. ATC TYPE-B -
+5.6 TR. ATC TYPE-C -
+5.7 TURRET ATC -
+6.0 APC -
+6.1 NC UNLOADER -
+6.2 WORK SUPPORT -
+6.3 MULT.U MATRIX MG -
+6.4 L TOOL IDX. SEL -
+6.5 MLT MAG. TYPE-B -
+6.6 ATC.EX.HP -
+6.7 POT TOOL TABLE -
+7.0 NC TST HI PRECISE -
+7.1 NC TST POLS LOW -
+7.2 NC TST CHECK LESS -
+7.3 TST 1ST-SP ATT. -
+7.4 W AXIS CUTTING -
+7.5 BTRT PROG. TST -
+7.6 NC TST 1st INCH -
+7.7 NC TST INCH -
+8.0 COORDINATE CONV. -
+8.1 WK.CORDINATE 100 -
+8.2 TOOL OFFSET 999 -
+8.3 COORDINATE CAL -
+8.4 PROGRAM MESSAGE o
+8.5 3-D CO. CONV. -
+8.6 PROF.GENE.HELI. -
+8.7 PREMIUM THREAD -
+9.0 SYNC.CONTROL ZA -
+9.1 SYNC.CONTROL XA -
+9.2  -
+9.3 SP. ORIENT. HI -
+9.4 SDF SEPARATE NC o
+9.5 SDF SEPARATE SP o
+9.6 SDF SEPARATE PLC -
+9.7 FEED AXIS RETRACT -
+10.0 WORK WEIGHT SET o
+10.1 Y-AX MANUAL FEED -
+10.2 C-AXIS MANUAL CO. -
+10.3 C-AXIS TORQ. SKIP -
+10.4 HOME POSITION C -
+10.5 AT ROTATION COMP -
+10.6 LONG BORING BAR -
+10.7 TOOL BASE -
+11.0 AXIS ACTIVE STOP o
+11.1 M-AX LIFE COUNT -
+11.2 0.1u TB/MB AX. SP -
+11.3 STRAIGHT. COMP. -
+11.4 VAR. LOST MOTION o
+11.5 SERVO NAVI L o
+11.6 RPD FD SPEED SET o
+11.7 TIME CONST SELECT -
+12.0 TOOL DIRECTION -
+12.1 TOOL DIR COMP. -
+12.2 TCPC MACHINE CO. -
+12.3 TCPC CUT POINT -
+12.4 TCPC SUB SPINDLE -
+12.5 TCPC LATHE TURN. -
+12.6 B/C TURRET TRIC -
+12.7 SUPER PROF. GENE. -
+13.0 PLC CROSS RAIL -
+13.1 NC CROSS RAIL -
+13.2 HP CROSS RAIL -
+13.3 SUPER EASY SET -
+13.4 NG TL CO. TM RED. -
+13.5 NX TL CO. TM RED. -
+13.6 TR. ATC TYPE-D -
+13.7 EXT. MG TOOL DATA -
+14.0 TOUCH SETTER2 -
+14.1 STROKE LIMIT RLS -
+14.2 RIGID TOUCH SETR -
+14.3 Y-MODE TOUCH SETR -
+14.4 TL BRAK. DETECT. -
+14.5 AE SENSOR -
+14.6 BLUM SENSOR -
+14.7 STROKE DIVIDE -
+15.0 MEAS.DATA COMM.SP -
+15.1 3 AXIS MEASURE -
+15.2 M-AXIS MEASURE -
+15.3 M-AXIS INTERPOL. -
+15.4 BLUM HYBRID SEN. -
+15.5 M-TOOL TOUCH ST. -
+15.6 BLUM TOUCH SETTER -
+15.7 SIDE SH. SRV.D -
+16.0 ATTACHMENT -
+16.1 ATTACHMENT SWIVEL -
+16.2 MLT MAG. TYPE-C -
+16.3 VTR -
+16.4 LONG BORING BAR B -
+16.5 3-D CO. CONV. 2 -
+16.6 3-D INDEX -
+16.7 L TOOL INDEX SP. -
+17.0 BELT SLIP CHECK -
+17.1 M BELT SLIP CHECK -
+17.2 ROTARY NOTCH FIL. -
+17.3 MLTREV SP. ORIENT -
+17.4 GEN. OL. DETECT -
+17.5 NO LOAD DET. EXT -
+17.6 LOAD MONITOR EXT -
+17.7 C-AX NOTCH FILTER -
+18.0 SELF ST.R 1 -
+18.1 SELF ST.R 2 -
+18.2 SELF ST.R 3 -
+18.3 SELF ST.R 1 REL. -
+18.4 SELF ST.R 2 REL. -
+18.5 SELF ST.R 3 REL. -
+18.6 NC ST.R 1Saddle -
+18.7 MA AXIS NO -
+19.0 CE MARKING STOP -
+19.1 MFU o
+19.2 GEOMETRIC COMP. -
+19.3 GEOMETRIC MES. -
+19.4 TL SIDE OFFSET -
+19.5 TL TIP SIDE OFF. -
+19.6 M-AXIS TORQ. SKIP -
+19.7 TURNING CUT -
+20.0 SA AXIS TANDEM -
+20.1 SB AXIS TANDEM -
+20.2 SPINDLE ACCEL SET -
+20.3 SPINDLE ROT. 0.1 -
+20.4 STEP CUTTING FEED -
+20.5 C-AXIS CLAMP AUT. -
+20.6 TOOL GROOVE PROC. -
+20.7 SP.COL. DETECTION o
+21.0 B-TRT Y-AXIS -
+21.1 ID/OD-GRIP SW NO -
+21.2 ZA-ZC AXIS IL -
+21.3 TRT INDI. CHANGE -
+21.4 3 SADDLE MACHINE -
+21.5 C-TRT M-AXIS -
+21.6 C-TRT SUB SPNDLE -
+21.7 C-TRT Y-AXIS -
+22.0 ABCO SCALE YSB -
+22.1 ABSO SCALE YSC -
+22.2 ABSO SCALE XC -
+22.3 ABSO SCALE ZC -
+22.4 SPIN. FLUCT. II -
+22.5 SUP. VL DIP REG. o
+22.6 M-AX MULT. REV -
+22.7 SP ORIENT. HI -
+23.0 HI-SPEED RESTART -
+23.1 L-G IGF LINK -
+23.2 BLOCK SKIP MULT. -
+23.3 M-GUIDANCE 2 -
+23.4 T-GUIDANCE(MAIN) -
+23.5 T-GUIDANCE(SUB) -
+23.6 NEW JIS -
+23.7 SP. CLP HIGH-SP. -
+24.0 A-TRT MID. POS. -
+24.1 B-TRT MID. POS. -
+24.2 C-TRT MID. POS. -
+24.3 CAS HYDRAULIC TRT -
+24.4 USER MANAGE. EXT. -
+24.5 LATHE X-RADIUS -
+24.6 OP. BUFFER EXPAND -
+24.7 MULTI TOOL -
+25.0 MAC. TIME SHORT. -
+25.1 TOOL LIFE MNG. 6 -
+25.2 ATCHP IN POSITION -
+25.3 TURN. CUT GUIDE -
+25.4 EX MONITOR ATT. -
+25.5 SPIN. OUT. MON. o
+25.6 SUITE w/o WIDGET o
+25.7 REMAI.TIME DISP. o
+26.0 POWER METER -
+26.1 TH.COMP.OILCON -
+26.2 LASER UNIT -
+26.3 GRINDING -
+26.4 TOOL STOCKER -
+26.5 SADDLE DIV. TIME -
+26.6 EX. TOOL STOCKER -
+26.7 NC CENTERING CH. -
+27.0 EASY OPERAT PANEL o
+27.1 MULT OPERAT PANEL -
+27.2 L TOOL MAC INFORM o
+27.3 EOP ANM SCALE-UP o
+27.4 19 INCH EXTEND -
+27.5 ECO SUITE o
+27.6 OSP SUITE o
+27.7 BASEZERO Z V.MEAS -
+28.0 2M1L ONE SIDE CUT -
+28.1 NC DOOR 2 -
+28.2 CURR. GEIN TEACH -
+28.3 Y-AXIS TURNING -
+28.4 PUNCH TAP -
+28.5 ENLARGE/REDUCT -
+28.6 LATHE FLAG -
+28.7 M33T MACHINE -
+29.0 STATUS LOGGER -
+29.1 STATUS MONITOR -
+29.2 RETRACT(ST.MON.) -
+29.3 ADD. SENSOR -
+29.4 FEED AXIS DIAG. -
+29.5 GATHER AGING o
+29.6 SPINDLE DIAG. -
+29.7 MACHINE DIAG. o
+30.0 FIXTURE OFFSET -
+30.1 CYCLE MODE SET@ o
+30.2 MACHINE. REC. II -
+30.3 ZB-W(TS) AXIS IL -
+30.4 SHORT RAPID DROOP o
+30.5 TAP RETRACT FUNC. -
+30.6 EES MOTOR -
+30.7 ROID -
+31.0  -
 31.1  -
 31.2  -
-31.3 Heavy-Work -
-31.4 2nd soft. limit -
-31.5 One Touch Adv. o
-31.6 ONE-TOUCH S/SHE. -
-31.7 COLLISION AV.SY. -
-32.0 Machi.Manage o
-32.1 Script Function -
-32.2 Custom APi o
-32.3 B-Axis limit -
-32.4 TOOL-ID -
-32.5 P300 o
-32.6 MFU CE -
-32.7 Op. Panel-typeB o
+31.3  -
+31.4 NON EE STOCKER -
+31.5 STANDROID -
+31.6 LIQ. CRYSTAL@PH -
+31.7 PRINT ROLL -
+32.0 CAM-AXIS ICB -
+32.1 CAM LE. LESS -
+32.2 ROID-NC MASTER -
+32.3 Y-AXIS BARRIER IL -
+32.4 TOUCH SENSOR B -
+32.5 TOOL-ID Type-B -
+32.6 FILE NAME SIZE EX -
+32.7 EtherNet/IP -
 
-Section: NC-B SPEC CODE No.1
--7.0 H-type Barrier -
--7.1 Tool edge Incomp. -
--7.2 Tool Data 999 o
--7.3 Wk. Cordina. 400 -
--7.4 M-info record -
--7.5 T-brk load check -
--7.6 G33 Thread cut -
--7.7 New Die&mole Mac -
--6.0 G39 ignore -
--6.1 Thread cut cycle -
--6.2 U Axis Func. -
--6.3 U Axis Diameter -
--6.4 Add-Funct.3 -
--6.5 Contour Gene. -
--6.6 Inductsyn Adj -
--6.7 D-Column 5cont. -
--5.0 M-800VH -
--5.1 Tl.Life Notice -
--5.2 Tl.Life Warning -
--5.3 Com.Var.2000set -
--5.4 90deg rotation -
--5.5 Library 260set -
--5.6 Option com. var. -
--5.7 Tl.life.mane.ex -
--4.0 Macro Cordinate -
--4.1 F-Conversion ex. -
--4.2 Tool-list  Func. -
--4.3 R-table grease -
--4.4 BlockSkip(9) -
--4.5 Prog.-Branch(9) -
--4.6 Axis active stop o
--4.7 Special comm. -
--3.0 Independent Aaxs -
--3.1 Independent Baxs -
--3.2 Independent Caxs -
--3.3 Axis detaching -
--3.4 Notice/Waring2 -
--3.5 PPC PANEL Speci. -
--3.6 CE Stopping mon. -
--3.7 Tl. Post. Fluct. -
--2.0 Remote API -
--2.1  -
--2.2 Linear A axis -
--2.3 Linear B axis -
--2.4 Linear C axis -
--2.5 MCR-H Stop Unit -
--2.6 R-feed change -
--2.7 Rtable grease di -
--1.0 Spin. Variation -
--1.1 Weight auto ADJ. -
--1.2 Rt. Identifies -
--1.3 SPRINT -
--1.4 Sub program 900 -
--1.5 PL speed clamp o
--1.6 C 10 servo data -
--1.7 Axis ID. file -
-0.0 Sync.Cntrl-6th -
-0.1 XYZ self tun -
-0.2 Add-axs self tun -
-0.3 Spildle self tun -
-0.4 THiNC  alarm -
-0.5 Runmode sw sel. -
-0.6 Servo navi.  M -
-0.7 Sp. Col. Detect. o
-1.0 MU-6300 Rt. Iden -
-1.1 Prg. Filter Func -
-1.2 TCPC Cut Pnt Cmd -
-1.3 Blade machine -
-1.4 Conti.Gaug.tool o
-1.5 MU-H PPC -
-1.6 Hob/Skiving Pro. -
-1.7 Sync.Cntrl-7th -
-2.0 Sync.Cntrl-8th -
-2.1 MU-V PPC -
-2.2 WeightADJ.Ycheck -
-2.3 integrated navi. -
-2.4 Deform comp. ax. -
-2.5 Liq. crystal PH -
-2.6 TCPC sys. Change -
-2.7 TAS Turn. Spindle o
-3.0 M.Status Logger -
-3.1 19inch Extend -
-3.2 BARCODE SELECT -
-3.3 Hi-Cut Pro NMKI -
-3.4 Moni.Sensor Con. -
-3.5 L.Turn t-cmp 100 -
-3.6 Rot. servo navi. -
-3.7 FS+VS Ctrl. -
-4.0 Fil.Prot IL. -
-4.1 I-MAP AUTO Meas. -
-4.2 ToolWear limit -
-4.3 Inertia X check -
-4.4 Process timing -
-4.5 C.S.Monitor -
-4.6 ECO suite o
-4.7 RI point Func. -
-5.0 R/W RS/CS CONT -
-5.1 ORIENT. SPECIAL -
-5.2 Limit check spei -
-5.3 At com auto mes. -
-5.4 Remain time o
-5.5 C.S.M Retract -
-5.6 TCPC Tool Side -
-5.7 Retract Func. AT -
-6.0 OSP suite o
-6.1 SP soft. limit -
-6.2 ECO Ext. Monitor -
-6.3 OP Disp. ScaleUp -
-6.4 C.S.M band -
-6.5 OSP suite SP o
-6.6 RUN BUF. SP -
-6.7 Tool Side Mac. -
-7.0 Ret. upper init. -
-7.1 Z-ax oscillation -
-7.2 Mac. diagnostics o
-7.3 CAS Restart Cut -
-7.4 Inertia XP check -
-7.5 Inertia YN check -
-7.6 AAC trq mon. A -
-7.7 Subpro.large size -
-8.0 Gather Aging Data o
-8.1 suite SPN.Monitor o
+Section: NC-SPEC CODE No.3
+1.0 Mac process diag -
+1.1  -
+1.2  -
+1.3  -
+1.4  -
+1.5  -
+1.6  -
+1.7  -
+2.0  -
+2.1  -
+2.2  -
+2.3  -
+2.4  -
+2.5  -
+2.6  -
+2.7  -
+3.0  -
+3.1  -
+3.2  -
+3.3  -
+3.4  -
+3.5  -
+3.6  -
+3.7  -
+4.0  -
+4.1  -
+4.2  -
+4.3  -
+4.4  -
+4.5  -
+4.6  -
+4.7  -
+5.0  -
+5.1  -
+5.2  -
+5.3  -
+5.4  -
+5.5  -
+5.6  -
+5.7  -
+6.0  -
+6.1  -
+6.2  -
+6.3  -
+6.4  -
+6.5  -
+6.6  -
+6.7  -
+7.0  -
+7.1  -
+7.2  -
+7.3  -
+7.4  -
+7.5  -
+7.6  -
+7.7  -
+8.0  -
+8.1  -
 8.2  -
-8.3 FL-net -
-8.4 Machine Analyze -
-8.5 Position Smooting -
-8.6 New 5ax machine -
-8.7 Torque skip func. -
-9.0 Torque limit func -
-9.1 Unusually detect -
-9.2 Turning cut Guide -
-9.3 Ethernet/IP -
-9.4 MU-4000V PPC -
-9.5 Adj. Path Algn. -
-9.6 LASER EX -
-9.7 HP HI-SPEED -
-10.0 Dynamic Fixture -
-10.1 Spatial Comp. -
-10.2 Geo.Err.Gaug.2 -
-10.3 Geo.Err.Cmp.2 -
-10.4 Ther.Sensor.Ver2 o
-10.5 New Die&mole Mac2 -
-10.6 Grinding func. -
-10.7 Solid type PPC -
-11.0 SuperRtChgParam -
-11.1 Cutting Mon. -
-11.2 New JIS -
-11.3 Speed Clump Hi -
-11.4 Mes. L-Ax. Err. -
-11.5 Cycle Mode Set o
-11.6 Tap Retract Func -
-11.7 Linear motor CE -
-12.0 Opt Com.1000set -
-12.1 TOOL-ID Type-B -
-12.2 Tl.life.mane.spc -
-12.3 Mes. Work Temp -
-12.4 Mac.Param.Config -
-12.5 Rotary spec. chg -
-12.6 Spindle Diag -
-12.7 THiNC alarm 8p -
-13.0 Feed Axis Diag -
-13.1 CIMX comm. -
-13.2 X,B-axis IL. -
-13.3 Machine. Rec. II -
-13.4 Last axis U-axis -
-13.5 Driving Cont. o
-13.6 ROID -
-13.7 Sizing dev. Func -
-14.0 1key origin pos -
-14.1 At com a. m. v2 -
-14.2 Mac process diag -
-14.3 MU-S600 Area exp -
-14.4 Work set correct. -
-14.5 Acc. Stb. Diag. -
-14.6 Cmp. for Deform. -
-14.7 Dns./Flct. Cmp. -
-15.0 Reversal Cmp. -
-15.1 Punch Tap -
-15.2 ROID-F -
-15.3 ARC THREAD CUT -
-15.4 Grooving Cycle -
-15.5 SP LOCK ERR CMP -
-15.6 TOOL RETRACTION -
-15.7 Non-contact sens -
-16.0 Acc. Stb. Grph. -
+8.3  -
+8.4  -
+8.5  -
+8.6  -
+8.7  -
+9.0  -
+9.1  -
+9.2  -
+9.3  -
+9.4  -
+9.5  -
+9.6  -
+9.7  -
+10.0  -
+10.1  -
+10.2  -
+10.3  -
+10.4  -
+10.5  -
+10.6  -
+10.7  -
+11.0  -
+11.1  -
+11.2  -
+11.3  -
+11.4  -
+11.5  -
+11.6  -
+11.7  -
+12.0  -
+12.1  -
+12.2  -
+12.3  -
+12.4  -
+12.5  -
+12.6  -
+12.7  -
+13.0  -
+13.1  -
+13.2  -
+13.3  -
+13.4  -
+13.5  -
+13.6  -
+13.7  -
+14.0  -
+14.1  -
+14.2  -
+14.3  -
+14.4  -
+14.5  -
+14.6  -
+14.7  -
+15.0  -
+15.1  -
+15.2  -
+15.3  -
+15.4  -
+15.5  -
+15.6  -
+15.7  -
+16.0  -
 16.1  -
 16.2  -
 16.3  -
@@ -518,485 +712,843 @@ Section: NC-B SPEC CODE No.1
 24.5  -
 24.6  -
 24.7  -
+25.0  -
+25.1  -
+25.2  -
+25.3  -
+25.4  -
+25.5  -
+25.6  -
+25.7  -
+26.0  -
+26.1  -
+26.2  -
+26.3  -
+26.4  -
+26.5  -
+26.6  -
+26.7  -
+27.0  -
+27.1  -
+27.2  -
+27.3  -
+27.4  -
+27.5  -
+27.6  -
+27.7  -
+28.0  -
+28.1  -
+28.2  -
+28.3  -
+28.4  -
+28.5  -
+28.6  -
+28.7  -
+29.0  -
+29.1  -
+29.2  -
+29.3  -
+29.4  -
+29.5  -
+29.6  -
+29.7  -
+30.0  -
+30.1  -
+30.2  -
+30.3  -
+30.4  -
+30.5  -
+30.6  -
+30.7  -
+31.0  -
+31.1  -
+31.2  -
+31.3  -
+31.4  -
+31.5  -
+31.6  -
+31.7  -
+32.0  -
+32.1  -
+32.2  -
+32.3  -
+32.4  -
+32.5  -
+32.6  -
+32.7  -
 
 --- PLC Spec Codes ---
 
 Section: PLC-SPEC CODE No.1
-1.0 ToolData100 -
-1.1 ToolData200 -
-1.2 ToolData300 -
-1.3 ATC fixed addres -
-1.4 TP Battery o
-1.5  -
-1.6  -
-1.7  -
-2.0 ATC o
-2.1 APC -
-2.2 AAC -
-2.3 Long tool -
-2.4 Spindle-REV1 o
-2.5 Spindle-REV2 -
-2.6 Spindle-REV3 -
-2.7 SP-Single-Cylind o
-3.0 Sp.Tool Non I/L o
-3.1 Sp.Airblow -
-3.2 Spindl.Ov.LOAD -
-3.3 #50 Spindle Spec -
-3.4 SpindleMotor-1 -
-3.5 HSK -
-3.6 F1-feed(4sets) -
-3.7 F1-feed(8sets) -
-4.0 JOG-feed(4000) -
-4.1 JOG-feed(5000) -
-4.2 JOG-feed(6000) -
-4.3 Prog.Select-B DS -
-4.4 Prog.Select-A -
-4.5 Prog.Select-B RS -
-4.6 Prog.Select-C4 -
-4.7 Prog.Select-C2 -
-5.0 SpindlOilmist o
-5.1 BallScrewCool -
-5.2 HydraOilCool -
-5.3 Slideway Cool -
-5.4 MistCollector -
-5.5 Slideway Cool Y -
-5.6 Oil Mist X/Y-axs -
-5.7 Oil Skimmer -
-6.0 CoolantHighPr. -
-6.1 CoolantHighPr.2 o
-6.2 CoolantLeblDet -
-6.3 Thru-the-tool -
-6.4 SpindlThrugh o
-6.5 Dirty Tank FS -
-6.6 SpindlThrugh15kg -
-6.7 Coolant Cool -
-7.0 GermanSafe-St -
-7.1 DoorInterlockS o
-7.2 DoorInterlockE o
-7.3 CE Marking -
-7.4 DoorInterlockD -
-7.5 DoorInterlockC -
-7.6 MAG-DoorI/L o
-7.7 Chip conveyor PL o
-8.0 TouchSens.MOVE -
-8.1 Pa.ClpConf.Wash -
-8.2  -
-8.3 Pallet Air Blow -
-8.4  -
-8.5 StackerCrane I/F -
-8.6 Robot-I/F TypeC -
-8.7 Robot-I/F TypeB -
-9.0 Poly APC -
-9.1 APC Setup-ST Non -
-9.2 APC-Safty-Gurd -
-9.3 APC JigInterlock -
-9.4 APC Interlock -
-9.5 APC.Wait Pa.Rot. -
-9.6 5 Axes Control -
-9.7 APC.Hydro.Unit -
-10.0 SplashGuard -
-10.1  -
-10.2 6PalletAPC -
-10.3 10PalletAPC -
-10.4 12PalletAPC -
-10.5 4PalletAPC -
-10.6 Pa.ClpConf.HiPr. -
-10.7 Man. Pallet Chg. -
-11.0 AT-ATC -
-11.1 PalletSitWatch -
-11.2 Sens. Power Cont -
-11.3 TOOL-ID Chip Ex. -
-11.4 Sim.5faceAttach. -
-11.5 Planer tool -
-11.6 M code SP Clump -
-11.7 M code AT-Move -
-12.0 AT 5deg. index -
-12.1 ATC Auto Door o
-12.2 Ext. NC Start -
-12.3 Safety Rubber SW -
-12.4 Dual Palm Start -
-12.5 Area Sensor -
-12.6 Workset autodoor -
-12.7 Axis Change -
-13.0 Cross-Posit. -
-13.1 Cross-Posit.10 -
-13.2 Cross.UpDownAC -
-13.3 CoolantInterfere -
-13.4 Touch&CrossI/L -
-13.5 Chipconv&ATC I/L -
-13.6 ANG-AT&ATC I/L -
-13.7 Pendant&CrossI/L -
-14.0 FMS later -
-14.1 MG Hydr. Unit -
-14.2 AAC fixed addres -
-14.3 StackerCrane FMS -
-14.4  -
-14.5  -
-14.6 APC BL-motor -
-14.7 Crosswise-APC -
-15.0 Jig Hydra-UNIT o
-15.1 Chuck o
-15.2 ChuckAirMiss o
-15.3 Tailstock -
-15.4 OP.door.auto -
-15.5 Doorlock-conf. o
-15.6 ATC/APC DoorLock -
-15.7  -
-16.0 CycleTimeReduc o
-16.1 Warming-Up -
-16.2 EXT.HourMeter -
-16.3  -
-16.4 2ndHourMet(NC) -
-16.5 2ndHourMet(Sp) -
-16.6 3rdHourMet(NC) -
-16.7 3rdHourMet(Sp) -
-17.0 PLC 5th Ax.name0 -
-17.1 PLC 5th Ax.name1 -
-17.2 PLC 5th Ax.name2 -
-17.3 PLC 5th Ax.name3 -
-17.4 PLC 6th Ax.name0 -
-17.5 PLC 6th Ax.name1 -
-17.6 PLC 6th Ax.name2 -
-17.7 PLC 6th Ax.name3 -
-18.0 PLC 7th Ax.name0 -
-18.1 PLC 7th Ax.name1 -
-18.2 PLC 7th Ax.name2 -
-18.3 PLC 7th Ax.name3 -
-18.4 PLC 8th Ax.name0 -
-18.5 PLC 8th Ax.name1 -
-18.6 PLC 8th Ax.name2 -
-18.7 PLC 8th Ax.name3 -
-19.0 PLC 1st Ax.name0 o
-19.1 PLC 1st Ax.name1 -
-19.2 PLC 1st Ax.name2 -
-19.3 PLC 1st Ax.name3 -
-19.4 PLC 2nd Ax.name0 -
-19.5 PLC 2nd Ax.name1 -
-19.6 PLC 2nd Ax.name2 o
-19.7 PLC 2nd Ax.name3 -
-20.0 PLC 3rd Ax.name0 -
-20.1 PLC 3rd Ax.name1 -
-20.2 PLC 3rd Ax.name2 -
-20.3 PLC 3rd Ax.name3 -
-20.4 PLC 4th Ax.name0 -
-20.5 PLC 4th Ax.name1 -
-20.6 PLC 4th Ax.name2 -
-20.7 PLC 4th Ax.name3 -
-21.0 FP Coolant o
-21.1 FP Shower Wash -
-21.2 FP Washing Gun -
-21.3 FP Shower -
-21.4 FP AirNozle o
-21.5 FP AirAdapt -
-21.6 FP Sp.Thrugh Air o
-21.7 FP ChipConv o
-22.0 FP Oilmist -
-22.1 FP Oilhole o
-22.2 FP OilholeHi.Pr. -
-22.3 Oil mist KURODA -
-22.4 Coolant filter -
-22.5 Thru-SP Hi/Lo -
-22.6 Oil air DAIDO o
-22.7 Oil mist BLUBE -
-23.0 MX-H -
-23.1 MU-V -
-23.2 MB-V o
-23.3 MB-H -
-23.4 MCR-A5C -
-23.5 MA-100H -
-23.6 MCM-B -
-23.7 MP-V -
-24.0 MCV-A2 -
-24.1 MCR-B2 -
-24.2 MCR-A -
-24.3  -
-24.4 MCR-AF -
-24.5 Lift Up Mosnic -
-24.6 Cylinder retract -
-24.7 ATC simulator -
-25.0 MA-800H -
-25.1 MC-V -
-25.2 MA-V -
-25.3 Semidry through -
-25.4 Semidry nozzle -
-25.5 Thru-SP Hi/Lo -
-25.6 Oilhole&Thru-SP -
-25.7 Jig I/F -
-26.0 NC master -
-26.1 HP Add (MCV-A2) -
-26.2 Cross Door I/L -
-26.3 Hyblid coolant -
-26.4 Dual Palm Op. -
-26.5 Safety Fence -
-26.6 Pallet AirBlow2 -
-26.7  -
-27.0 Paper filter -
-27.1 Sensor cover -
-27.2 OA lub. always o
-27.3 Magnet Sepa. -
-27.4 FP OilholeMd.Pr. -
-27.5 M-B type -
-27.6 Leak invalid o
-27.7 Chip flush valid -
-28.0 FilterDet.B Cont -
-28.1 Pallet thr. Jig -
-28.2 Oil mist cycle -
-28.3 Ext. NC Stop -
-28.4 Four Jig -
-28.5 Three Jig -
-28.6 Liftup Conv o
-28.7 Two Jig -
-29.0 Auto Greasing -
-29.1 JOG Lever -
-29.2 MXR-V -
-29.3 FP 2ndCoolant -
-29.4 Large Dia. Tool -
-29.5 Column Cooling -
-29.6  -
-29.7  -
-30.0  -
-30.1 Pre-press Hydra -
-30.2  -
-30.3 FP ChipCon CCW -
-30.4 Detach MG tool -
-30.5 Saddle wash -
-30.6 Cover wash -
-30.7 Ext. Alarm IF -
-31.0  -
-31.1 Reverse-insert -
-31.2 EXT.JOG Override -
-31.3 EXT.Int.Program -
-31.4 High-speed SP -
-31.5 Coupler air -
-31.6 S com. limit -
-31.7  -
-32.0 Extinction DEV. -
-32.1  -
+1.0 2 SADDLE MACHINE -
+1.1 MULTIPLE MACHINE -
+1.2 OPPOSED TURRET -
+1.3 SUB SPINDLE -
+1.4 OPPOSED 2 SPNDL -
+1.5 SLANT-Y AXIS -
+1.6 PARALLEL 2 SPNDL -
+1.7 B-AXIS TURRET -
+2.0 0.0001M CONTROL -
+2.1 FLAT BED -
+2.2 W-AXIS CONTROL -
+2.3 HYD LESS -
+2.4 W-AXIS CLAMP -
+2.5 HOB CUTTING -
+2.6 B-TURRET SUB SP. -
+2.7 B-AXIS INTERPOL. -
+3.0 SPNDL OIL AIR LUB -
+3.1 SPNDL ORNT.ELEC. o
+3.2 SPNDL ORNT. PIN -
+3.3 SPNDL ORNT. BRK. -
+3.4 1SP. LOWEST SP. -
+3.5 2SP. LOWEST SP. -
+3.6 1SP. OIL COOLER -
+3.7 2SP. OIL COOLER -
+4.0 HYD. UNIT COOLER -
+4.1 OIL COOLER ALM-A -
+4.2 HYD. OIL COOLER -
+4.3 WITHOUT STE SW -
+4.4 EX BRAKE RELEASE o
+4.5 SAFETY RELAY -
+4.6 POS UNIT -
+4.7 CHUCK IL.RLS.SP -
+5.0 2 CHUCK PDL. 1SP -
+5.1 SMW CHUCK 1 SP. -
+5.2 FR.DRV.CHUCK 1SP -
+5.3 CHK GRSP SPC 1SP -
+5.4 2 CHUCK PDL. 2SP -
+5.5 SMW CHUCK 2SP -
+5.6 FR.DRV.CHUCK 2SP -
+5.7 CHK GRSP SPC 2SP -
+6.0 CHUCK GRASP COMF o
+6.1 CHUCK IL. RLS. -
+6.2 CHUCK. MISS 1 SP -
+6.3 CHUCK. MISS 2 SP -
+6.4 CHUCK H/L 1 SP. -
+6.5 CHUCK H/L 2 SP. -
+6.6 INDEX CHK 45 1SP -
+6.7 INDEX CHK 90 1SP -
+7.0 CENTER WORK o
+7.1 TAIL STOCK LIMIT -
+7.2 TAIL-STK.IL.RLS. -
+7.3 PROG. TAIL STOCK o
+7.4 SIMPLE TOW-ALONG -
+7.5 TAIL STK.RT.INCH -
+7.6 ST.R AUTO TOW-A. -
+7.7 ST. R. ENABLE SW -
+8.0 ST. REST FIX -
+8.1 ST. REST MID -
+8.2 ST. REST LOW-T -
+8.3 ST. REST REL. -
+8.4 ST. REST OPEN -
+8.5 ST. REST CLOSE -
+8.6 ST. REST TOW-A -
+8.7 ST. REST GR.COMF -
+9.0 NC TURRET o
+9.1 TURRET LIMIT A -
+9.2 CAM TURRET -
+9.3 NC TR WITH BRAKE -
+9.4 TURRET LIMIT B -
+9.5 1MMT CLUTCH COMF. -
+9.6 1 MOTOR MULTI TR -
+9.7 1MMT BRAKE CR -
+10.0 ATC TYPE A -
+10.1 ATC TYPE B -
+10.2 ATC TYPE C -
+10.3 ATC TYPE D -
+10.4 MG. DOOR 2 -
+10.5 MG.DOOR MECHA-LK -
+10.6 MG TOOL MAN CHG -
+10.7 TOOL ID -
+11.0 DR.SPEED SWITCH -
+11.1 AUTO DOOR -
+11.2 DOOR CONTROL -
+11.3 R.DOOR ONE BODY -
+11.4 R.DOOR SIDE OPEN -
+11.5 ROOF DOOR -
+11.6 PL DOOR I.L.E-D -
+11.7 PL DOOR I.L.E-C -
+12.0 MECHA-LOCK DOOR1 -
+12.1 MECHA-LOCK DOOR2 o
+12.2 R.DOOR2 -
+12.3 AUTO DOOR2 -
+12.4 DOOR IL. S o
+12.5 DOOR IL. D -
+12.6 DOOR IL. E o
+12.7 MECHA-LOCK SP. -
+13.0 EXTERNAL MEASURE -
+13.1 EX. MEASURE BCD -
+13.2 CEJ MATIC -
+13.3 TOUCH SENSOR 2SP -
+13.4 TOUCH SENSOR -
+13.5 OPTICAL SENSOR -
+13.6 2SP TOUCH SETTER -
+13.7 TOUCH SET. COV.LK -
+14.0 TOUCH SETTER -
+14.1 TOUCH SET. SLIDE -
+14.2 TOUCH SET. COVER -
+14.3 TOUCH SET. MOTOR -
+14.4 TL BRAK. DETECT. -
+14.5 WORK EJECTOR -
+14.6 WORK EJ.AD CONF -
+14.7 WORK EJ.RT CONF -
+15.0 M-AXIS ORIENT. -
+15.1 FLAT TURNING -
+15.2 B-TURRET M-AXIS -
+15.3 B-AXIS POS LOMP -
+15.4 ATC TYPE H -
+15.5 CAM AXIS LUB. -
+15.6 M-AXIS OIL MIST -
+15.7 M-SP. OILCOOLER -
+16.0 HIGH COOLANT -
+16.1 B-TURRET 1MMTR -
+16.2 A-COOLANT 1MMTR -
+16.3 COOLANT H/L SP. -
+16.4 CLNT LEVEL CHECK -
+16.5 CLNT FLOW CHECK -
+16.6 COOLANT L/M CHG. -
+16.7 CLNT.THRU.SPNDL. -
+17.0 LFS10 -
+17.1 LVT -
+17.2 LAW-V -
+17.3 2SP-H -
+17.4 ACC MACHINE -
+17.5 ATC TYPE-E -
+17.6 ATC TYPE-F -
+17.7 SUB MAGAZINE -
+18.0 RBT/LDR I/F B -
+18.1 RBT/LDR I/F C -
+18.2 RBT/LDR I/F D -
+18.3 OGL LOADER I/F -
+18.4 PROGRAM SELECT A -
+18.5 PROGRAM SELECT B -
+18.6 PROGRAM SELECT C -
+18.7 FIX POT ATC -
+19.0 BAR FEEDER I/F 1 -
+19.1 BAR FEEDER I/F 2 -
+19.2 B.FEEDER CHK.IL. -
+19.3 BAR FEEDER I/F 3 -
+19.4 BAR FEEDER I/F 4 -
+19.5 BAR FEEDER I/F 5 -
+19.6 THRU. AIRBLOW IL. -
+19.7 CUT OFF DETECT -
+20.0 BF/PC BIT SWITCH -
+20.1 PARTS CATCHER -
+20.2 PARTS CA.DOOR IL -
+20.3 PARTS CA.AD/RT SP -
+20.4 PARTS CA.SWING -
+20.5 NC TAIL STOCK -
+20.6 CONV.DEVICE I/F -
+20.7 UNLOADER  I/F -
+21.0 DUAL START -
+21.1 DUAL ST.DR. CLS. -
+21.2 EDIT INTERLOCK -
+21.3 PROG.STOP SPECIA -
+21.4 PANEL POSIT. SP -
+21.5 PORTABLE PH o
+21.6 CE MARKING -
+21.7 OIL LEVEL DETECT -
+22.0 WARMING UP -
+22.1 WORK CNT.SPECIAL -
+22.2 CHIP CNVYR CHECK -
+22.3 THRU&MEASURE AIR -
+22.4 DRAIN PUMP -
+22.5 SP AIR PURGE DET -
+22.6 AIR PRES.DETECT -
+22.7 SEQUENCER ALARM -
+23.0 DNC-B -
+23.1 DNC-C -
+23.2 ATC TYPE G -
+23.3 W-AXIS OVERLAP -
+23.4 ST.R AUTO TOW-A B -
+23.5 THREAD OVERRIDE o
+23.6 IND.CHK1 NO CHECK -
+23.7 PROG. TAIL STK. B -
+24.0 OVERRIDE SPECIAL o
+24.1 LOAD MONITOR o
+24.2 SAFETY TAPE SW -
+24.3 NC MASTER -
+24.4 CYCLE TIME RE.NEW o
+24.5 LAW-F L-MACHINE -
+24.6 PNL.POSIT. FRONT -
+24.7 T CONST SWITCH -
+25.0 FINGER CHUCK 4-1 -
+25.1 FINGER CHUCK 4-2 -
+25.2 FINGER CHUCK 2-1 -
+25.3 FINGER CHUCK 2-2 -
+25.4 COLLET GRSP COMF -
+25.5 SIDE COVER I.L. -
+25.6 M.LOCK SIDE CVR. -
+25.7 SUB PANEL -
+26.0 TURNOVER DEVICE -
+26.1 TRNOVR RTRCT SP. -
+26.2 TURNOVER L->R -
+26.3 DIREC SWITCHABLE -
+26.4 MULTI-MAGAZINE -
+26.5 M.LOCK SP CVR. o
+26.6 LVT SAFETY FENCE -
+26.7 MEASURE OVER M/C -
+27.0 NC LOADER -
+27.1 NC LOADER TYPE-C -
+27.2 2M1L -
+27.3 3M1L -
+27.4 GANTRY LOADER -
+27.5 RECIPROCAL INTER -
+27.6 2CARRIERS LDR -
+27.7 3 AXIS LOADER -
+28.0 A CLAMP MISS CHK -
+28.1 B CLAMP MISS CHK -
+28.2 SWING IL TYPE-A -
+28.3 SWING IL TYPE-B -
+28.4 DUAL HAND OPE. -
+28.5 FENCE MECHA-LOCK -
+28.6 HAND OPE. I.L. -
+28.7 LDR AXIS INTRLCK -
+29.0 NC ROBOT -
+29.1 OR5 -
+29.2 HYD ER DET. -
+29.3 SPEC SELECT -
+29.4 NO CE DOOR OPENLS -
+29.5 OSP CHIP CONVERE -
+29.6 SWING&LIMIT SWIVE -
+29.7 OR SEFTY FENCE -
+30.0 NO CEIL 2 -
+30.1 NO CEIL 3 -
+30.2 WORK STOCKER -
+30.3 WORK STOCKER2 -
+30.4 VERTICAL SW. LO. -
+30.5 T.CLMP OUTPUT HLD -
+30.6 B-PANEL o
+30.7 NC DOOR -
+31.0 B-AXIS TURRET -
+31.1 B-AXIS 1deg -
+31.2 B-AXIS 0.001deg -
+31.3 TURRET TYPE-H1 -
+31.4 TURRET TYPE-H2 -
+31.5 TR.PNDLM.CNTRL. -
+31.6 L TOOL INDEX -
+31.7 L TOOL THD. CLMP -
+32.0 L TOOL INDEX SP -
+32.1 TL EXST COMF.REV. -
 32.2  -
-32.3 HalfCover Safety -
-32.4 Foot put detect -
-32.5 Pls-Hndl.2set -
-32.6 Pls-Hndl.3set -
-32.7  -
+32.3 FL-net -
+32.4 ATC TYPE-R -
+32.5 AAC TYPE-C -
+32.6 NC TURRET SETUP -
+32.7 SETUP TEST MODE -
 
 Section: PLC-SPEC CODE No.2
-1.0 PLC 13 Ax.name0 -
-1.1 PLC 13 Ax.name1 -
-1.2 PLC 13 Ax.name2 -
-1.3 PLC 13 Ax.name3 -
-1.4 PLC 14 Ax.name0 -
-1.5 PLC 14 Ax.name1 -
-1.6 PLC 14 Ax.name2 -
-1.7 PLC 14 Ax.name3 -
-2.0 PLC 15 Ax.name0 -
-2.1 PLC 15 Ax.name1 -
-2.2 PLC 15 Ax.name2 -
-2.3 PLC 15 Ax.name3 -
-2.4 PLC 16 Ax.name0 -
-2.5 PLC 16 Ax.name1 -
-2.6 PLC 16 Ax.name2 -
-2.7 PLC 16 Ax.name3 -
-3.0 PLC 9 Ax.name0 -
-3.1 PLC 9 Ax.name1 -
-3.2 PLC 9 Ax.name2 -
-3.3 PLC 9 Ax.name3 -
-3.4 PLC 10 Ax.name0 -
-3.5 PLC 10 Ax.name1 -
-3.6 PLC 10 Ax.name2 -
-3.7 PLC 10 Ax.name3 -
-4.0 PLC 11 Ax.name0 -
-4.1 PLC 11 Ax.name1 -
-4.2 PLC 11 Ax.name2 -
-4.3 PLC 11 Ax.name3 -
-4.4 PLC 12 Ax.name0 -
-4.5 PLC 12 Ax.name1 -
-4.6 PLC 12 Ax.name2 -
-4.7 PLC 12 Ax.name3 -
-5.0 Hydr.unit 1ax -
-5.1 Hydr.unit 2ax -
-5.2  -
-5.3  -
-5.4  -
-5.5  -
-5.6  -
-5.7  -
-6.0  -
-6.1  -
-6.2  -
-6.3  -
-6.4  -
-6.5  -
-6.6  -
-6.7  -
-7.0  -
-7.1  -
-7.2  -
-7.3  -
-7.4  -
-7.5  -
-7.6  -
-7.7  -
-8.0  -
-8.1  -
-8.2  -
-8.3  -
-8.4  -
-8.5  -
-8.6  -
-8.7  -
-9.6  -
-9.7  -
-10.0  -
-10.1  -
-10.2  -
-10.3  -
-11.2  -
-11.3  -
-11.4  -
-11.5  -
-11.6  -
-11.7  -
-12.0  -
-12.1  -
-12.2  -
-12.3  -
-12.4  -
-12.5  -
-12.6  -
+1.0 2MOTOR MULTI TR -
+1.1 2MOTOR TR B -
+1.2 TR INDEX COND W -
+1.3 2SP-H TR.CLMP-R -
+1.4 2SP-H TR.CLMP-L -
+1.5 B TURRET Y -
+1.6 C TURRET Y -
+1.7 2 MOTOR TR C -
+2.0 MANY CHIPS 12 -
+2.1 MANY CHIPS 8 -
+2.2 ATC POS INDEX RE -
+2.3 B-AXIS 5deg PITCH -
+2.4 MANY CHIPS 4 -
+2.5 TL EXIST COMF. -
+2.6 TURNING IL -
+2.7 2MOTOR TR TYPE B -
+3.0 SP. LOW. FIX. SP. -
+3.1 C AXS BR. TRQ LMT -
+3.2 SKIVING CUT -
+3.3 TURN.TOOL GROOVE -
+3.4 1SP WIND-CHG SP -
+3.5 2SP WIND-CHG SP -
+3.6 SP BRAKE PS -
+3.7 MAN MODE C BRAKE -
+4.0 CHUCK GRASP CO.B1 -
+4.1 CHUCK GRASP CO.B2 -
+4.2 ST. REST ZC -
+4.3 NC TAIL INCHING -
+4.4 INDEX CHK 45/90SW -
+4.5 2SP CHK DS SENSOR -
+4.6 CHUCK GRASP CO.D1 -
+4.7 CHUCK GRASP CO.D2 -
+5.0 NC TAIL WORK HLD -
+5.1 NC TAIL NO CHG -
+5.2 NC TAIL NO PEDAL -
+5.3 HYD QL NC TAIL -
+5.4 NC TAIL PRECISE -
+5.5 NC TAIL POLS LOW -
+5.6 TAIL SLEEVE I.L -
+5.7 TAIL SLEEVE 1SP -
+6.0 NC STEADY REST -
+6.1 ST REST AIR CLAMP -
+6.2 SELF ST.R 1 -
+6.3 SELF ST.R 2 -
+6.4 SELF ST.R 3 -
+6.5 SELF ST.R 1 REL. -
+6.6 SELF ST.R 2 REL. -
+6.7 SELF ST.R 3 REL. -
+7.0 SAFETY SW RST -
+7.1 DOOR DIVISION -
+7.2 FLAT DOOR IL -
+7.3 FLAT 1 DOOR -
+7.4 FLAT DOOR IL SP -
+7.5 FLAT DOOR MLK -
+7.6 R.DR.GUIDE SLIDE -
+7.7 MAINTENANCE DOOR -
+8.0 HP COOLANT UNIT -
+8.1 HP COOLANT UNIT2 -
+8.2 HP COOLANT UNIT3 -
+8.3 RV. FLUSH CLNT -
+8.4 BL. SADDLE CLNT -
+8.5 ANOTHER TANK -
+8.6 RV. FLUSH CLNT2 -
+8.7 SP TAIL WORK HLD -
+9.0 LINEAR GUIDE CVR. -
+9.1 ATC CYCL TIME RE -
+9.2 ATC TYPE I -
+9.3 EX ATC HP -
+9.4 ATC TYPE J -
+9.5 ATC TYPE K -
+9.6 TOOL RET MT CM -
+9.7 ATC TYPE L -
+10.0 M-SP LUBE CHECK -
+10.1 M-SP OIL AIR -
+10.2 MA-SP. LOWEST -
+10.3 M-SP 4P INDEX -
+10.4 TOOL M-SP.MAX -
+10.5 C-TURRET M-AXIS -
+10.6 CHIP BITING AV. -
+10.7 MACHIN. Navi M-i -
+11.0 A TURRET MID. -
+11.1 B TURRET MID. -
+11.2 C TURRET MID. -
+11.3 2APC I/F B -
+11.4 L TOOL IDX. SEL -
+11.5 B 2MMTR TYPE B -
+11.6 C MODE C BRAKE -
+11.7 TAIL STOCK CLAMP -
+12.0 SUB PNL.B ST.CHG -
+12.1 CENT.PARTITION -
+12.2 SP PEAK POW. CUT -
+12.3 CE CHUCK NO CONF -
+12.4 ATC TYPE-Q -
+12.5 MULTI-MAG. B -
+12.6 APC FRONT DOOR2 -
+12.7 CHUCK/JIG CHANGE -
+13.0 HAND PUSH. AIR -
+13.1 STOCKER INV.CTRL -
+13.2 STCK.AREA SENSOR -
+13.3 3AX LDR SWING IL -
+13.4 CHUCK H/L B 2SP. -
+13.5 1SP C GAIN CUT -
+13.6 2SP C GAIN CUT -
+13.7 NC UNLOADER -
+14.0 SCHUNK CHUCK 1 SP o
+14.1 SCHUNK CHUCK 2 SP -
+14.2 CHUCK H/L B 1SP. -
+14.3 P-TS UNCLAMP IL -
+14.4 HP COOLANT UNIT5 -
+14.5 HP COOLANT UNIT6 -
+14.6 VTR CHUCK CTRL -
+14.7 2APC SETUP CLAMP -
+15.0 OPTICAL SENSOR B -
+15.1 TOUCH SET.SLD B -
+15.2 TOUCH SET.CROS-L -
+15.3 TOUCH SET.CROS-R1 -
+15.4 TOUCH SET.CROS-R2 -
+15.5 TOUCH SET.SLID R -
+15.6 TR.&MEASURE AIR -
+15.7 T SETTER MOTOR B -
+16.0 1SP C BRAKE KEEP -
+16.1 2SP C BRAKE KEEP -
+16.2 FD.CHUCK 1 GRSP -
+16.3 FD.CHUCK GRSP.CK -
+16.4 C UNCLAMP CONF. -
+16.5 1SP A.CHUCK RSS -
+16.6 2SP A.CHUCK RSS -
+16.7 NC ST. R. CLAMP -
+17.0 FIRE ALARM CHK -
+17.1 MIST COLLECTOR -
+17.2 0.1UM PH CHG -
+17.3 CROSS RAIL AUTO -
+17.4 CROSS RAIL AT-C -
+17.5 SP ER DET. SHARE -
+17.6 ABSO SCALE FILT. -
+17.7 1SP INDEX CHK SP -
+18.0 HP COOLANT UNIT4 -
+18.1 AXIS RETRACT -
+18.2 CROSS RAIL AUTO 7 -
+18.3 CROSS RAIL AUTO 8 -
+18.4 CROSS RAIL AUTO 9 -
+18.5 CROSS RAIL AUTO10 -
+18.6 DOOR IL S SP -
+18.7 PENDANT IL -
+19.0 PWR SUP R/L COM -
+19.1 EX CUT FEED OVR -
+19.2 EX INT PROGRAM -
+19.3 SUB PANEL B -
+19.4 EX NC FEED HOLD -
+19.5 INSIDE M/C CNVYR -
+19.6 LIFT UP MOSNIC A -
+19.7 LIFT UP MOSNIC B -
+20.0 NEW CEMK -
+20.1 M-NAVI GUIDANCE -
+20.2 SUB PNL.B BIT SW -
+20.3 ATC OIL PRES.DET -
+20.4 OIL LEVEL DET.2 -
+20.5 VERT. MLT. PANEL -
+20.6 OPERATION DOOR -
+20.7 C CLAMP CONF. -
+21.0 2PALLET APC -
+21.1 STACKER CRANE I/F -
+21.2 C AXIS GROUP SW. -
+21.3 PALLET CLAMP B -
+21.4 2PALLET APC I/F C -
+21.5 6PALLET APC I/F C -
+21.6 APC DOOR -
+21.7 PALLET CLAMP C -
+22.0 ACC AREA SENSOR -
+22.1 SP VIB. SENSOR -
+22.2 S-ST CHK. PDL/PB -
+22.3 APC SPNDL CLAMP -
+22.4 PH TYPE-B o
+22.5 C CONNECT SP -
+22.6 PH TYPE-C -
+22.7 THINC ALARM -
+23.0 RIGID TURRET -
+23.1 A-TURRET PENDULUM -
+23.2 B-TURRET PENDULUM -
+23.3 A-TURRET PND. SW. -
+23.4 B-TURRET PND. SW. -
+23.5 DOOR IL. SW CHECK -
+23.6 OSP CNVYR PNL.SP -
+23.7 SPNDL LUBE DRAIN -
+24.0 MAN JOG FEED -
+24.1 SP COM. UNIT 0.1 -
+24.2 CHIP NIPPING AVO. -
+24.3 CAT TOOL DIR. -
+24.4 TABLE ROUND CONV. -
+24.5 MG CLAMP -
+24.6 SETUP MODE -
+24.7 GEN. OL. DETECT -
+25.0 ATC TYPE M -
+25.1 ATC SHUTTER -
+25.2 MATRIX TIM.RE.A -
+25.3 MATRIX TIM.RE.B -
+25.4 ATC COV.TOOL -
+25.5 ATC LATHE TOOL -
+25.6 ATC TYPE N -
+25.7 ATC SENS. TOOL -
+26.0 AAC -
+26.1 M-SP CL/UC MCODE -
+26.2 AT MCODE -
+26.3 AT-C INDEX 5DEG -
+26.4 MAN AT TOOL CHG -
+26.5 AAC TYPE B -
+26.6 DOOR IL S SP2 -
+26.7 CONVEYER HOLD DR -
+27.0 M-SP COOLING -
+27.1 THR SP COOLANT -
+27.2 X-AXIS OILMIST -
+27.3 OIL SKIMMER -
+27.4 COOLANT COOLING -
+27.5 COOLANT SW -
+27.6 WORK WASH SW -
+27.7 CHIP FLUSH SW -
+28.0 AIR NOZZLE SW -
+28.1 M-SP AIRBLOW SW -
+28.2 CHIP CON SW -
+28.3 OILMIST SW -
+28.4 OILHOLE SW -
+28.5 OILHOLE HIGH SW -
+28.6 COOLANT CLOG -
+28.7 COOLANT LV CHECK -
+29.0 ATC TYPE-P -
+29.1 ATC NO MOD RST -
+29.2 DOOR WINDOW -
+29.3 DRUM FILTER -
+29.4 PH ENABLE SW -
+29.5 ATC SIDE TH.TOOL -
+29.6 ST.REST MAN GRIP -
+29.7 3 SADDLE MACHINE -
+30.0 MCTYPE VTR-A -
+30.1 ANGLE HEAD -
+30.2 L-NAVI GUIDANCE -
+30.3 EASY OPERAT PANEL o
+30.4 ANG COOLANT -
+30.5 ANG AIRBLOW -
+30.6 SHOWER SW -
+30.7 MF UNIT o
+31.0 SIDE SHUTTER -
+31.1 TCH STTR POS RV -
+31.2 1SP CHK GRASP C -
+31.3 2SP CHK GRASP C -
+31.4 W-AXIS CUTTING -
+31.5 TOUCH SET.TRN.SLD -
+31.6 DOOR I.L.E-C SP -
+31.7 SP. LATHE TOOL -
+32.0  -
+32.1  -
+32.2  -
+32.3  -
+32.4  -
+32.5  -
+32.6 CUSTOM PLC -
+32.7 PREVENT TS. RT. -
+
+Section: PLC-SPEC CODE No.3
+1.0 ECO SUITE o
+1.1 M-AXIS INTERPOL. -
+1.2 M-AXIS MEASURE -
+1.3 M-AXIS CLAMP M -
+1.4 MATRIX TLS SHUT. -
+1.5 ATC-H MATRIX MG -
+1.6 C-AXIS CLAMP AUT -
+1.7 NC TAIL START IL -
+2.0 WORK SUPPORT SP. -
+2.1 HP COOLANT UNIT7 -
+2.2 TOOL IC -
+2.3 ST.R GR.COMF B -
+2.4 TL BRAK. DETECT.B -
+2.5 THRM. OIL COOLER -
+2.6 DOOR INCHING -
+2.7 CHIP CNV.INTERV. -
+3.0 TURNING CUT -
+3.1 WORK SUPP.B-TUR. -
+3.2 NC UNLOADER B -
+3.3 WORK EJECT H1 -
+3.4 CE PARTS CA.DRIL -
+3.5 BALL SCREW COOL. -
+3.6 DATA TRA. OUT.MG -
+3.7 VL L-MACHINE -
+4.0 BLUM TOUCH PROBE -
+4.1 TR BRAK. DETECT.C -
+4.2 HYBRID SENSOR -
+4.3 ST.R. MOUNT PAR. -
+4.4 TAIL ADVANCE 2 -
+4.5 PARTS CA. BELT -
+4.6 OIL CNLT SPECIAL -
+4.7 OSP suite -
+5.0 A L-TUR. ATC -
+5.1 B L-TUR. ATC -
+5.2 ST.R GR.COMF C -
+5.3 PROG TS AIR CLP -
+5.4 CUT STATUS MON. -
+5.5 SP.DIAGNOSTIC o
+5.6 ATC TYPE-S -
+5.7 ENABLE SW CHECK -
+6.0 TH./ATC AIR COM. -
+6.1 TOUCH SET. POWER -
+6.2 TOUCH PROBE FIX -
+6.3 M02 SHORT. TIME -
+6.4 LASER UNIT -
+6.5 R/W HEAD POS. SP -
+6.6 RB/LD REQ. 255 -
+6.7 RB/LD SP ORNT.15 -
+7.0 PROGRAM SELECT D -
+7.1 1SP CHK PRES. 6 -
+7.2 2SP CHK PRES. 6 -
+7.3 INC./ORI.HI-SPEED -
+7.4 IND. ROOF DOOR IL -
+7.5 AAC TYPE C -
+7.6 LODER SWING SERVO -
+7.7 H1 TR. UNCLAMP -
+8.0 TOOL STOCKER -
+8.1 TOOL STOCKER OP. -
+8.2 MULTI.SP.ORNT. -
+8.3 TOOL STOCKER OUT. -
+8.4 GRINDING FUNC. -
+8.5 LASER UNIT B -
+8.6 ATC TYPE-T -
+8.7 EX.MG TOOL DATA -
+9.0 JIS MAC SAFETY -
+9.1 ENABLING EASING -
+9.2 TESTCUT TURRET -
+9.3 TESTCUT ATC -
+9.4 4M1L -
+9.5 ST REL. START IL -
+9.6 STANDROID -
+9.7 ARMROID -
+10.0 TR INDIV. CTRL -
+10.1 MATRIX PREP.ST -
+10.2 MATRIX NG ST -
+10.3 MATRIX STOR.ST -
+10.4 TESTCUT MODE -
+10.5 ATC TIME RE.TR. -
+10.6 EES Type-A -
+10.7 EES Type-B -
+11.0 EES Type-C -
+11.1 OAC HP. COOLANT2 -
+11.2 OAC HP. COOLANT4 -
+11.3 TR TOOL NO. MNG -
+11.4 MG TORQUE LIMIT -
+11.5 ARMROID CLNT -
+11.6 BLUM LS. TSC. -
+11.7 TOOL-ID TL. ATT. -
+12.0 THiNC ALARM EX. -
+12.1 ANG CT.THR.CL. -
+12.2 ARMROID T.HAND -
+12.3 MA AXIS NO -
+12.4 LIQ. CRYSTAL PH -
+12.5 FLAT DOOR CEMK -
+12.6 EE MAN CHG -
 12.7  -
-13.0  -
-13.1  -
-13.2  -
-13.3  -
-13.4  -
-13.5  -
-13.6  -
-13.7  -
-14.0  -
-14.1  -
-14.2  -
-14.3  -
-14.4  -
-14.5  -
-14.6  -
-14.7  -
-15.0  -
-15.1  -
-15.2  -
-15.3  -
-15.4  -
-15.5  -
-15.6  -
-15.7  -
-16.0  -
-16.1  -
-16.2  -
-16.3  -
+13.0 1ST CL1 DOOR IL -
+13.1 1ST CL2 DOOR IL -
+13.2 1ST CL3 DOOR IL -
+13.3 1ST CL4 DOOR IL -
+13.4 1ST CL5 DOOR IL -
+13.5 1ST CL6 DOOR IL -
+13.6 1ST CL7 DOOR IL -
+13.7 1ST CL8 DOOR IL -
+14.0 2ND CL1 DOOR IL -
+14.1 2ND CL2 DOOR IL -
+14.2 2ND CL3 DOOR IL -
+14.3 2ND CL4 DOOR IL -
+14.4 2ND CL5 DOOR IL -
+14.5 2ND CL6 DOOR IL -
+14.6 2ND CL7 DOOR IL -
+14.7 2ND CL8 DOOR IL -
+15.0 3RD CL1 DOOR IL -
+15.1 3RD CL2 DOOR IL -
+15.2 3RD CL3 DOOR IL -
+15.3 3RD CL4 DOOR IL -
+15.4 3RD CL5 DOOR IL -
+15.5 3RD CL6 DOOR IL -
+15.6 3RD CL7 DOOR IL -
+15.7 3RD CL8 DOOR IL -
+16.0 OSP-P500 -
+16.1 NC ATC SHUTTER -
+16.2 NC SIDE SHUTTER -
+16.3 NO C TL.INDEX M -
 16.4  -
 16.5  -
 16.6  -
 16.7  -
-17.6 Oil air press ck o
-17.7 MG rear door lock -
-18.0 Chuck OP/CL cnf2 -
-18.1 Seal air tank -
-18.2 Tape SW reset -
-18.3 New Ft-put detect -
-19.2 Door I/L SW conf. -
-19.3 APC belt dual ck -
-19.4 General overload -
-19.5 Ram cooling unit -
-19.6 Mechanical brake -
-19.7 MG tool break ck -
-20.0 GX -
-20.1 MB-8000H -
-20.2 MCR-B5 -
-20.3 MU-S600V -
-20.4 MCR-S -
-20.5 MCR-B -
-20.6 Conn. master spec -
-20.7 Conn. slave spec -
-21.0 MCV-A/MDB-A -
-21.1 MCV-B/MDB-B -
-21.2 MCR-H -
-21.3 MU-1000H -
-21.4 MCR-C -
-21.5 MA-400H -
-21.6 MCR-A5C2 -
-21.7 MA-12500H -
-22.0 MB-1000H -
-22.1 APC belt check -
-22.2 B Ax.U.C.PS less -
-22.3 MB-5000H -
-22.4 MB-4000H -
-22.5 Light work spec -
-22.6 ATC belt check -
-22.7 MA-500H2/600H2 -
-23.0 M55H -
-23.1 NEW M1052V -
-23.2 M-33TU -
-23.3 M-44H2/55H2 -
-23.4 MB-80V -
-23.5 MCR -
+17.0  -
+17.1  -
+17.2  -
+17.3  -
+17.4  -
+17.5  -
+17.6  -
+17.7  -
+18.0  -
+18.1  -
+18.2  -
+18.3  -
+18.4  -
+18.5  -
+18.6  -
+18.7  -
+19.0  -
+19.1  -
+19.2  -
+19.3  -
+19.4  -
+19.5  -
+19.6  -
+19.7  -
+20.0  -
+20.1  -
+20.2  -
+20.3  -
+20.4  -
+20.5  -
+20.6  -
+20.7  -
+21.0  -
+21.1  -
+21.2  -
+21.3  -
+21.4  -
+21.5  -
+21.6  -
+21.7  -
+22.0  -
+22.1  -
+22.2  -
+22.3  -
+22.4  -
+22.5  -
+22.6  -
+22.7  -
+23.0  -
+23.1  -
+23.2  -
+23.3  -
+23.4  -
+23.5  -
 23.6  -
 23.7  -
-24.0 MILLAC -
-24.1 M-800VH -
-24.2 M1052/852/761/611 -
-24.3 M561V -
-24.4 M468V -
-24.5 M-1000VH -
-24.6 M44V -
-24.7 M44H -
-25.6 APC sub panel -
-25.7 APC fork wash -
-26.0 C-Ax auto grease -
-26.1 MG front doorlock -
-26.2 None B axis CL -
-26.3 None TUP -
-27.2 Sub telesco. cov. -
-27.3 Laser processing -
-27.4 EXT.SP override -
-27.5 Wetting dust pump -
-27.6 PPC temporary stp -
-27.7 C-Ax auto grease2 -
-28.0 APC Wait ST flush -
-28.1 CE mark typeII -
-28.2 MG waste oil col. -
-28.3 Tower APC -
-28.4 Vib. sensor unit -
-28.5 DoorInterlockF -
-28.6 DoorI/L option1 -
-28.7 DoorI/L option2 -
-29.0 DoorI/L option3 -
-29.1 DoorI/L option4 -
-29.2 Senser cover I/L -
-29.3 Hydra-UNIT press. -
-29.4 Kosell Thru-UNIT -
-29.5 SetupST Auto Rot. -
-29.6 Thru-drawing pump -
-29.7 X-axis extension -
-30.0 Jig Hydra-UNIT2 -
-30.1 PL col. door I/L -
-30.2 PL air door I/L -
-30.3 Door OP Jig CL.PB -
-30.4 PLT transfer I/L -
-30.5 Thru. clog detect -
-30.6 Avoid motion APC -
-30.7 Ceiling door I/L -
-31.0 Oil lubrication -
-31.1 Work sit2 -
-31.2 Work sit2 Mcode -
-31.3 Work sit2 SW -
-31.4 Work sit alarm3 -
-31.5 APC attachable -
-31.6 Circulation pump -
-31.7 WS washgun inval. -
-32.0 Shower pump2 sync -
-32.1 SP cooling unit2 -
-32.2 SP head cooling2 -
-32.3 Pallet shower2 -
-32.4 Manu-set pot turn -
-32.5 PowderFeed level -
-32.6 Custom PLC -
-32.7 Ex M-signal 16 -
+24.0  -
+24.1  -
+24.2  -
+24.3  -
+24.4  -
+24.5  -
+24.6  -
+24.7  -
+25.0  -
+25.1  -
+25.2  -
+25.3  -
+25.4  -
+25.5  -
+25.6  -
+25.7  -
+26.0  -
+26.1  -
+26.2  -
+26.3  -
+26.4  -
+26.5  -
+26.6  -
+26.7  -
+27.0  -
+27.1  -
+27.2  -
+27.3  -
+27.4  -
+27.5  -
+27.6  -
+27.7  -
+28.0  -
+28.1  -
+28.2  -
+28.3  -
+28.4  -
+28.5  -
+28.6  -
+28.7  -
+29.0  -
+29.1  -
+29.2  -
+29.3  -
+29.4  -
+29.5  -
+29.6  -
+29.7  -
+30.0  -
+30.1  -
+30.2  -
+30.3  -
+30.4  -
+30.5  -
+30.6  -
+30.7  -
+31.0  -
+31.1  -
+31.2  -
+31.3  -
+31.4  -
+31.5  -
+31.6  -
+31.7  -
+32.0  -
+32.1  -
+32.2  -
+32.3  -
+32.4  -
+32.5  -
+32.6  -
+32.7  -

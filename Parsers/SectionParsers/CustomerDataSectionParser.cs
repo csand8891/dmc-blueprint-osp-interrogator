@@ -3,8 +3,16 @@ using System;
 
 namespace DmcBlueprint.Parsers.SectionParsers
 {
+    /// <summary>
+    /// Parses the "[ Customer Data ]" section of a DMC file.
+    /// This section typically contains contact information for a distributor and an end customer.
+    /// The parser differentiates between these two entities and populates the <see cref="DistributorAndCustomerInfo"/> model.
+    /// </summary>
     internal class CustomerDataSectionParser
     {
+        /// <summary>
+        /// Defines the type of customer entity currently being parsed (Distributor or EndCustomer).
+        /// </summary>
         private enum CustomerEntityType
         {
             Distributor,
@@ -14,6 +22,13 @@ namespace DmcBlueprint.Parsers.SectionParsers
         private CustomerEntityType _currentCustomerEntityType = CustomerEntityType.Distributor;
         private string? _currentCustomerDataKey = null;
 
+        /// <summary>
+        /// Parses a single line from the "[ Customer Data ]" section of a DMC file.
+        /// It identifies keys (e.g., "&lt;Name&gt;", "&lt;Address&gt;") and their corresponding values,
+        /// assigning them to the appropriate contact (Distributor or EndCustomer) in the <see cref="DistributorAndCustomerInfo"/> object.
+        /// </summary>
+        /// <param name="line">The line of text to parse. This line is expected to be pre-trimmed.</param>
+        /// <param name="customerInfo">The <see cref="DistributorAndCustomerInfo"/> object to populate with parsed data.</param>
         public void ParseLine(string line, DistributorAndCustomerInfo customerInfo)
         {
             // Note: 'line' is already trimmed by the main Parse loop.
@@ -61,6 +76,11 @@ namespace DmcBlueprint.Parsers.SectionParsers
                 }
             }
         }
+        /// <summary>
+        /// Resets the internal state of the parser.
+        /// This should be called when starting to parse a new DMC file or before re-parsing,
+        /// to ensure the parser defaults to the <see cref="CustomerEntityType.Distributor"/> and clears the current key.
+        /// </summary>
         public void ResetState()
         {
             _currentCustomerEntityType = CustomerEntityType.Distributor;

@@ -4,10 +4,22 @@ using System.Globalization;
 
 namespace DmcBlueprint.Parsers.SectionParsers
 {
+    /// <summary>
+    /// Parses the "[ Machine Data ]" section of a DMC file.
+    /// This section contains key-value pairs identifying various machine and software details.
+    /// The parser maintains state to associate values with the most recently encountered key.
+    /// </summary>
     internal class MachineDataSectionParser
     {
         private string? _currentMachineDataKey = null;
 
+        /// <summary>
+        /// Parses a single line from the "[ Machine Data ]" section of a DMC file.
+        /// It identifies keys (enclosed in angle brackets) and their corresponding values,
+        /// populating the provided <see cref="MachineIdentifier"/> object.
+        /// </summary>
+        /// <param name="line">The line of text to parse. This line is expected to be pre-trimmed.</param>
+        /// <param name="machineDetails">The <see cref="MachineIdentifier"/> object to populate with parsed data.</param>
         public void ParseLine(string line, MachineIdentifier machineDetails)
         {
             // Note: 'line' is already trimmed by the main Parse loop.
