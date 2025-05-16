@@ -23,6 +23,9 @@ namespace DmcBlueprint.Parsers.SectionParsers
                     case "Windows System Version":
                         softVersions.WindowsSystemVersion = valueCandidate;
                         break;
+                    case " Windows System Version ":
+                        softVersions.WindowsSystemVersion = valueCandidate;
+                        break;
                     case "Custom API Additional DVD Version":
                         softVersions.ApiDvdVersion = valueCandidate;
                         break;

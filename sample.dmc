@@ -1,4 +1,4 @@
- cspsVer.11.1.6     2022-05-02  23:13:44
+ cspsVer.11.1.6     2022-04-22  15:06:12
 (Zip Format Install)
 
 
@@ -14,21 +14,21 @@
 < Type of Machine >
                               M560-V
 < Soft Production No >
-                              #04256
+                              #04355
 < Project No >
-                              P240898
+                              P242445
 < Software Production Date >
-                              2022-05-02
+                              2022-04-22
 
 ===========================[ Customer Data ]==================================
 
 < Name >
-             O.A.C.
+             GOSIGER NORTHWEST
 < Address >
              USA
 < Phone >
 < Customer >
-             O.A.C.
+             TEREX-REDMOND
 < Address >
              USA
 < Phone >
@@ -39,8 +39,7 @@
 < Note NO.2 >
 < Special Spec >
 < Comment >
-             1  04/01/22  SO# 2136498  P# 1076427
-             2  05/02/22  SO# 2136498  P# 1076427
+             1  04/22/22  SO# 2136309  P# 1076436
 
 [ Not attached Windows System Disk ]
 =========================[ DVD Media Version Data ]========================
@@ -56,10 +55,10 @@
   8.0.0.E
 
 [ Custom API Additional DVD Version ]
-  App_THINC_API          V1.23.0.0-V3.2.1_P
+  App_THINC_API          V1.23.0.0-V3.3.3_P
 
 [ MTconnect Version@(Included in  App_THINC_API DVD) ]
-  MTConnect              V3.2.1
+  MTConnect              V3.3.3
 
 
 ===========================[ Package Soft composition ]=======================
@@ -79,13 +78,13 @@
 **START
 [ REALTIME OS ]
 
-     VSYS500H
+     VSYS500G
 
-ccdrps-pv1.35                    - 1/8 - <W01><O03><          M560-V><P240898>
 
+ccdrps-pv1.35                    - 1/8 - <W01><O03><          M560-V><P242445>
 [ NC CONTROL ]
 
-     MNC-413H-Z244A-P300A-3
+     MNC-413H-P300A-3
 
 [ NC CONTROL MESSAGE ]
         [ N/A ]
@@ -165,9 +164,8 @@ ccdrps-pv1.35                    - 1/8 - <W01><O03><          M560-V><P240898>
 
 [ OSP SUITE ]
 
-ccdrps-pv1.35                    - 2/8 - <W01><O03><          M560-V><P240898>
-
      SUITE120C
+ccdrps-pv1.35                    - 2/8 - <W01><O03><          M560-V><P242445>
 
 [ OSP SUITE UTILITY ]
 
@@ -175,7 +173,7 @@ ccdrps-pv1.35                    - 2/8 - <W01><O03><          M560-V><P240898>
 
 [ EASY SETTING OF CYCLE TIME REDUCTION ]
 
-     MEASYSET-VA007
+     MEASYSET-VA109
 
 
 
@@ -249,7 +247,9 @@ ccdrps-pv1.35                    - 2/8 - <W01><O03><          M560-V><P240898>
 
 
 
-ccdrps-pv1.35                    - 3/8 - <W01><O03><          M560-V><P240898>
+
+
+ccdrps-pv1.35                    - 3/8 - <W01><O03><          M560-V><P242445>
 ============================[ NC Custom Soft composition ]=====================
 
 
@@ -268,7 +268,7 @@ ccdrps-pv1.35                    - 3/8 - <W01><O03><          M560-V><P240898>
      C:\PBU-DAT\PLCUG11-MA001A.PBU
      C:\PBU-DAT\PLCUH11-MA001B.PBU
      C:\PBU-DAT\MNCUJ65-NG151-0B.PBU
-     C:\PBU-DAT\MPRM01A-03N.PBU
+     C:\PBU-DAT\MPRM01A-03R.PBU
 
 
 [ CNS-DAT ]
@@ -283,7 +283,7 @@ ccdrps-pv1.35                    - 3/8 - <W01><O03><          M560-V><P240898>
      C:\OSP-P\CNS-DAT\AXSPMNA-XDG001-B.CNS
      C:\OSP-P\CNS-DAT\AXSPMNA-YDG001-B1.CNS
      C:\OSP-P\CNS-DAT\AXSPMNA-ZDG001-B1.CNS
-     C:\OSP-P\CNS-DAT\AXSPMNA-AA886-B0.CNS
+     C:\OSP-P\CNS-DAT\AXSPMNA-AA671-B.CNS
      C:\OSP-P\CNS-DAT\AXSPMP6-NF119-A.CNS
      C:\OSP-P\CNS-DAT\AXSPMP6-NF402-A1.CNS
      C:\OSP-P\CNS-DAT\MNCPD11-NF05-C.CNS
@@ -291,14 +291,14 @@ ccdrps-pv1.35                    - 3/8 - <W01><O03><          M560-V><P240898>
      C:\OSP-P\CNS-DAT\PFCPMNA-YDG001-A.CNS
      C:\OSP-P\CNS-DAT\PFCPMNA-ZDG001-A.CNS
      C:\OSP-P\CNS-DAT\LFPUMS1-DG150-0A.CNS
-     C:\OSP-P\CNS-DAT\ENG\PIOD21-P240898BE.CNS
-     C:\OSP-P\CNS-DAT\SIOD21-P240898B.CNS
-     C:\OSP-P\CNS-DAT\PWRD21-P240898A.CNS
+     C:\OSP-P\CNS-DAT\ENG\PIOD21-P242445BE.CNS
+     C:\OSP-P\CNS-DAT\SIOD21-P242445B.CNS
+     C:\OSP-P\CNS-DAT\PWRD21-P242445A.CNS
      C:\OSP-P\CNS-DAT\PLPWR11-MA001N.CNS
      C:\OSP-P\CNS-DAT\ERP-A0029.CNS
      C:\OSP-P\CNS-DAT\SPOM1-662-03-S-A.CNS
-     C:\OSP-P\CNS-DAT\ENG\MPM1-P240898A-ENG.CNS
-     C:\OSP-P\CNS-DAT\DGPTFD-P240898A.CNS
+     C:\OSP-P\CNS-DAT\ENG\MPM1-P242445A-ENG.CNS
+     C:\OSP-P\CNS-DAT\DGPTFD-P242445A.CNS
      C:\OSP-P\CNS-DAT\DGFD-A0002.CNS
      C:\OSP-P\CNS-DAT\PMIO200-MA002E.CNS
      C:\OSP-P\CNS-DAT\SLGCA01-MNF001A.CNS
@@ -333,10 +333,10 @@ ccdrps-pv1.35                    - 3/8 - <W01><O03><          M560-V><P240898>
 
 
 
-ccdrps-pv1.35                    - 4/8 - <W01><O03><          M560-V><P240898>
+ccdrps-pv1.35                    - 4/8 - <W01><O03><          M560-V><P242445>
 ===========================[ NC-SPEC CODE No.1 ]==============================
 
-FB01-C1EF-0410-8023-1037-F102-0008-1000
+FB01-C1EF-0410-8023-1037-F102-0008-0000
 
 0305-0000-C7A0-0CBF-A083-4388-0826-20A5
 
@@ -354,7 +354,7 @@ Sync.Control-X   -  Inductsyn---Z    -  Turning Cut      -  None R specV2.0  -
 Sync.Control-Y   -  Inductsyn---U    -  Interrupt-prog.  -                   -
 Sync.Control-Z   -  Inductsyn---V    -  Non es spec.     o                   -
 Sync.Cntrl-4th   -  Inductsyn---W    -  Non es spec. V4  o  Heavy-Work       -
-5th-Ax.limit     -  Inductsyn---A    o  Non es spec. LP  -  2nd soft. limit  -
+5th-Ax.limit     -  Inductsyn---A    -  Non es spec. LP  -  2nd soft. limit  -
 Rotary-2Ax.      -  Inductsyn---B    -  2nd.Tool.Offset  -  One Touch Adv.   o
 Sync.Cntrl-5th   -  Inductsyn---C    -  Nose.Radius.Cmp  -  ONE-TOUCH S/SHE. -
 Animation        o  A-Axis.Limit     -  MSB_YAxEscape    -  COLLISION AV.SY. -
@@ -417,7 +417,7 @@ Sub.Programs     o  Spindle Contour  -  Spindle PG Non   -  MOP-TOOL(NCIN)   -
 Schedule-Prog.   o  Ax.name.Design   -  M-LAP            -  Low SVP          o
 ==============================================================================
 
-ccdrps-pv1.35                    - 5/8 - <W01><O03><          M560-V><P240898>
+ccdrps-pv1.35                    - 5/8 - <W01><O03><          M560-V><P242445>
 ===========================[ NC-B SPEC CODE No.1 ]============================
 
 0400-0040-0000-2080-1080-0040-1021-0403
@@ -501,12 +501,12 @@ G33 Thread cut   -  Hob/Skiving Pro. -  LASER EX         -                   -
 New Die&mole Mac -  Sync.Cntrl-7th   -  HP HI-SPEED      -                   -
 ==============================================================================
 
-ccdrps-pv1.35                    - 6/8 - <W01><O03><          M560-V><P240898>
+ccdrps-pv1.35                    - 6/8 - <W01><O03><          M560-V><P242445>
 ===========================[ PLC-SPEC CODE No.1 ]=============================
 
-1091-0100-0112-C600-0000-0002-0000-2001
+1091-0100-0112-C600-0000-0002-0000-2701
 
-0000-4100-D142-0400-0000-4440-0100-0000
+0000-4100-D142-0400-0000-4440-0000-0000
 
 ==================  ==================  ==================  ==================
 TouchSens.MOVE   -  CycleTimeReduc   o  MCV-A2           -  Extinction DEV.  -
@@ -518,9 +518,9 @@ StackerCrane I/F -  2ndHourMet(Sp)   -  Lift Up Mosnic   -  Pls-Hndl.2set    -
 Robot-I/F TypeC  -  3rdHourMet(NC)   -  Cylinder retract -  Pls-Hndl.3set    -
 Robot-I/F TypeB  -  3rdHourMet(Sp)   -  ATC simulator    -                   -
 ------------------  ------------------  ------------------  ------------------
-GermanSafe-St    -  Jig Hydra-UNIT   -  MX-H             -                   -
-DoorInterlockS   o  Chuck            -  MU-V             -  Reverse-insert   -
-DoorInterlockE   o  ChuckAirMiss     -  MB-V             o  EXT.JOG Override -
+GermanSafe-St    -  Jig Hydra-UNIT   o  MX-H             -                   -
+DoorInterlockS   o  Chuck            o  MU-V             -  Reverse-insert   -
+DoorInterlockE   o  ChuckAirMiss     o  MB-V             o  EXT.JOG Override -
 CE Marking       -  Tailstock        -  MB-H             -  EXT.Int.Program  -
 DoorInterlockD   -  OP.door.auto     -  MCR-A5C          -  High-speed SP    -
 DoorInterlockC   -  Doorlock-conf.   o  MA-100H          -  Coupler air      -
@@ -537,7 +537,7 @@ Dirty Tank FS    -                   -  Thru-SP Hi/Lo    -  Saddle wash      -
 SpindlThrugh15kg -  APC BL-motor     -  Oil air DAIDO    o  Cover wash       -
 Coolant Cool     -  Crosswise-APC    -  Oil mist BLUBE   -  Ext. Alarm IF    -
 ------------------  ------------------  ------------------  ------------------
-SpindlOilmist    o  Cross-Posit.     -  FP Coolant       o  Auto Greasing    o
+SpindlOilmist    o  Cross-Posit.     -  FP Coolant       o  Auto Greasing    -
 BallScrewCool    -  Cross-Posit.10   -  FP Shower Wash   -  JOG Lever        -
 HydraOilCool     -  Cross.UpDownAC   -  FP Washing Gun   -  MXR-V            -
 Slideway Cool    -  CoolantInterfere -  FP Shower        -  FP 2ndCoolant    -
@@ -585,7 +585,7 @@ TP Battery       o  APC Interlock    -  PLC 6th Ax.name0 -  Semidry nozzle   -
                  -  APC.Hydro.Unit   -  PLC 6th Ax.name3 -  Jig I/F          -
                                                                               
 ==============================================================================
-ccdrps-pv1.35                    - 7/8 - <W01><O03><          M560-V><P240898>
+ccdrps-pv1.35                    - 7/8 - <W01><O03><          M560-V><P242445>
 ===========================[ PLC-SPEC CODE No.2 ]=============================
 
 0000-0000-0000-0000-0000-0000-0000-0000
@@ -669,4 +669,4 @@ PLC 14 Ax.name2  -                   -  Oil air press ck o  APC sub panel    -
 PLC 14 Ax.name3  -                   -  MG rear door lock-  APC fork wash    -
                                                                               
 ==============================================================================
-ccdrps-pv1.35                    - 8/8 - <W01><O03><          M560-V><P240898>
+ccdrps-pv1.35                    - 8/8 - <W01><O03><          M560-V><P242445>

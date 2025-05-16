@@ -23,7 +23,13 @@ namespace DmcBlueprint.Parsers.SectionParsers
                     case "Windows System CD Version":
                         dvdMediaData.WindowsSystemCdVersion = valueCandidate;
                         break;
+                    case "Windows System CD/DVD Version":
+                        dvdMediaData.WindowsSystemCdVersion = valueCandidate;
+                        break;
                     case "OSP System CD Version":
+                        dvdMediaData.OspSystemCdVersion = valueCandidate;
+                        break;
+                    case "OSP System CD/DVD Version":
                         dvdMediaData.OspSystemCdVersion = valueCandidate;
                         break;
                     default:

@@ -138,7 +138,7 @@ namespace DmcBlueprint.Parsers
             {
                 _currentActualSectionTitle = match.Groups["name"].Value.Trim();
                 string normalizedTitle = _currentActualSectionTitle.ToUpperInvariant().Replace(" ", "").Replace("NO.", "");
-
+                Console.WriteLine(normalizedTitle);
                 switch (normalizedTitle)
                 {
                     case "MACHINEDATA":
@@ -160,6 +160,8 @@ namespace DmcBlueprint.Parsers
                         _currentSection = CurrentSection.SoftVersionExceptedOspSystemCd;
                         _softVersionParser.ResetState();
                         break;
+                    case "SOFTVERSIONEXCEPTEDOSPSYSTEMCD/DVD":
+                    
                     case "PACKAGESOFTCOMPOSITION":
                         _currentSection = CurrentSection.PackageSoftComposition;
                         _packageParser.ResetState();
@@ -173,6 +175,9 @@ namespace DmcBlueprint.Parsers
                         break;
                     case "NC-SPECCODE2":
                         _currentSection = CurrentSection.NcSpecCode2;
+                        break;
+                    case "NC-BSPECCODE1":
+                        _currentSection = CurrentSection.NcSpecCode1;
                         break;
                     case "NC-SPECCODE3":
                         _currentSection = CurrentSection.NcSpecCode3;

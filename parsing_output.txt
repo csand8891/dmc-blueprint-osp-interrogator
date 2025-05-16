@@ -1,77 +1,113 @@
-DMC Blueprint Parser Demonstration - Outputting to C:\Users\corey\dev\dmc-blueprint-osp-interrogator\parsing_output.txt
+DMC Blueprint Parser Demonstration - Outputting to C:\Users\corey\software_dev\work\DmcBlueprint\parsing_output.txt
 ===================================================================
 
 --- Initial Console Output (will be in parsing_output.txt) ---
-Attempting to parse DMC file: C:\Users\corey\dev\dmc-blueprint-osp-interrogator\sample.dmc
-'sample.dmc' not found. Creating a sample file for demonstration...
-Sample file 'sample.dmc' created successfully.
-DEBUG: ParseSpecCodeLine received line: 'SLANT-Y AXIS     -  ONE TOUCH IGF ADVo'
-DEBUG: currentSpecSection title: NC-SPEC CODE No.1
-DEBUG: Applying feature parsing to trimmedLine (length 38): "SLANT-Y AXIS     -  ONE TOUCH IGF ADVo"
-DEBUG: Processing segment 0: Raw='SLANT-Y AXIS', Trimmed='SLANT-Y AXIS'
-DEBUG:   Case 2.5: Name='SLANT-Y AXIS', Whitespace, ThenStatus='-'
-DEBUG:     Adding SpecFeature: Name='SLANT-Y AXIS', Enabled=False, No=8, Bit=0 (Col 0)
-DEBUG: Processing segment 3: Raw='ONE TOUCH IGF ADVo', Trimmed='ONE TOUCH IGF ADVo'
-DEBUG:   Case 3/4: Name segment 'ONE TOUCH IGF ADVo' with no status found through lookahead.
-DEBUG: FAILED PARSE for feature: Name='ONE TOUCH IGF ADVo' found, but no status. Full line: 'SLANT-Y AXIS     -  ONE TOUCH IGF ADVo'
-DEBUG: Line processed. Successfully parsed feature columns this line: 1.
-DEBUG: ParseSpecCodeLine received line: 'Y AXIS BY CT-Z   -  TAPE DATA IN/OUT o'
-DEBUG: currentSpecSection title: NC-SPEC CODE No.1
-DEBUG: Applying feature parsing to trimmedLine (length 38): "Y AXIS BY CT-Z   -  TAPE DATA IN/OUT o"
-DEBUG: Processing segment 0: Raw='Y AXIS BY CT-Z', Trimmed='Y AXIS BY CT-Z'
-DEBUG:   Case 2: Name='Y AXIS BY CT-Z', NextSegmentStatus='-'
-DEBUG:     Adding SpecFeature: Name='Y AXIS BY CT-Z', Enabled=False, No=8, Bit=1 (Col 0)
-DEBUG: Processing segment 2: Raw='TAPE DATA IN/OUT o', Trimmed='TAPE DATA IN/OUT o'
-DEBUG:   Case 1: Parsed from single segment: Name='TAPE DATA IN/OUT', Status='o'
-DEBUG:     Adding SpecFeature: Name='TAPE DATA IN/OUT', Enabled=True, No=16, Bit=1 (Col 1)
-DEBUG: Line processed. Successfully parsed feature columns this line: 2.
-DEBUG: ParseSpecCodeLine received line: 'HI-G CONTROL     o  PROGRAM SELECT   -'
-DEBUG: currentSpecSection title: PLC-SPEC CODE No.1
-DEBUG: Applying feature parsing to trimmedLine (length 38): "HI-G CONTROL     o  PROGRAM SELECT   -"
-DEBUG: Processing segment 0: Raw='HI-G CONTROL', Trimmed='HI-G CONTROL'
-DEBUG:   Case 2.5: Name='HI-G CONTROL', Whitespace, ThenStatus='o'
-DEBUG:     Adding SpecFeature: Name='HI-G CONTROL', Enabled=True, No=8, Bit=0 (Col 0)
-DEBUG: Processing segment 3: Raw='PROGRAM SELECT', Trimmed='PROGRAM SELECT'
-DEBUG:   Case 2: Name='PROGRAM SELECT', NextSegmentStatus='-'
-DEBUG:     Adding SpecFeature: Name='PROGRAM SELECT', Enabled=False, No=16, Bit=0 (Col 1)
-DEBUG: Line processed. Successfully parsed feature columns this line: 2.
-DEBUG: ParseSpecCodeLine received line: 'PFC‡U            -  MG TOOL READY    -'
-DEBUG: currentSpecSection title: PLC-SPEC CODE No.1
-DEBUG: Applying feature parsing to trimmedLine (length 38): "PFC‡U            -  MG TOOL READY    -"
-DEBUG: Processing segment 0: Raw='PFC‡U', Trimmed='PFC‡U'
-DEBUG:   Case 3/4: Name segment 'PFC‡U' with no status found through lookahead.
-DEBUG: FAILED PARSE for feature: Name='PFC‡U' found, but no status. Full line: 'PFC‡U            -  MG TOOL READY    -'
-DEBUG: Processing segment 6: Raw='-', Trimmed='-'
-DEBUG:   Case 0: Nameless feature from single segment: Status='-'
-DEBUG:     Adding SpecFeature: Name='', Enabled=False, No=8, Bit=1 (Col 0)
-DEBUG: Processing segment 7: Raw='MG TOOL READY', Trimmed='MG TOOL READY'
-DEBUG:   Case 2.5: Name='MG TOOL READY', Whitespace, ThenStatus='-'
-DEBUG:     Adding SpecFeature: Name='MG TOOL READY', Enabled=False, No=16, Bit=1 (Col 1)
-DEBUG: Line processed. Successfully parsed feature columns this line: 2.
+Attempting to parse DMC file: C:\Users\corey\software_dev\work\DmcBlueprint\sample.dmc
+
+Attempting to parse DMC file: C:\Users\corey\software_dev\work\DmcBlueprint\sample.dmc
+Warning: Unclassified line (CurrentSection is None): ' cspsVer.11.1.6     2022-04-22  15:06:12'
+Warning: Unclassified line (CurrentSection is None): '(Zip Format Install)'
+Warning: Unclassified line (CurrentSection is None): '              OSP Software Management Data Card'
+Warning: Unclassified line (CurrentSection is None): '                                                   cf. Attached Approval List'
+Warning: Unclassified line (CurrentSection is None): '                                                   -------- -------- --------'
+MACHINEDATA
+CUSTOMERDATA
+NOTE
+DVDMEDIAVERSIONDATA
+SOFTVERSIONEXCEPTEDOSPSYSTEMCD/DVD
+PACKAGESOFTCOMPOSITION
+NCCUSTOMSOFTCOMPOSITION
+NC-SPECCODE1
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+NC-BSPECCODE1
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+PLC-SPECCODE1
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+PLC-SPECCODE2
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
+DEBUG (SpecCodeParser): Invalid status char ' ' in an otherwise empty/whitespace block. RawName='                 '. Skipping this block for feature addition.
 
 File Parsed Successfully!
 ------------------------------------
 
 Parsed Data Highlights:
 -----------------------
-  Machine OSP Type: OSP-P300S
-  Software Production No: #12345
-  Project No: P67890
-  Production Date: 1/15/2023
-  Machine Types: MB-5000H
-  Distributor Name: Okuma America
-  End Customer Name: End User Corp
-  Number of Revision Entries: 2
-    First Revision ID: 1, Date: 1/15/2023, SO#: SO#001, P#: P#001
-  NC Spec Codes Sections: 1
-    First NC Section: 'NC-SPEC CODE No.1' has 3 features.
-      First Feature: No.8 Bit.0 - SLANT-Y AXIS (Enabled: False)
-  PLC Spec Codes Sections: 1
-    First PLC Section: 'PLC-SPEC CODE No.1' has 4 features.
-      First Feature: No.8 Bit.0 - HI-G CONTROL (Enabled: True)
-  Software Packages: 2
-    First Package: NC INSTALLER - P300_NC_INSTALLER_L01-01_01.01.01.00R0001_11-1J
-  Custom Software Groups: 2
-    First Custom Group: 'LPP' has 2 files.
-      First File Path: C:\OSP-P\P-MANUAL\LPP\ENG\LPP627C-ENG.CNT
+  Machine OSP Type: OSP-P300MA
+  Software Production No: #04355
+  Project No: P242445
+  Production Date: 4/22/2022
+  Machine Types: M560-V
+  Distributor Name: GOSIGER NORTHWEST
+  End Customer Name: N/A
+  Number of Revision Entries: 1
+    First Revision ID: 1, Date: 4/22/2022, SO#: SO#2136309, P#: P#1076436
+  NC Spec Codes Sections: 2
+    First NC Section: 'NC-SPEC CODE No.1' has 256 features.
+      First Feature: No.8 Bit.0 - Color-Display (Enabled: True)
+      First Hex Code Line: FB01-C1EF-0410-8023-1037-F102-0008-0000
+    Second NC Section: 'NC-B SPEC CODE No.1' has 256 features.
+      First Feature: No.0 Bit.0 - Sync.Cntrl-6th (Enabled: False)
+      First Hex Code Line: 0400-0040-0000-2080-1080-0040-1021-0403
+  PLC Spec Codes Sections: 2
+    First PLC Section: 'PLC-SPEC CODE No.1' has 256 features.
+      First Feature: No.8 Bit.0 - TouchSens.MOVE (Enabled: False)
+      First Hex Code Line: 1091-0100-0112-C600-0000-0002-0000-2701
+    Second PLC Section: 'PLC-SPEC CODE No.2' has 220 features.
+      First Feature: No.8 Bit.0 -  (Enabled: False)
+      First Hex Code Line: 0000-0000-0000-0000-0000-0000-0000-0000
+  Software Packages: 27
+    First Package: Windows System Version - 8.0.0.E
+  Custom Software Groups: 8
+    First Custom Group: 'MPP' has 0 files.
 ------------------------------------

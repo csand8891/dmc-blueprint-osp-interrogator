@@ -93,11 +93,11 @@ namespace DmcBlueprint.Parsers.SectionParsers
                     {
                         if (!string.IsNullOrWhiteSpace(rawNamePart)) 
                         {
-                            // Console.WriteLine($"DEBUG (SpecCodeParser): FAILED PARSE for feature block: RawName='{rawNamePart}' found, but statusChar='{statusChar}' is invalid. Full line: '{line}'");
+                             Console.WriteLine($"DEBUG (SpecCodeParser): FAILED PARSE for feature block: RawName='{rawNamePart}' found, but statusChar='{statusChar}' is invalid. Full line: '{line}'");
                         }
                         else
                         {
-                            // Console.WriteLine($"DEBUG (SpecCodeParser): Invalid status char '{statusChar}' in an otherwise empty/whitespace block. RawName='{rawNamePart}'. Skipping this block for feature addition.");
+                             Console.WriteLine($"DEBUG (SpecCodeParser): Invalid status char '{statusChar}' in an otherwise empty/whitespace block. RawName='{rawNamePart}'. Skipping this block for feature addition.");
                         }
                     }
                     
