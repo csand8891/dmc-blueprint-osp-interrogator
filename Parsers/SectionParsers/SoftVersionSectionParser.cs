@@ -3,10 +3,22 @@ using System;
 
 namespace DmcBlueprint.Parsers.SectionParsers
 {
+    /// <summary>
+    /// Parses the "[ Soft Version Excepted OSP System CD/DVD ]" section of a DMC file.
+    /// This section lists version information for various software components like Windows System,
+    /// Custom API, and MTConnect. Keys are expected to be enclosed in square brackets.
+    /// </summary>
     internal class SoftVersionSectionParser
     {
         private string? _currentSoftVersionKey = null;
 
+        /// <summary>
+        /// Parses a single line from the "[ Soft Version Excepted OSP System CD/DVD ]" section.
+        /// It identifies software component names (keys) and their version strings (values),
+        /// populating the provided <see cref="SoftwareVersionIdentifier"/> object.
+        /// </summary>
+        /// <param name="line">The line of text to parse. This line is expected to be pre-trimmed.</param>
+        /// <param name="softVersions">The <see cref="SoftwareVersionIdentifier"/> object to populate.</param>
         public void ParseLine(string line, SoftwareVersionIdentifier softVersions)
         {
             // Note: 'line' is already trimmed by the main Parse loop.
@@ -40,6 +52,12 @@ namespace DmcBlueprint.Parsers.SectionParsers
                 _currentSoftVersionKey = null; // Typically one value per key
             }
         }
+
+        /// <summary>
+        /// Resets the internal state of the parser.
+        /// This should be called when starting to parse a new DMC file or before re-parsing,
+        /// to ensure that any previously stored software version key is cleared.
+        /// </summary>
         public void ResetState() {
             _currentSoftVersionKey = null;
         }
