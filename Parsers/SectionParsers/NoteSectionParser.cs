@@ -4,8 +4,20 @@ using System.Globalization;
 
 namespace DmcBlueprint.Parsers.SectionParsers
 {
+    /// <summary>
+    /// Parses the "[ NOTE ]" section of a DMC file.
+    /// This section can contain various free-form notes, but this parser specifically
+    /// looks for lines that represent revision entries, typically containing an identifier,
+    /// a date, and optionally Sales Order (SO#) and Project (P#) numbers.
+    /// </summary>
     internal class NoteSectionParser
     {
+        /// <summary>
+        /// Parses a single line from the "[ NOTE ]" section. If the line is identified as a comment/revision entry,
+        /// it attempts to parse it into a <see cref="RevisionEntry"/> and adds it to the <see cref="SoftwareDataManagementCard"/>.
+        /// </summary>
+        /// <param name="line">The line of text to parse. This line is expected to be pre-trimmed.</param>
+        /// <param name="card">The <see cref="SoftwareDataManagementCard"/> object to populate with parsed revision data.</param>
         public void ParseLine(string line, SoftwareDataManagementCard card)
         {
             // Note: 'line' is already trimmed by the main Parse loop.
@@ -21,6 +33,12 @@ namespace DmcBlueprint.Parsers.SectionParsers
             // else: Handle other types of lines within the NOTE section if necessary
         }
 
+        /// <summary>
+        /// Determines if a given line from the NOTE section is a comment line (potentially a revision entry)
+        /// rather than a key-value pair or a separator.
+        /// </summary>
+        /// <param name="line">The line to check, expected to be pre-trimmed.</param>
+        /// <returns>True if the line is considered a comment/revision entry; otherwise, false.</returns>
         private bool IsCommentLine(string line)
         {
             // Line is already trimmed
@@ -30,6 +48,13 @@ namespace DmcBlueprint.Parsers.SectionParsers
                    !line.StartsWith("=");
         }
 
+        /// <summary>
+        /// Attempts to parse a <see cref="RevisionEntry"/> from a comment line.
+        /// It expects a specific format where parts are space-separated, including an identifier,
+        /// a date (MM/dd/yy), and optional SO# and P# tags.
+        /// </summary>
+        /// <param name="line">The comment line to parse.</param>
+        /// <returns>A <see cref="RevisionEntry"/> object if parsing is successful, or null if essential parts cannot be parsed.</returns>
         private RevisionEntry? ParseRevisionEntryFromLine(string line)
         {
             var entry = new RevisionEntry { FullCommentLine = line };
